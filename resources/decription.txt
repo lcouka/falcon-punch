@@ -1,0 +1,226 @@
+*FREE DOWNLOAD* - UVI Falcon Scripts - Guru Pack 1.0
+
+Salut à tous les heureux possesseurs de Falcon,
+
+Aujourd'hui je vous propose un pack 12 scripts qui vient compléter la librairie actuelle :
+
+
+[b]Chord[/b] - Une version smart de l'actuel Chorder.
+
+[img]http://louiscouka.com/img/scripts/chord.png[/img]
+
+
+[b]Multi Chord[/b] - Permet de se contruire une banque d'accords.
+
+[img]http://louiscouka.com/img/scripts/multi_chord.png[/img]
+
+
+[b]Mono[/b] - Force le jeu en mono.
+
+[img]http://louiscouka.com/img/scripts/mono.png[/img]
+
+
+[b]Mono Group[/b] - Force le jeu en mono pour un groupe de note uniquement. (Ex : pour les hihats)
+
+[img]http://louiscouka.com/img/scripts/mono_group.png[/img]
+
+
+[b]Random Note[/b] - Applique de l'aléatoire sur une note.
+
+[img]http://louiscouka.com/img/scripts/random_note.png[/img]
+
+
+[b]Random Play[/b] - Un arpeggiator random.
+
+[img]http://louiscouka.com/img/scripts/random_play.png[/img]
+
+
+[b]Scale[/b] - Force à jouer dans des modes. (mixo, dorien, etc...)
+
+[img]http://louiscouka.com/img/scripts/random_play.png[/img]
+
+
+[b]Transpose[/b] - MIDI Transpose
+
+[img]http://louiscouka.com/img/scripts/transpose.png[/img]
+
+
+[b]Note Range[/b] - Limite la tessiture
+
+[img]http://louiscouka.com/img/scripts/note_range.png[/img]
+
+
+[b]Piano Analyzer[/b] - Un Analyzer de note midi
+
+[img]http://louiscouka.com/img/scripts/piano_analyzer.png[/img]
+
+
+[b]Fix Overlaps[/b] - Maintient la cohérence note on note off
+
+[img]http://louiscouka.com/img/scripts/fix_overlaps.png[/img]
+
+
+[b]Bass Extractor[/b] - Ne joue que la note la plus grave (pratique pour ajouter une sub)
+
+[img]http://louiscouka.com/img/scripts/bass_extractor.png[/img]
+
+
+
+Une vidéo des scripts en action :
+
+VIDEO
+
+Le pack est disponible gratuitement sur mon site :
+http://louiscouka.com/software.html
+
+Bonne journée,
+Louis
+
+
+---------------------------------------------------------------------
+
+*FREE DOWNLOAD* - UVI Falcon Scripts - Falcon Punch 1.0
+
+Hello all the lucky owners of Falcon,
+
+I just released a pack of 12 scripts that complements the current library:
+
+
+[b]Chord[/b] - Smarter version of the current Chorder.
+
+[img]http://louiscouka.com/img/scripts/chord.png[/img]
+
+
+[b]Multi Chord[/b] - Build a bank of chords.
+
+[img]http://louiscouka.com/img/scripts/multi_chord.png[/img]
+
+
+[b]Mono[/b] - Force mono playing
+
+[img]http://louiscouka.com/img/scripts/mono.png[/img]
+
+
+[b]Mono Group[/b] - Force mono playing for selected notes. (Ex : hihats choking)
+
+[img]http://louiscouka.com/img/scripts/mono_group.png[/img]
+
+
+[b]Random Note[/b] - Apply some randomness on note parameters
+
+[img]http://louiscouka.com/img/scripts/random_note.png[/img]
+
+
+[b]Random Play[/b] - A random arpeggiator
+
+[img]http://louiscouka.com/img/scripts/random_play.png[/img]
+
+
+[b]Scale[/b] - Restricts all MIDI notes to a defined scale
+
+[img]http://louiscouka.com/img/scripts/random_play.png[/img]
+
+
+[b]Transpose[/b] - MIDI Transpose
+
+[img]http://louiscouka.com/img/scripts/transpose.png[/img]
+
+
+[b]Note Range[/b] - Limits the range
+
+[img]http://louiscouka.com/img/scripts/note_range.png[/img]
+
+
+[b]Piano Analyzer[/b] - Analyzing notes that are passing threw this module
+
+[img]http://louiscouka.com/img/scripts/piano_analyzer.png[/img]
+
+
+[b]Fix Overlaps[/b] - Maintains consistency between "note on" and "note off"
+
+[img]http://louiscouka.com/img/scripts/fix_overlaps.png[/img]
+
+
+[b]Bass Extractor[/b] - Only plays the lowest note (convenient to add a sub)
+
+[img]http://louiscouka.com/img/scripts/bass_extractor.png[/img]
+
+
+
+I did a video that provides a quick overview of the bundle :
+
+VIDEO
+
+The pack is available on my website :
+http://louiscouka.com/software.html
+
+Have a good day,
+Louis
+
+
+
+
+
+
+Fix Overlaps (To check)
+Merge identical midi notes that are overlaping
+
+Memory (To check)
+The classic memory game adapted to our ears
+Three levels to complete
+Not as easy as you think ;)
+
+Mono
+Only play the lastest note.
+If Repeat enabled, will repeat a note that has been already off
+=> Cas d'utilisations
+?????
+
+Voice Extractor
+=> Cas d'utilisations
+1) Ajouter une sub
+2) doubler la mélodie
+
+Note Range
+Repeat or off notes depending to a range
+
+Chord
+Assign the same chord to each note
+
+Multi Chord
+Assign a chord to each note
+
+Piano
+Analyzing notes that are passing threw this module, or just click to play.
+
+Transpose
+Transpose from -48 to +48 while preserving the timbre
+
+Random Note
+Apply some randomness on note parameters or totally remap the keyboard randomly
+
+Random Play
+Play note randomly while an input note is playing
+Can be coupled with random note to sound design FXs
+
+
+
+
+Other
+Timbre Changer
+Auto Pan
+
+Mono
+MonoBass
+Note Range
+delay
+delay note off
+velocity mapper
+duration changer
+
+CHORDER
+bug du copier copller
+bug du learn quand trop elevé
+
+
+

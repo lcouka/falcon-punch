@@ -1,0 +1,6 @@
+Version 1.0, 26-march-2016
+* First Release
+
+Version 1.1, 31-may-2016
+* New Scripts : Note Single, Velocity Mapper and Double
+* Minor improvements
