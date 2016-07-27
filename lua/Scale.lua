@@ -4,7 +4,7 @@
 --! Date : 05/03/2016
 --------------------------------------------------------------------------------
 
-local KEY = {"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"}
+local KEY = {"C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"}
 local keysButton = {}
 for i = 1, 12 do
     keysButton[i] = OnOffButton{"KeyButton_"..tostring(i), true, width = 42 - 3, x = 102 + (i - 1) * 42, y = 5, height = 39}

@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
---! Chord Suite
+--! Analyzer
 --! Note to chords wrapping
 --! Author : Louis Couka
 --! Date : 25/02/2016

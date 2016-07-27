@@ -3,7 +3,6 @@
 --! Kill identical notes interlacing
 --! Author : Louis Couka
 --! Date : 01/03/2016
---! Version 1.0b
 --------------------------------------------------------------------------------
 
 Label{"Fix Overlaps : Kill identical notes that are played at the same time", align = "centred", width = 710}

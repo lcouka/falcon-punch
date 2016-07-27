@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
---! Velocity Mapper
+--! Mapper
 --! Author : Louis Couka
 --! Date : 20/05/2016
 --------------------------------------------------------------------------------
@@ -45,7 +45,6 @@ function refreshTable()
         y = curveMapper(1.2^(curve.value*10), (i/127)) * 127
         y = min.value + y * (max.value - min.value) / 127
         t.setValue(t, x+1, y, true)
-        if (x < 10) then  print(x.." "..t.getValue(t, x + 1)) end
     end
 end
 refreshTable()

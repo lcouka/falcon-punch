@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 
 
-local KEY = {"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"}
+local KEY = {"C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"}
 function formatNote(value)
     local chroma = value % 12
     return tostring(value).." ("..KEY[chroma + 1]..tostring((value - chroma) / 12 - 2)..")"

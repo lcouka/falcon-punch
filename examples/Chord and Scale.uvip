@@ -1,0 +1,902 @@
+<UVI4>
+    <Program Name="Program" Bypass="0" Gain="0.50118721" Pan="0" DisplayName="Chord and Scale" TransposeOctaves="0" TransposeSemiTones="0" OutputName="" Polyphony="16" NotePolyphony="0" ProgramPath="D:/Louis/Programmation/Ayon/Falcon Punch/examples/Chord and Scale.uvip" LoopProgram="0" Streaming="1" BypassInsertFX="0">
+        <Mappers>
+            <ControlSignalMapper Name="Mapper 0" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 0">0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,097143 0,108571 0,120000 0,120000 0,131429 0,142857 0,154286 0,165714 0,177143 0,188571 0,188571 0,200000 0,211429 0,222857 0,234286 0,245714 0,257143 0,257143 0,268571 0,280000 0,291429 0,302857 0,314286 0,325714 0,325714 0,337143 0,348571 0,360000 0,371429 0,382857 0,394286 0,394286 0,405714 0,417143 0,428571 0,440000 0,451429 0,451429 0,462857 0,474286 0,485714 0,497143 0,508571 0,520000 0,520000 0,531429 0,542857 0,554286 0,565714 0,577143 0,588571 0,588571 0,600000 0,611429 0,622857 0,634286 0,645714 0,657143 0,657143 0,680333 0,703190 0,725714 0,748571 0,771429 0,805714 0,828905 0,851762 0,874619 0,908571 0,920333 0,954286 0,977143 1,000000</ControlSignalMapper>
+            <ControlSignalMapper Name="Mapper 1" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 1">-0,051429 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,074286 -0,085714 -0,108571 -0,108571 -0,120000 -0,131429 -0,142857 -0,154286 -0,165714 -0,177143 -0,188571 -0,188571 -0,188571 -0,200000 -0,211429 -0,222857 -0,222857 -0,222857 -0,222857 -0,222857 -0,228571 -0,234286 -0,238095 -0,241905 -0,245714 -0,249524 -0,253333 -0,257143 -0,260952 -0,264762 -0,268571 -0,272381 -0,276190 -0,280000 -0,285714 -0,291429 -0,291429 -0,302857 -0,314286 -0,314286 -0,310476 -0,306667 -0,302857 -0,280000 -0,268571 -0,257143 -0,257143 -0,234286 -0,188571 -0,154286 -0,108571 -0,074286 -0,051429 -0,028571 0,017143 0,040000 0,062857 0,085714 0,097143 0,108571 0,120000 0,138286 0,156571 0,174857 0,193143 0,211429 0,227429 0,243429 0,259429 0,275429 0,291429 0,304286 0,317143 0,330000 0,342857 0,355714 0,368571 0,381429 0,394286 0,408980 0,423673 0,438367 0,453061 0,467755 0,482449 0,497143 0,514286 0,531429 0,548571 0,565714 0,582857 0,600000 0,617143 0,634286 0,651429 0,668571 0,689524 0,710476 0,731429 0,752381 0,773333 0,794286 0,813333 0,832381 0,851429 0,870476 0,889524 0,908571 0,933061 0,957551 0,982041 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000</ControlSignalMapper>
+        </Mappers>
+        <Properties BackgroundImagePath="./../../../../Travail/12 - UVI/Presets Falcon/XP1/_img/bg.png" description="Preset Credits : Louis Couka"/>
+        <ControlSignalSources/>
+        <EventProcessors>
+            <Arpeggiator Name="EventProcessor2" Bypass="0" Mode="0" TriggerMode="1" OctaveMode="1" Octave="0" NumStrike="1" RepeatBottomNote="0" RepeatTopNote="0" Resolution="22" StepLength="0.57319999" ArpVelocityBlend="0.5" GrooveAmount="0" Hold="0" NumSteps="16" Step0State="1" Step1State="2" Step2State="1" Step3State="1" Step4State="2" Step5State="1" Step6State="2" Step7State="1" Step8State="2" Step9State="1" Step10State="2" Step11State="1" Step12State="2" Step13State="1" Step14State="1" Step15State="1" Step16State="1" Step17State="1" Step18State="1" Step19State="1" Step20State="1" Step21State="1" Step22State="1" Step23State="1" Step24State="1" Step25State="1" Step26State="1" Step27State="1" Step28State="1" Step29State="1" Step30State="1" Step31State="1" Step32State="1" Step33State="1" Step34State="1" Step35State="1" Step36State="1" Step37State="1" Step38State="1" Step39State="1" Step40State="1" Step41State="1" Step42State="1" Step43State="1" Step44State="1" Step45State="1" Step46State="1" Step47State="1" Step48State="1" Step49State="1" Step50State="1" Step51State="1" Step52State="1" Step53State="1" Step54State="1" Step55State="1" Step56State="1" Step57State="1" Step58State="1" Step59State="1" Step60State="1" Step61State="1" Step62State="1" Step63State="1" Step64State="1" Step65State="1" Step66State="1" Step67State="1" Step68State="1" Step69State="1" Step70State="1" Step71State="1" Step72State="1" Step73State="1" Step74State="1" Step75State="1" Step76State="1" Step77State="1" Step78State="1" Step79State="1" Step80State="1" Step81State="1" Step82State="1" Step83State="1" Step84State="1" Step85State="1" Step86State="1" Step87State="1" Step88State="1" Step89State="1" Step90State="1" Step91State="1" Step92State="1" Step93State="1" Step94State="1" Step95State="1" Step96State="1" Step97State="1" Step98State="1" Step99State="1" Step100State="1" Step101State="1" Step102State="1" Step103State="1" Step104State="1" Step105State="1" Step106State="1" Step107State="1" Step108State="1" Step109State="1" Step110State="1" Step111State="1" Step112State="1" Step113State="1" Step114State="1" Step115State="1" Step116State="1" Step117State="1" Step118State="1" Step119State="1" Step120State="1" Step121State="1" Step122State="1" Step123State="1" Step124State="1" Step125State="1" Step126State="1" Step127State="1" Step0Size="1" Step1Size="1" Step2Size="1" Step3Size="1" Step4Size="1" Step5Size="1" Step6Size="1" Step7Size="1" Step8Size="1" Step9Size="1" Step10Size="1" Step11Size="1" Step12Size="1" Step13Size="1" Step14Size="1" Step15Size="1" Step16Size="1" Step17Size="1" Step18Size="1" Step19Size="1" Step20Size="1" Step21Size="1" Step22Size="1" Step23Size="1" Step24Size="1" Step25Size="1" Step26Size="1" Step27Size="1" Step28Size="1" Step29Size="1" Step30Size="1" Step31Size="1" Step32Size="1" Step33Size="1" Step34Size="1" Step35Size="1" Step36Size="1" Step37Size="1" Step38Size="1" Step39Size="1" Step40Size="1" Step41Size="1" Step42Size="1" Step43Size="1" Step44Size="1" Step45Size="1" Step46Size="1" Step47Size="1" Step48Size="1" Step49Size="1" Step50Size="1" Step51Size="1" Step52Size="1" Step53Size="1" Step54Size="1" Step55Size="1" Step56Size="1" Step57Size="1" Step58Size="1" Step59Size="1" Step60Size="1" Step61Size="1" Step62Size="1" Step63Size="1" Step64Size="1" Step65Size="1" Step66Size="1" Step67Size="1" Step68Size="1" Step69Size="1" Step70Size="1" Step71Size="1" Step72Size="1" Step73Size="1" Step74Size="1" Step75Size="1" Step76Size="1" Step77Size="1" Step78Size="1" Step79Size="1" Step80Size="1" Step81Size="1" Step82Size="1" Step83Size="1" Step84Size="1" Step85Size="1" Step86Size="1" Step87Size="1" Step88Size="1" Step89Size="1" Step90Size="1" Step91Size="1" Step92Size="1" Step93Size="1" Step94Size="1" Step95Size="1" Step96Size="1" Step97Size="1" Step98Size="1" Step99Size="1" Step100Size="1" Step101Size="1" Step102Size="1" Step103Size="1" Step104Size="1" Step105Size="1" Step106Size="1" Step107Size="1" Step108Size="1" Step109Size="1" Step110Size="1" Step111Size="1" Step112Size="1" Step113Size="1" Step114Size="1" Step115Size="1" Step116Size="1" Step117Size="1" Step118Size="1" Step119Size="1" Step120Size="1" Step121Size="1" Step122Size="1" Step123Size="1" Step124Size="1" Step125Size="1" Step126Size="1" Step127Size="1" Step0Level="1" Step1Level="1" Step2Level="1" Step3Level="1" Step4Level="1" Step5Level="1" Step6Level="1" Step7Level="1" Step8Level="1" Step9Level="1" Step10Level="1" Step11Level="1" Step12Level="1" Step13Level="1" Step14Level="1" Step15Level="1" Step16Level="1" Step17Level="1" Step18Level="1" Step19Level="1" Step20Level="1" Step21Level="1" Step22Level="1" Step23Level="1" Step24Level="1" Step25Level="1" Step26Level="1" Step27Level="1" Step28Level="1" Step29Level="1" Step30Level="1" Step31Level="1" Step32Level="1" Step33Level="1" Step34Level="1" Step35Level="1" Step36Level="1" Step37Level="1" Step38Level="1" Step39Level="1" Step40Level="1" Step41Level="1" Step42Level="1" Step43Level="1" Step44Level="1" Step45Level="1" Step46Level="1" Step47Level="1" Step48Level="1" Step49Level="1" Step50Level="1" Step51Level="1" Step52Level="1" Step53Level="1" Step54Level="1" Step55Level="1" Step56Level="1" Step57Level="1" Step58Level="1" Step59Level="1" Step60Level="1" Step61Level="1" Step62Level="1" Step63Level="1" Step64Level="1" Step65Level="1" Step66Level="1" Step67Level="1" Step68Level="1" Step69Level="1" Step70Level="1" Step71Level="1" Step72Level="1" Step73Level="1" Step74Level="1" Step75Level="1" Step76Level="1" Step77Level="1" Step78Level="1" Step79Level="1" Step80Level="1" Step81Level="1" Step82Level="1" Step83Level="1" Step84Level="1" Step85Level="1" Step86Level="1" Step87Level="1" Step88Level="1" Step89Level="1" Step90Level="1" Step91Level="1" Step92Level="1" Step93Level="1" Step94Level="1" Step95Level="1" Step96Level="1" Step97Level="1" Step98Level="1" Step99Level="1" Step100Level="1" Step101Level="1" Step102Level="1" Step103Level="1" Step104Level="1" Step105Level="1" Step106Level="1" Step107Level="1" Step108Level="1" Step109Level="1" Step110Level="1" Step111Level="1" Step112Level="1" Step113Level="1" Step114Level="1" Step115Level="1" Step116Level="1" Step117Level="1" Step118Level="1" Step119Level="1" Step120Level="1" Step121Level="1" Step122Level="1" Step123Level="1" Step124Level="1" Step125Level="1" Step126Level="1" Step127Level="1" Step0Offset="0" Step1Offset="0" Step2Offset="7" Step3Offset="12" Step4Offset="0" Step5Offset="0" Step6Offset="0" Step7Offset="10" Step8Offset="0" Step9Offset="8" Step10Offset="0" Step11Offset="7" Step12Offset="0" Step13Offset="5" Step14Offset="3" Step15Offset="5" Step16Offset="0" Step17Offset="0" Step18Offset="0" Step19Offset="0" Step20Offset="0" Step21Offset="0" Step22Offset="0" Step23Offset="0" Step24Offset="0" Step25Offset="0" Step26Offset="0" Step27Offset="0" Step28Offset="0" Step29Offset="0" Step30Offset="0" Step31Offset="0" Step32Offset="0" Step33Offset="0" Step34Offset="0" Step35Offset="0" Step36Offset="0" Step37Offset="0" Step38Offset="0" Step39Offset="0" Step40Offset="0" Step41Offset="0" Step42Offset="0" Step43Offset="0" Step44Offset="0" Step45Offset="0" Step46Offset="0" Step47Offset="0" Step48Offset="0" Step49Offset="0" Step50Offset="0" Step51Offset="0" Step52Offset="0" Step53Offset="0" Step54Offset="0" Step55Offset="0" Step56Offset="0" Step57Offset="0" Step58Offset="0" Step59Offset="0" Step60Offset="0" Step61Offset="0" Step62Offset="0" Step63Offset="0" Step64Offset="0" Step65Offset="0" Step66Offset="0" Step67Offset="0" Step68Offset="0" Step69Offset="0" Step70Offset="0" Step71Offset="0" Step72Offset="0" Step73Offset="0" Step74Offset="0" Step75Offset="0" Step76Offset="0" Step77Offset="0" Step78Offset="0" Step79Offset="0" Step80Offset="0" Step81Offset="0" Step82Offset="0" Step83Offset="0" Step84Offset="0" Step85Offset="0" Step86Offset="0" Step87Offset="0" Step88Offset="0" Step89Offset="0" Step90Offset="0" Step91Offset="0" Step92Offset="0" Step93Offset="0" Step94Offset="0" Step95Offset="0" Step96Offset="0" Step97Offset="0" Step98Offset="0" Step99Offset="0" Step100Offset="0" Step101Offset="0" Step102Offset="0" Step103Offset="0" Step104Offset="0" Step105Offset="0" Step106Offset="0" Step107Offset="0" Step108Offset="0" Step109Offset="0" Step110Offset="0" Step111Offset="0" Step112Offset="0" Step113Offset="0" Step114Offset="0" Step115Offset="0" Step116Offset="0" Step117Offset="0" Step118Offset="0" Step119Offset="0" Step120Offset="0" Step121Offset="0" Step122Offset="0" Step123Offset="0" Step124Offset="0" Step125Offset="0" Step126Offset="0" Step127Offset="0" Step0CC="0" Step1CC="0" Step2CC="0" Step3CC="0" Step4CC="0" Step5CC="0" Step6CC="0" Step7CC="0" Step8CC="0" Step9CC="0" Step10CC="0" Step11CC="0" Step12CC="0" Step13CC="0" Step14CC="0" Step15CC="0" Step16CC="0" Step17CC="0" Step18CC="0" Step19CC="0" Step20CC="0" Step21CC="0" Step22CC="0" Step23CC="0" Step24CC="0" Step25CC="0" Step26CC="0" Step27CC="0" Step28CC="0" Step29CC="0" Step30CC="0" Step31CC="0" Step32CC="0" Step33CC="0" Step34CC="0" Step35CC="0" Step36CC="0" Step37CC="0" Step38CC="0" Step39CC="0" Step40CC="0" Step41CC="0" Step42CC="0" Step43CC="0" Step44CC="0" Step45CC="0" Step46CC="0" Step47CC="0" Step48CC="0" Step49CC="0" Step50CC="0" Step51CC="0" Step52CC="0" Step53CC="0" Step54CC="0" Step55CC="0" Step56CC="0" Step57CC="0" Step58CC="0" Step59CC="0" Step60CC="0" Step61CC="0" Step62CC="0" Step63CC="0" Step64CC="0" Step65CC="0" Step66CC="0" Step67CC="0" Step68CC="0" Step69CC="0" Step70CC="0" Step71CC="0" Step72CC="0" Step73CC="0" Step74CC="0" Step75CC="0" Step76CC="0" Step77CC="0" Step78CC="0" Step79CC="0" Step80CC="0" Step81CC="0" Step82CC="0" Step83CC="0" Step84CC="0" Step85CC="0" Step86CC="0" Step87CC="0" Step88CC="0" Step89CC="0" Step90CC="0" Step91CC="0" Step92CC="0" Step93CC="0" Step94CC="0" Step95CC="0" Step96CC="0" Step97CC="0" Step98CC="0" Step99CC="0" Step100CC="0" Step101CC="0" Step102CC="0" Step103CC="0" Step104CC="0" Step105CC="0" Step106CC="0" Step107CC="0" Step108CC="0" Step109CC="0" Step110CC="0" Step111CC="0" Step112CC="0" Step113CC="0" Step114CC="0" Step115CC="0" Step116CC="0" Step117CC="0" Step118CC="0" Step119CC="0" Step120CC="0" Step121CC="0" Step122CC="0" Step123CC="0" Step124CC="0" Step125CC="0" Step126CC="0" Step127CC="0" StepCCId="-1" ArpeggiatorVersion="2">
+                <Properties PresetPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/EventProcessors/Arpeggiator/Groove.preset"/>
+            </Arpeggiator>
+            <ScriptProcessor Name="EventProcessor0" Bypass="0" Key_0="0" Key_2="0" Key_4="0" Key_5="0" Key_7="0" Key_9="0" Key_11="0" Key_12="0" Key_14="0" Key_16="0" Key_17="0" Key_19="0" Key_21="0" Key_23="0" Key_24="0" Key_26="0" Key_28="0" Key_29="0" Key_31="0" Key_33="0" Key_35="0" Key_36="0" Key_38="0" Key_40="0" Key_41="0" Key_43="0" Key_45="0" Key_47="0" Key_48="1" Key_50="0" Key_52="0" Key_53="0" Key_55="1" Key_57="0" Key_59="0" Key_60="1" Key_62="0" Key_64="1" Key_65="0" Key_67="1" Key_69="0" Key_71="0" Key_72="1" Key_74="0" Key_76="0" Key_77="0" Key_79="0" Key_81="0" Key_83="0" Key_84="0" Key_86="0" Key_88="0" Key_89="0" Key_91="0" Key_93="0" Key_95="0" Key_96="0" Key_98="0" Key_100="0" Key_101="0" Key_103="0" Key_105="0" Key_107="0" Key_108="0" Key_110="0" Key_112="0" Key_113="0" Key_115="0" Key_117="0" Key_119="0" Key_120="0" Key_1="0" Key_3="0" Key_6="0" Key_8="0" Key_10="0" Key_13="0" Key_15="0" Key_18="0" Key_20="0" Key_22="0" Key_25="0" Key_27="0" Key_30="0" Key_32="0" Key_34="0" Key_37="0" Key_39="0" Key_42="0" Key_44="0" Key_46="0" Key_49="0" Key_51="0" Key_54="0" Key_56="0" Key_58="0" Key_61="0" Key_63="0" Key_66="0" Key_68="0" Key_70="0" Key_73="0" Key_75="0" Key_78="0" Key_80="0" Key_82="0" Key_85="0" Key_87="0" Key_90="0" Key_92="0" Key_94="0" Key_97="0" Key_99="0" Key_102="0" Key_104="0" Key_106="0" Key_109="0" Key_111="0" Key_114="0" Key_116="0" Key_118="0" Chord_Learn="0" Colours="2" Voicing="1" API_version="16">
+                <Properties ScriptPath="./../builds/lua/Chord.lua"/>
+                <script><![CDATA[-- From Falcon Punch 1.1
+-- Visit my website for updates at : http://louiscouka.com/
+
+--------------------------------------------------------------------------------
+--! Chord
+--! Author : Louis Couka
+--! Date : 03/03/2016
+--------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------- PIANO CLASS
+
+Piano = {}
+Piano.__index = Piano
+
+function Piano:refreshColour(i)
+    local colourOff
+    local colourOn
+    if (isWhite(i-1)) then
+        if (self.isNotePlaying[i] > 0) then
+            if (self.colourOff[i] == 0) then
+                colourOff = "#999999"
+            else
+                colourOff = "#00bb00"
+            end
+            colourOn = "#bb0000"
+        else
+            if (self.colourOff[i] == 0) then
+                colourOff = "#ffffff"
+            else
+                colourOff = "#00ff00"
+            end
+            colourOn = "#ff0000"
+        end
+    else
+        if (self.isNotePlaying[i] > 0) then
+            if (self.colourOff[i] == 0) then
+                colourOff = "#000000"
+            else
+                colourOff = "#009900"
+            end
+            colourOn = "#990000"
+        else
+            if (self.colourOff[i] == 0) then
+                colourOff = "#444444"
+            else
+                colourOff = "#00dd00"
+            end
+            colourOn = "#dd0000"
+        end
+    end
+    self.keyButtons[i].backgroundColourOff = colourOff
+    self.keyButtons[i].backgroundColourOn = colourOn
+end
+
+function Piano.create(name)
+    local piano = {} -- our new object
+    setmetatable(piano,Piano) -- make Piano handle lookup
+    piano.name = name
+    piano.keyButtons = {}
+    
+    -- Gui Position
+    piano.y = 5
+    local KEYBOARD_LEFT = 5
+    local KEY_WIDTH = 11
+    local KEY_BLACK_WIDTH = 6
+    local KEY_HEIGHT = 60
+    local KEY_BLACK_HEIGHT = 39
+    piano.numberKeys = 121
+    local FIRST_KEY = 0 -- C-2
+    local FIRST_KEY_RANGE = -2
+   
+    piano.isNotePlaying = {}
+    piano.colourOff = {}
+    for i = 1,piano.numberKeys do
+        piano.isNotePlaying[i] = 0
+        piano.colourOff[i] = 0 -- 0 : normal ; 1 : green
+    end
+  
+    -- White Keys
+    local note = 0
+    local xPos = KEYBOARD_LEFT
+    while (note < piano.numberKeys) do
+        chroma = note % 12
+        i = note + 1
+        piano.keyButtons[i] = OnOffButton(name.."_"..tostring(note))
+        piano.keyButtons[i].displayName = " "
+        piano.keyButtons[i].x = xPos
+        piano.keyButtons[i].y = piano.y
+        piano.keyButtons[i].width = KEY_WIDTH
+        piano.keyButtons[i].height = KEY_HEIGHT
+        piano:refreshColour(i)
+        if (chroma ~= 4 and chroma ~= 11) then -- E/F and B/C break
+            note = note + 2
+        else
+            note = note + 1
+        end
+        xPos = xPos + KEY_WIDTH - 1
+    end
+
+    -- Black Keys
+    local note = 1
+    local xPos = KEYBOARD_LEFT + KEY_WIDTH - KEY_BLACK_WIDTH / 2
+    while (note < piano.numberKeys) do -- Black
+        chroma = note % 12
+        i = note + 1
+        piano.keyButtons[i] = OnOffButton(name.."_"..tostring(note))
+        piano.keyButtons[i].displayName = "1"
+        if (chroma == 1 or chroma == 6) then -- Piano asymetries
+            piano.keyButtons[i].x = xPos - 1
+        elseif (chroma == 10) then
+            piano.keyButtons[i].x = xPos + 1
+        else
+            piano.keyButtons[i].x = xPos
+        end
+        piano.keyButtons[i].y = piano.y
+        piano.keyButtons[i].width = KEY_BLACK_WIDTH
+        piano.keyButtons[i].height = KEY_BLACK_HEIGHT
+        piano:refreshColour(i)
+        if (chroma ~= 3 and chroma ~= 10) then -- E/F and B/C break
+            note = note + 2
+        else
+            note = note + 3
+            xPos = xPos + KEY_WIDTH - 1
+        end
+        xPos = xPos + KEY_WIDTH - 1
+    end
+    
+    piano.stopMouseEventLayer = Label(" ")
+    piano.stopMouseEventLayer.x = KEYBOARD_LEFT
+    piano.stopMouseEventLayer.y = piano.y
+    piano.stopMouseEventLayer.width = 710
+    piano.stopMouseEventLayer.height = KEY_HEIGHT
+    piano.stopMouseEventLayer.visible = false
+    
+    return piano
+end
+
+function isWhite(note)
+    chroma = note % 12
+    return chroma ~= 1 and chroma ~= 3 and chroma ~= 6 and chroma ~= 8 and chroma ~= 10
+end
+    
+function Piano:isNoteVisible(note)
+    return note < self.numberKeys
+end
+    
+function Piano:setY(y)
+    self.y = y
+    for i=1, self.numberKeys do
+        self.keyButtons[i].y = y
+    end
+    self.stopMouseEventLayer.y = y
+end
+
+function Piano:onNote(note)
+    if (note < self.numberKeys) then
+        self.isNotePlaying[note+1] = self.isNotePlaying[note+1] + 1
+        self:refreshColour(note+1)
+    end
+end
+
+function Piano:onRelease(note)
+    if (note < self.numberKeys and self.isNotePlaying[note+1] > 0) then
+        self.isNotePlaying[note+1] = self.isNotePlaying[note+1] - 1
+        self:refreshColour(note+1)
+    end
+end
+
+function Piano:setClickable(isClickable)
+    self.stopMouseEventLayer.visible = not isClickable
+end
+
+function Piano:setColourOff(i, colourId)
+    self.colourOff[i] = colourId
+    self:refreshColour(i)
+end
+piano = Piano.create("Key")
+piano:setY(5)
+
+isPlaying = 0
+learn = OnOffButton{"Chord_Learn", false, displayName = "Chord Learn", backgroundColourOn = ("#f11a1a"), x = 605, y = 75}
+learn.changed = function(self)
+    if (self.value) then
+        for i = 1,piano.numberKeys do
+            if (piano.isNotePlaying[i] > 0) then
+                piano.keyButtons[i]:setValue(true)
+                piano.isNotePlaying[i] = 0 -- Reset play shadow
+                piano:refreshColour(i)
+            end
+        end        
+    end
+end
+
+-------------------------------------------------------------------------------- TRANSPOSE STUFF
+
+function transpose(semiton)
+    local start, end_, step
+    if (semiton < 0) then
+        start = 1
+        end_ = piano.numberKeys
+        step = 1
+    elseif (semiton > 0) then
+        start = piano.numberKeys
+        end_ = 1
+        step = -1
+    else
+        return
+    end
+    
+    for jj=start,end_ + semiton, step do
+        piano.keyButtons[jj]:setValue(piano.keyButtons[jj - semiton].value)
+    end
+    for jj=end_ + semiton,end_ + semiton, step do -- Disable extrems keys
+        piano.keyButtons[jj]:setValue(false)
+    end
+end
+
+function onNote(e)
+    isPlaying = isPlaying + 1
+    if (learn.value and learn.enabled) then
+        playNote(e.note, e.velocity, -1, e.layer, e.channel, e.input, e.vol, e.pan, e.tune, e.slice)
+        if (isPlaying == 1) then -- New chord played
+            for i = 1,piano.numberKeys do
+                piano.keyButtons[i]:setValue(false) -- Reset
+            end
+        end
+        piano.keyButtons[e.note + 1]:setValue(true) -- Add note
+    else
+        for i, keyButton in ipairs(piano.keyButtons) do
+            if keyButton.value then
+               playNote(i + e.note - 61, e.velocity, -1, e.layer, e.channel, e.input, e.vol, e.pan, e.tune, e.slice)
+            end
+        end
+    end
+    piano:onNote(e.note)
+end
+
+function onRelease(e)
+
+    if (isPlaying > 0) then -- failsafe
+        isPlaying = isPlaying - 1
+    end
+    piano:onRelease(e.note)
+end
+
+piano.keyButtons[61]:setValue(true)
+function loadPreset(preset)
+    -- Reset
+    for i, keyButton in ipairs(piano.keyButtons) do
+        keyButton:setValue(false, false)
+    end
+    for i = 1, table.getn(preset) do
+        piano.keyButtons[preset[i]]:setValue(true, false)
+    end
+end
+
+
+local vocingSus4
+
+local vocingMinorMajor7
+
+local vocingMajorMajor7 = {
+    
+}
+
+local presets =
+{
+    {
+        "--",
+        {
+            {61}
+        },
+    },
+    
+    {
+        "Major",
+        {
+            {49,56,61,65,68,73}, 
+            {49,56,61,65,70,75}, 
+            {49,56,61,65,68,72,75,80},   
+            {49,56,61,63,65,68,70,72,75}, 
+            {49,56,61,68,72,77}, 
+            {49,56,61,63,65,68}, 
+            {56,61,65,68,72,73,75}, 
+            {49,56,61,63,65,68,73}, 
+            {49,56,61,65,68,70,73}, 
+            {49,56,60,63,65,68,72}, 
+            {49,56,60,63,65,70}, 
+            {49,56,60,63,65,68}, 
+            {49,56,61,65,68,72,75}, 
+            {49,56,61,65,70,75,80}, 
+            {49,53,58,63,68,73}, 
+            {53,58,63,68,73,77,80}, 
+            {49,53,58,63,68,73,80}, 
+            {49,53,58,63,65,68,70}, 
+            {49,53,56,58,61,65,68}, 
+            {49,53,56,60,63,65,68}, 
+            {49,56,61,65,68,72,73,75},
+            {49,56,61,65,70,75,77,80},
+            {49,56,61,68,73,77,80}, --
+            {49,56,65}, 
+            {49,56,63,65,68}, 
+            {49,56,61,63,65}, --
+            {56,61,65,68,73,77}, --
+            {53,56,61,65,68,73}, --
+            {56,61,65,70,75,77,80}, --  
+            {61,63,65,68,73,77,80}, --
+            {56,61,65,68,73,77,80,82}, --
+            {56,61,63,65,68,70,72,75}, --
+            {49,56,61,65,68,72,75,77,80,84}, --
+            {49,56,58,61,65,68,72,75,77,80,84,87}, --
+        }
+    },
+    {
+        "Minor",
+        {
+            {49,56,61,64,68,73}, 
+            {49,56,61,63,64,68,71}, 
+            {49,56,61,68,71,75,78}, 
+            {49,56,59,64,68,73}, 
+            {49,56,64,68,71,75}, 
+            {61,63,64,68,71}, 
+            {59,63,64,66,68,71,75,78}, 
+            {61,63,64,66,68,71,75}, 
+            {49,52,56,61,63,64,68}, 
+            {49,52,56,59,64,68,71,75}, 
+            {49,56,59,64,68}, 
+            {49,56,59,64}, 
+            {49,59,64,68,73,78}, 
+            {49,56,61,64,68,71}, 
+            {49,56,61,64,68,71,75}, 
+            {49,56,59,61,64,68}, 
+            {49,56,61,64,66,68,71}, 
+            {49,56,61,68,71,76}, 
+            {49,56,61,64,70,73,75}, 
+            {49,56,59,64,68,73,78}, 
+            {49,56,64,68,71,73,76},    
+            {59,61,64,66,68,71,75,78}, --
+            {49,56,59,64,68,73,78,85}, --
+            {49,56,61,64,68,73,75}, --
+            {49,56,61,64,68,72,75}, --
+            {49,52,56,59,63,68,73,80}, --
+            {56,59,61,64,66,68,71,73,76}, --
+            {49,56,59,63,64,66,71,73,75,78}, --
+            {49,52,54,56,59,63,66}, --
+            {49,52,56,59,61,64,68}, --
+            {49,52,58,63,68,73,78}, --
+            {49,58,63,68,73,76,78}, --
+            {49,56,59,64,70,75}, --
+            {49,51,52,56,59,63}, --
+            {49,52,58,63,68,73}, --
+            {49,54,59,64,70,75}, --
+            {49,56,61,66,71,76}, --
+            {52,56,59,63,68,71,76,78,80}, --
+            {49,56,61,63,64,68,71,75,78,80,83}, 
+        }
+    },
+    {
+        "Dominant",
+        {
+            --- 7
+            {49,56,59,65,68,73}, 
+            {49,56,61,65,68,71,73},
+            {49,53,59,63,68}, 
+            {49,53,59,63,68,73}, 
+            {49,59,65,70,75,80}, 
+            {59,65,70,75,80,85}, 
+            {49,59,65,68,71,75}, 
+            {49,59,63,65,68}, 
+            
+            --- Tensions
+            {49,65,69,71,76}, 
+            {49,59,65,69,73}, 
+            {49,59,62,65,68,71}, 
+            {49,56,59,62,67,71}, 
+            {49,56,59,62,65,68,73}, 
+            {49,56,59,61,62,65,68,71}, 
+            {49,56,61,62,67,71,74}, 
+            {49,53,59,63,67,70}, 
+            {49,53,59,62,65,70}, 
+            {49,53,59,62,67,70}, 
+            {49,53,59,62,67,71}, 
+            {61,63,65,67,69,71,73}, 
+            {49,59,62,65,67,71}, 
+            {49,59,62,65,71}, 
+            {49,59,64,65,68}, 
+            {49,53,59,64,68,73}, 
+            {49,56,62,65,67,68,71,73}, 
+            {49,56,59,61,62,65,68,71,74}, 
+            {49,56,59,62,65,69}, 
+            {49,56,61,65,69,71,76}, 
+            {49,53,59,65,69,73}, 
+            {49,56,61,65,69,71,74,76}, 
+            {53,59,64,68,73,80}, 
+            {49,56,59,65,67,69,71,73}, 
+        }
+    },
+    {
+        "Sus4",
+        {
+            {49,56,59,63,66,70,73}, 
+            {49,56,59,61,63,66,68,73}, 
+            {49,56,59,63,66,68,71}, 
+            {49,56,59,63,66,70}, 
+            {49,56,59,61,63,66,70,75}, 
+            {49,56,59,61,63,66,68,71,73}, 
+            {54,56,59,61,63,66,70,73}, 
+            {49,54,59,63,66,70}, 
+            {49,54,56,58,59,63}, 
+            {49,56,63,66,68,71}, 
+            {49,56,59,66,68,71,73,75}, 
+            {49,56,61,68,71,75,78}, 
+            {49,56,59,63,66,68}, 
+            {49,56,59,63,66,71,73}, 
+            {49,56,59,63,66,68,71,73}, 
+            {56,59,61,63,66,68,71,73,75,78}, 
+            {49,59,63,66,70,73}, 
+            {49,59,63,66,70,73,75,78,80}, 
+            {61,63,66,68,71,73,75,78}, 
+            {54,56,59,61,63,66,68,70,73}, 
+            {51,54,56,59,61,66,68,71,73}, 
+            {49,54,59,63,66,71,75}, 
+            {49,54,56,58,59,63,66}, 
+            {61,66,68,71,75,78}, 
+            {61,63,66,68,71,75}, 
+            {61,66,68,70,71,75}, 
+            {61,66,68,70,71,75,78}, 
+            {49,54,59,63,66,71}, 
+            {49,56,59,61,63,66,68,71,73,75,78,80}, 
+            {49,54,59,63,68,73}, 
+            {49,54,59,61,63,68,73,78}, 
+            {49,54,56,59,61,64,66,68,71,73,78}, 
+            {49,56,59,63,68,71,75}, 
+        }
+    }
+}
+
+---- UNCOMMENT THIS TO SEE IF THERE ARE DOUBLONS
+-- function compareTable(t1, t2)
+--     if table.getn(t1) == table.getn(t2) then
+--         for i, note in ipairs(preset) do
+--             if t1[i] ~= t2[i] then return false end
+--         end
+--         return true
+--     else
+--         return false
+--     end
+-- end
+-- 
+-- for i, preset_ in ipairs(presets) do
+--     print(preset_[1])
+--     preset = preset_[2]
+--     for j, note in ipairs(preset) do
+--         for k, note in ipairs(preset) do
+--             if j ~= k and compareTable(preset[j], preset[k]) then print(tostring(j).."="..tostring(k)) end
+--         end
+--     end
+-- end
+
+presetNames = {}
+for i = 1, table.getn(presets) do
+    presetNames[i] = presets[i][1]
+end
+
+coloursMenu = Menu{"Colours", presetNames, showLabel = false, height = 20, x = 5, y = 75, width = 100}
+vocing = NumBox{"Voicing", 1, 1, 99, true, x = coloursMenu.x + coloursMenu.width + 9, y = 75, width = coloursMenu.width}
+function loadSelectedPreset()
+    loadPreset(presets[coloursMenu.value][2][vocing.value])
+end
+vocing.changed = function(self)
+    numVoicings = table.getn(presets[coloursMenu.value][2])
+    if self.value > numVoicings then self:setValue(numVoicings, false) end
+    self.displayText = tostring(self.value).."/"..tostring(numVoicings)
+    loadSelectedPreset()
+end
+coloursMenu.changed = function(self)
+    vocing:setValue(1, false)
+    vocing.changed(vocing)
+end
+vocing.changed(vocing)
+
+voicingUp = Button{"Voicing_Up", displayName = "+", width = 15, height = 12, x = vocing.x + vocing.width + 3, y = vocing.y - 1}
+voicingUp.changed = function(self) vocing:setValue(vocing.value+1) end
+voicingDown = Button{"Voicing_Down", displayName = "-", width = 15, height = 12, x = vocing.x + vocing.width + 3, y = vocing.y + 10}
+voicingDown.changed = function(self) vocing:setValue(vocing.value-1) end
+
+]]></script>
+                <ScriptData/>
+            </ScriptProcessor>
+            <ScriptProcessor Name="EventProcessor1" Bypass="0" KeyButton_1="1" KeyButton_2="0" KeyButton_3="1" KeyButton_4="1" KeyButton_5="0" KeyButton_6="1" KeyButton_7="0" KeyButton_8="1" KeyButton_9="0" KeyButton_10="1" KeyButton_11="1" KeyButton_12="0" Root="1" Scale="8" Priority="0" API_version="16">
+                <Properties PresetPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/EventProcessors/Script Processor/Falcon Punch/Transpose.lua" ScriptPath="./../builds/lua/Scale.lua"/>
+                <script><![CDATA[-- From Falcon Punch 1.1
+-- Visit my website for updates at : http://louiscouka.com/
+
+--------------------------------------------------------------------------------
+--! Scale
+--! Author : Louis Couka
+--! Date : 05/03/2016
+--------------------------------------------------------------------------------
+
+local KEY = {"C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"}
+local keysButton = {}
+for i = 1, 12 do
+    keysButton[i] = OnOffButton{"KeyButton_"..tostring(i), true, width = 42 - 3, x = 102 + (i - 1) * 42, y = 5, height = 39}
+end
+
+local rootKey = Menu{"Root", KEY, showLabel = false, width = 94, height = 20, x = 5, y = 5}
+rootKey.changed = function(self)
+    for i = 1, 12 do
+        keysButton[i].displayName = KEY[(i + self.value - 2) % 12 + 1]
+    end
+end
+rootKey.changed(rootKey)
+
+scales = {
+	{"--", {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}},
+	{"Major (Ionian)", {0, 2, 4, 5, 7, 9, 11}},
+	{"Minor (Aeolion)", {0, 2, 3, 5, 7, 8, 10}},
+	{"Harmonic Minor", {0, 2, 3, 5, 7, 8, 11}},
+	{"Melodic Minor", {0, 2, 3, 5, 7, 9, 11}},
+	{"Major Pentatonic", {0, 2, 4, 7, 9}},
+	{"Minor Pentatonic", {0, 3, 5, 7, 10}},
+	{"Dorian (D)", {0, 2, 3, 5, 7, 9, 10}},
+	{"Phrygian (E)", {0, 1, 3, 5, 7, 8, 10}},
+	{"Lydian (F)", {0, 2, 4, 6, 7, 9, 11}},
+	{"Mixolydian (G)", {0, 2, 4, 5, 7, 9, 10}},
+	{"Locrian (B)", {0, 1, 3, 5, 6, 8, 10}},
+	{"Whole Tone", {0, 2, 4, 6, 8, 10}},
+	{"1/2 Tone 1 Tone", {0, 1, 3, 4, 6, 7, 9, 10}},
+	{"1 Tone 1/2 Tone", {0, 2, 3, 5, 6, 8, 9, 11}},
+	{"Altered", {0, 2, 4, 6, 8, 10, 10}},
+	{"Hungarian", {0, 2, 3, 6, 7, 8, 10}},
+	{"Phrygish", {0, 1, 4, 5, 7, 8, 10}},
+	{"Arabic", {0, 1, 4, 5, 7, 8, 11}},
+	{"Persian", {0, 1, 4, 5, 7, 10, 11}},
+	{"Acoustic (Lydian b7)", {0, 2, 4, 6, 7, 9, 10}},
+	{"Harmonic Major", {0, 2, 4, 5, 7, 8, 11}},
+}
+scaleNames = {}
+for i = 1, table.getn(scales) do
+    scaleNames[i] = scales[i][1]
+end
+
+function loadScale(scale)
+    for i = 1, 12 do
+        keysButton[i]:setValue(false)
+    end
+    for i = 1, table.getn(scale) do
+        keysButton[scale[i]+1]:setValue(true)
+    end
+end
+
+local scaleMenu = Menu{"Scale", scaleNames, showLabel = false, width = rootKey.width, height = rootKey.height, x = rootKey.x, y = 24}
+scaleMenu.changed = function(self)
+    loadScale(scales[self.value][2])
+end
+scaleMenu.changed(scaleMenu)
+
+local priority = OnOffButton{"Priority", x = 606, y = 5, height = 39} -- Use an OnOffButton until the refresh bug will be fixed
+ priorityValue = 1
+priority.changed = function(self)
+    priority:setValue(false, false) -- Use an OnOffButton until the refresh bug will be fixed
+    if (priorityValue == 1) then
+        self.displayName = "Key Down Priority"
+        priorityValue = -1
+    else
+        self.displayName = "Key Up Priority"
+        priorityValue = 1
+    end
+end
+priority.changed(priority)
+
+function onNote(e)
+    degree = (e.note - (rootKey.value - 1) + 12) % 12
+    degreeDeviation = 0
+    while (true) do
+        if (keysButton[(degree + degreeDeviation + 12) % 12 + 1].value) then break end
+        degreeDeviation = - degreeDeviation
+        if (keysButton[(degree + degreeDeviation + 12) % 12 + 1].value) then break end
+        degreeDeviation = priorityValue - degreeDeviation
+        if (degreeDeviation == priorityValue * 7) then -- no button
+            degreeDeviation = 0
+            break
+        end
+    end
+    playNote(e.note + degreeDeviation, e.velocity, -1, e.layer, e.channel, e.input, e.vol, e.pan, e.tune, e.slice)
+end
+
+function onRelease(e)
+end
+
+]]></script>
+                <ScriptData/>
+            </ScriptProcessor>
+        </EventProcessors>
+        <Layers>
+            <Layer Name="Layer 0" Bypass="0" Gain="0.25118861" Pan="0" Mute="0" MidiMute="0" Solo="0" DisplayName="Main" OutputName="" LowKey="0" HighKey="127" CustomPolyphony="0" PlayMode="0" PortamentoTime="0" PortamentoMode="0" NumVoicesPerNote="1" VelocityCurve="0" BypassInsertFX="0">
+                <Properties Color="ff02b0ff"/>
+                <ControlSignalSources/>
+                <Inserts>
+                    <ParametricEQ Name="InsertFX2" Bypass="0" Freq1="30" Q1="0.69999999" Gain1="0" Enable1="0" Freq2="236.19072" Q2="2.5599997" Gain2="1.9200096" Enable2="1" Freq3="216.02164" Q3="0.69999999" Gain3="12.200001" Enable3="0" Freq4="520" Q4="0.65280002" Gain4="13.800003" Enable4="0" Freq5="2271.4497" Q5="0.55840003" Gain5="5" Enable5="1" Freq6="9906.5781" Q6="0.69999999" Gain6="2" Enable6="0" Freq7="1522.7106" Q7="7.0439997" Gain7="-2.0999603" Enable7="1" Freq8="9369.748" Q8="0.69999999" Gain8="0" Enable8="1">
+                        <Properties PresetPath=""/>
+                    </ParametricEQ>
+                    <DualDelay Name="InsertFX0" Bypass="0" SyncToHost="1" DelayTime="0.75" LowCut="146.62811" HighCut="8960.9482" PeakFreq="1000" PeakGain="0" PeakQ="1" Feedback="0.39999998" Mix="0.21600001" Rotation="0" InputWidth="1" OutputWidth="1" DelayRatio="0.3312" FeedbackRatio="-0.1512" InputRotation="0" OutputRotation="0" ModDepth="0" ModRate="1" ModChannelOffset="1" Interpolation="1" DualDelayVersion="1"/>
+                    <SparkVerb Name="InsertFX1" Bypass="0" ModDepth="4" ModRate="1" Diffusion="0.61799997" DiffusionStart="5" Width="1" RoomSize="20" DecayTime="1.870682" DecayLow="0.34994519" DecayHigh="0.12246162" FreqLow="250" FreqHigh="6655.5083" Shape="0" Mix="0.14" Quality="3" Mode="1" HiCut="0" LowCut="0" Rolloff="10399.921" DiffusionOnOff="0" PreDelay="2" MixMode="1" SparkVerbVersion="1"/>
+                    <EffectRack Name="InsertFX4" Bypass="0">
+                        <ControlSignalSources>
+                            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Low Freq" Bipolar="0" Style="0" Value="0.29800001">
+                                <Properties customPosition="0" x="210" y="25"/>
+                            </ConstantModulation>
+                            <ConstantModulation Name="Macro 2" Bypass="0" DisplayName="High Freq" Bipolar="0" Style="0" Value="0.62199998">
+                                <Properties customPosition="0" x="465" y="25"/>
+                            </ConstantModulation>
+                        </ControlSignalSources>
+                        <Chains>
+                            <AuxEffect Name="Chain1" Bypass="0" Gain="1" Pan="0" PreInsert="1" DisplayName="Chain1">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="20000" Type="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain2" Bypass="0" Gain="0.75563246" Pan="0" PreInsert="1" DisplayName="Chain2">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="1469.0275" Type="1">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="7.2999992" CompThreshold="-12.779999" CompRatio="2.4200001" CompAttack="13.000003" CompRelease="189.23087" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain3" Bypass="0" Gain="0.50118721" Pan="0" PreInsert="1" DisplayName="Chain3">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="20" HighFrequency="1469.0275" Type="2">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="8.3000031" CompThreshold="-8.6200027" CompRatio="4" CompAttack="3.8400006" CompRelease="119.54205" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                        </Chains>
+                    </EffectRack>
+                </Inserts>
+                <BusRouters/>
+                <Keygroups>
+                    <Keygroup Name="Keygroup 0" Bypass="0" Gain="1" Pan="0" DisplayName="Keygroup 1" OutputName="" ExclusiveGroup="0" LowKey="0" HighKey="127" LowVelocity="1" HighVelocity="127" LowKeyFade="0" HighKeyFade="0" LowVelocityFade="0" HighVelocityFade="0" TriggerMode="0" TriggerSync="0" TriggerRule="0" LatchTrigger="0" FXPostGain="0" BypassInsertFX="0">
+                        <Connections>
+                            <SignalConnection Name="AmpEnvMod" Ratio="1" Source="$Keygroup/DAHDSR 1" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                        </Connections>
+                        <ControlSignalSources>
+                            <DAHDSR Name="DAHDSR 1" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0.006984516" DecayTime="0.9935624" DecayCurve="-0.16976878" SustainLevel="0.38636363" ReleaseTime="0.021004545" ReleaseCurve="0" DisplayName="DAHDSR 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.82758623" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <DAHDSR Name="DAHDSR 2" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="2.6063526" DecayCurve="0" SustainLevel="0" ReleaseTime="0.050000001" ReleaseCurve="0" DisplayName="DAHDSR 2" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <LFO Name="LFO 1" Bypass="0" SyncToHost="0" DisplayName="LFO 1" DelayTime="0.02414703" RiseTime="0" Freq="2.867595" Depth="0.091999993" Phase="0" WaveFormType="0" Retrigger="1" Bipolar="1" Smooth="0"/>
+                        </ControlSignalSources>
+                        <Inserts>
+                            <XpanderFilter Name="InsertFX0" Bypass="0" Freq="363.94022" Q="0.039999999" KeyTracking="0.5" Mode="3" DistortionType="0" Drive="1.1199988" Fat="1">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 1" Ratio="0.090000004" Source="@VoiceParam Velocity" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="0.25999999" Source="$Keygroup/DAHDSR 2" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Ratio" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                        </Connections>
+                                    </SignalConnection>
+                                </Connections>
+                            </XpanderFilter>
+                            <WaveShaper Name="InsertFX2" Bypass="0" InputGain="0" OutputGain="0" Amount="0.2" Knee="0" Mix="1" PreFreq="20000" PostFreq="20" Oversampling="0" Mode="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.10344828" Source="@VoiceParam LinearKeyFollow" Destination="Amount" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveShaper>
+                        </Inserts>
+                        <BusRouters/>
+                        <Oscillators>
+                            <WaveTableOscillator Name="Oscillator" Bypass="0" WavetablePath="$FalconResources.ufs/Samples/Wavetables/X-Bass/Terror_900.wav" StartPhase="0" PhaseDistortionAmount="0" PhaseDistortionMode="3" Spread="0.088" DetuneMode="0" WaveIndex="1" WaveIndexSpread="0" StereoSpread="1" StereoSpreadMode="1" NumOscs="2" FadeMipMap="1" FadeWaveIndex="1" Stereo="1" PhaseSpread="1" CoarseTune="0" FineTune="0" Gain="1" Pitch="0" NoteTracking="1" BaseNote="60" DisplayName="Oscillator 1">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="PhaseDistortionAmount" Mapper="Mapper 1" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="PitchBendMod" Ratio="1.9999992" Source="@PitchBend" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.48171562" Source="$Keygroup/LFO 1" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveTableOscillator>
+                        </Oscillators>
+                    </Keygroup>
+                </Keygroups>
+            </Layer>
+            <Layer Name="Layer 1" Bypass="0" Gain="0.75957906" Pan="0" Mute="0" MidiMute="0" Solo="0" DisplayName="Sub" OutputName="" LowKey="0" HighKey="127" CustomPolyphony="0" PlayMode="2" PortamentoTime="0.029999999" PortamentoMode="0" NumVoicesPerNote="1" VelocityCurve="0" BypassInsertFX="0">
+                <Properties Color="ff02b0ff"/>
+                <ControlSignalSources/>
+                <EventProcessors>
+                    <ScriptProcessor Name="EventProcessor0" Bypass="0" Mono_Retrigger="0" API_version="16">
+                        <Properties PresetPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/EventProcessors/Script Processor/Falcon Punch/Bass Extractor.lua" ScriptPath="./../lua/Bass Extractor.lua"/>
+                        <script><![CDATA[--------------------------------------------------------------------------------
+--! Extract Bass
+--! Only play the lowest note
+--! Author : Louis Couka
+--! Date : 18/12/2015
+--------------------------------------------------------------------------------
+
+Label{"Extract Bass : Only play the lowest note", align = "centred", width = 710}
+retrigger = OnOffButton{"Mono_Retrigger", displayName="Mono Retrigger",  x = 305}
+
+local idPlaying
+local note = 128
+function onNote(e)
+    if (e.note < note) then
+        if (retrigger.value) then
+            releaseVoice(idPlaying)
+            idPlaying = postEvent(e)
+            note = e.note
+        else
+            local previousIdPlaying = idPlaying
+            idPlaying = postEvent(e)
+            note = e.note
+            releaseVoice(previousIdPlaying)
+        end
+    end
+end
+
+function onRelease(e)
+    if (idPlaying == e.id) then note = 128 end
+    postEvent(e)
+end]]></script>
+                        <ScriptData/>
+                    </ScriptProcessor>
+                    <ScriptProcessor Name="EventProcessor2" Bypass="0" Transpose="-12" API_version="16">
+                        <Properties PresetPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/EventProcessors/Script Processor/Falcon Punch/Transpose.lua" ScriptPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/EventProcessors/Script Processor/Falcon Punch/Transpose.lua"/>
+                        <script><![CDATA[-- From Falcon Punch 1.1
+-- Visit my website for updates at : http://louiscouka.com/
+
+--------------------------------------------------------------------------------
+--! Transpose
+--! Author : Louis Couka
+--! Date : 29/02/2016
+--------------------------------------------------------------------------------
+
+transpose = Knob("Transpose", 0, -48, 48, true)
+
+function onNote(e)
+    playNote(e.note + transpose.value, e.velocity, -1, e.layer, e.channel, e.input, e.vol, e.pan, e.tune, e.slice)
+end
+
+function onRelease(e)
+end]]></script>
+                        <ScriptData/>
+                    </ScriptProcessor>
+                    <ScriptProcessor Name="EventProcessor1" Bypass="0" Mode="2" Min="28" Max="45" API_version="16">
+                        <Properties PresetPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/EventProcessors/Script Processor/Falcon Punch/Note Range.lua" ScriptPath="./../lua/Note Range.lua"/>
+                        <script><![CDATA[--------------------------------------------------------------------------------
+--! Note Range
+--! Author : Louis Couka
+--! Date : 29/02/2016
+--------------------------------------------------------------------------------
+
+
+local KEY = {"C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"}
+function formatNote(value)
+    local chroma = value % 12
+    return tostring(value).." ("..KEY[chroma + 1]..tostring((value - chroma) / 12 - 2)..")"
+end
+
+mode = Menu("Mode", {"Note Off", "Nearest octave", "Repeat range", "Limit"})
+min = Knob("Min", 0, 0, 127, true)
+max = Knob("Max", 127, 0, 127, true)
+min.changed = function(self)
+    self.displayText = formatNote(self.value)
+end
+max.changed = min.changed
+min:changed()
+max:changed()
+
+function onNote(e)
+    local note
+    if (mode.value == 1) then
+        if (e.note >= min.value and e.note <= max.value) then
+            playNote(e.note, e.velocity, -1, e.layer, e.channel, e.input, e.vol, e.pan, e.tune, e.slice)
+        end
+    else
+        if (mode.value == 2) then
+            note = e.note
+            while (note > max.value) do
+                note = note - 12
+            end
+            while  (note < min.value) do
+                note = note + 12
+            end
+        elseif (mode.value == 3) then
+            local diff = max.value - min.value + 1
+            if (diff > 0) then
+                note = e.note
+                if (note > max.value) then
+                    note = note - diff
+                end
+                if  (note < min.value) then
+                    note = note + diff
+                end
+            else
+                note = min.value
+            end
+        else
+            if (e.note < min.value) then
+                note = min.value
+            elseif (e.note > max.value) then
+                note = max.value
+            else
+                note = e.note
+            end
+        end
+        playNote(note, e.velocity, -1, e.layer, e.channel, e.input, e.vol, e.pan, e.tune, e.slice)
+    end
+end
+
+function onRelease(e)
+end]]></script>
+                        <ScriptData/>
+                    </ScriptProcessor>
+                </EventProcessors>
+                <Inserts>
+                    <ThreeBandShelves Name="InsertFX0" Bypass="0" FreqLowMid="200" FreqMidHigh="2000" GainLow="4.4160004" GainMid="-2" GainHigh="14.783997"/>
+                </Inserts>
+                <BusRouters/>
+                <Keygroups>
+                    <Keygroup Name="Keygroup 1" Bypass="0" Gain="1.4202411" Pan="0" DisplayName="Keygroup 1" OutputName="" ExclusiveGroup="0" LowKey="0" HighKey="127" LowVelocity="1" HighVelocity="127" LowKeyFade="0" HighKeyFade="0" LowVelocityFade="0" HighVelocityFade="0" TriggerMode="0" TriggerSync="0" TriggerRule="0" LatchTrigger="0" FXPostGain="0" BypassInsertFX="0">
+                        <Connections>
+                            <SignalConnection Name="AmpEnvMod" Ratio="1" Source="$Keygroup/DAHDSR 1" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                        </Connections>
+                        <ControlSignalSources>
+                            <MultiEnvelope Name="Multi Envelope 1" Bypass="0" SyncToHost="0" DisplayName="Multi Envelope 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NumSteps="5" Speed="0.99999994" Smooth="0" Bipolar="0" NoteOffRetrigger="0" LoopStart="3" LoopEnd="3" ReleaseStep="4">
+                                <Steps>
+                                    <Step Time="0" DestLevel="0" Curve="0"/>
+                                    <Step Time="0" DestLevel="1" Curve="-0.32890138"/>
+                                    <Step Time="0.031670332" DestLevel="0" Curve="-0.83882576"/>
+                                    <Step Time="0.12296683" DestLevel="0" Curve="-0.57301283"/>
+                                    <Step Time="0.058710534" DestLevel="0" Curve="-0.55852461"/>
+                                </Steps>
+                                <Properties PresetPath="$Resource/resource/FactoryPresets/Modulation/Multi Envelope/Basics/Basic One.preset"/>
+                            </MultiEnvelope>
+                            <DAHDSR Name="DAHDSR 1" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="0" DecayCurve="0" SustainLevel="1" ReleaseTime="0.031711485" ReleaseCurve="0" DisplayName="DAHDSR 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0"/>
+                        </ControlSignalSources>
+                        <Inserts>
+                            <Drive Name="InsertFX0" Bypass="0" DriveAmount="0.19080034" Mode="0" Oversampling="0"/>
+                            <MoogFilter Name="InsertFX1" Bypass="0" Freq="2697.9221" Q="0"/>
+                        </Inserts>
+                        <BusRouters/>
+                        <Oscillators>
+                            <WaveTableOscillator Name="Oscillator" Bypass="0" WavetablePath="$FalconResources.ufs/Samples/Wavetables/X-Dist/atan.wav" StartPhase="0" PhaseDistortionAmount="0" PhaseDistortionMode="3" Spread="0.47999999" DetuneMode="0" WaveIndex="0" WaveIndexSpread="0.056000002" StereoSpread="1" StereoSpreadMode="1" NumOscs="1" FadeMipMap="0" FadeWaveIndex="1" Stereo="1" PhaseSpread="0" CoarseTune="0" FineTune="0" Gain="0.70935029" Pitch="0" NoteTracking="1" BaseNote="60" DisplayName="Oscillator 1">
+                                <Connections>
+                                    <SignalConnection Name="PitchBendMod" Ratio="2" Source="@PitchBend" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="48" Source="$Keygroup/Multi Envelope 1" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="-1" Source="@VoiceParam LinearKeyFollow" Destination="Ratio" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="-1" Source="@VoiceParam LinearKeyFollow" Destination="Ratio" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                        </Connections>
+                                    </SignalConnection>
+                                    <SignalConnection Name="SignalConnection 1" Ratio="48" Source="$Keygroup/Multi Envelope 1" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="-1" Source="@VoiceParam LinearKeyFollow" Destination="Ratio" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="-1" Source="@VoiceParam LinearKeyFollow" Destination="Ratio" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                        </Connections>
+                                    </SignalConnection>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="7.000001" Source="$Keygroup/Multi Envelope 1" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="1" Inverted="0"/>
+                                </Connections>
+                            </WaveTableOscillator>
+                            <NoiseOscillator Name="Oscillator 2" Bypass="0" CoarseTune="0" FineTune="0" Gain="0.056428701" Pitch="0" NoteTracking="1" BaseNote="60" DisplayName="Oscillator 2" Value="0.77999997" NoiseType="7" Stereo="0">
+                                <Connections>
+                                    <SignalConnection Name="PitchBendMod" Ratio="2" Source="@PitchBend" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </NoiseOscillator>
+                        </Oscillators>
+                    </Keygroup>
+                </Keygroups>
+            </Layer>
+        </Layers>
+    </Program>
+    <NeededFS Source="C:/ProgramData/UVI/Falcon/FalconResources.ufs"/>
+</UVI4>

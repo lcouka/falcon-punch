@@ -1,0 +1,214 @@
+<UVI4>
+    <Program Name="Program" Bypass="0" Gain="0.89125091" Pan="0" DisplayName="Random Pop Corn" TransposeOctaves="0" TransposeSemiTones="0" OutputName="" Polyphony="16" NotePolyphony="0" ProgramPath="D:/Louis/Programmation/Ayon/Falcon Punch/examples/Random Pop Corn.uvip" LoopProgram="0" Streaming="1" BypassInsertFX="0">
+        <Mappers>
+            <ControlSignalMapper Name="Mapper 1" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 1">0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000001 0,000001 0,000001 0,000002 0,000002 0,000003 0,000004 0,000006 0,000007 0,000010 0,000013 0,000016 0,000021 0,000026 0,000033 0,000042 0,000052 0,000064 0,000079 0,000097 0,000118 0,000143 0,000173 0,000208 0,000248 0,000296 0,000352 0,000416 0,000491 0,000577 0,000676 0,000790 0,000920 0,001068 0,001237 0,001429 0,001647 0,001892 0,002170 0,002482 0,002833 0,003226 0,003667 0,004159 0,004708 0,005320 0,006000 0,006755 0,007592 0,008518 0,009542 0,010672 0,011917 0,013287 0,014793 0,016447 0,018260 0,020245 0,022417 0,024791 0,027381 0,030205 0,033281 0,036627 0,040264 0,044214 0,048498 0,053141 0,058169 0,063608 0,069487 0,075836 0,082686 0,090073 0,098030 0,106596 0,115809 0,125713 0,136349 0,147765 0,160008 0,173130 0,187184 0,202226 0,218316 0,235514 0,253887 0,273502 0,294430 0,316746 0,340529 0,365860 0,392824 0,421511 0,452015 0,484433 0,518868 0,555426 0,594218 0,635360 0,678974 0,725185 0,774125 0,825931 0,880745 0,938717 1,000000</ControlSignalMapper>
+        </Mappers>
+        <ControlSignalSources/>
+        <EventProcessors>
+            <ScriptProcessor Name="EventProcessor0" Bypass="0" Time="70.449997" Randomize="0.73000002" Note_Duration="0.80000001" Multiple_Notes="1" API_version="16">
+                <Properties ScriptPath="./../lua/Random Play.lua"/>
+                <script><![CDATA[--------------------------------------------------------------------------------
+--! Random Play
+--! Author : Louis Couka
+--! Date : 29/02/2016
+--------------------------------------------------------------------------------
+
+local MIN_TIME = 5
+
+time = Knob("Time", 500, MIN_TIME, 3000, false)
+randomize = Knob("Randomize", 0, 0, 1, false)
+noteDuration = Knob{"Note_Duration", 0.8, 0, 10, false, displayName = "Note Dur."}
+mode = Menu{"Multiple_Notes", {"Free", "Link", "Random Arp"}, displayName = "Multiple Notes"}
+
+isEventPlaying = {}
+
+function getTimeVal()
+    return time.value + (time.value - MIN_TIME) * randomize.value*(math.random() * 2 - 1)
+end
+
+-- MODE FREE
+
+function free(e)
+    while isEventPlaying[e.id] do
+        local timeVal = getTimeVal()
+        playNote(e.note, e.velocity, noteDuration.value * timeVal, e.layer, e.channel, e.input, e.vol, e.pan, e.tune, e.slice)
+        wait(timeVal)
+    end
+end
+
+-- MODE LINK
+
+local linkLaunched
+local timeFoo
+function link()
+    local active = true
+    while active do
+        active = false
+        local timeVal = getTimeVal()
+        timeFoo = getTime() + noteDuration.value * timeVal
+        for k, e in pairs(isEventPlaying) do
+            playNote(e.note, e.velocity, noteDuration.value * timeVal, e.layer, e.channel, e.input, e.vol, e.pan, e.tune, e.slice)
+            active = true
+        end
+        if active then
+            wait(timeVal)
+        end
+    end
+    timeFoo = nil
+    linkLaunched = false
+end
+
+-- MODE ARP
+
+function tableLength(T)
+  local count = 0
+  for _ in pairs(T) do count = count + 1 end
+  return count
+end
+local arpLaunched
+function arp()
+    while true do
+        len = tableLength(isEventPlaying)
+        if (len == 0) then break end
+        
+        randomI = math.random(1, len) 
+        local timeVal = getTimeVal()
+        local i = 1
+        for k, e in pairs(isEventPlaying) do
+            if (i == randomI) then
+                playNote(e.note, e.velocity, noteDuration.value * timeVal, e.layer, e.channel, e.input, e.vol, e.pan, e.tune, e.slice)
+                wait(timeVal)
+                break
+            end
+            i = i + 1
+        end
+    end
+    timeFoo = nil
+    arpLaunched = false
+end
+
+-- CALLBACKS
+
+local idsPlaying
+function onNote(e)
+    isEventPlaying[e.id] = e
+    if (mode.value == 1) then
+        run(free, e)
+    elseif (mode.value == 2) then
+        if linkLaunched then
+            if (timeFoo) then -- Not sure it is thread safe or what
+                local timeVal = timeFoo - getTime()
+                if (timeVal > 0 and timeVal < time.max * 2) then -- Check for coherence
+                    playNote(e.note, e.velocity, timeVal)
+                end
+            end
+        else
+            linkLaunched = true
+            run(link, e)
+        end
+    else--if (mode.value == 3) then
+        if not arpLaunched then
+            arpLaunched = true
+            run(arp, e)
+        end
+    end
+end
+
+function onRelease(e)
+    isEventPlaying[e.id] = nil
+end]]></script>
+                <ScriptData/>
+            </ScriptProcessor>
+            <ScriptProcessor Name="EventProcessor1" Bypass="0" Pitch_Deviation="3.45" velocityDeviation="0" panDeviation="0.28" delayDeviation="0" Timbre_Preservation="1" Tonal_Pitch="0" Random_Mode="1" API_version="16">
+                <Properties ScriptPath="./../lua/Random Note.lua"/>
+                <script><![CDATA[--------------------------------------------------------------------------------
+--! Random Note
+--! Author : Louis Couka
+--! Date : 29/02/2016
+--------------------------------------------------------------------------------
+
+pitchLabel = Label{"Pitch", align="right", x = 5, y = 5, width = 50}
+velocityLabel = Label{"Velocity", align="right", x = 5, y = 30, width = 50}
+panLabel = Label{"Pan", align="right", x = 5, y = 55, width = 50}
+delayLabel = Label{"Delay", align="right", x = 5, y = 80, width = 50}
+pitchDeviation = NumBox{"Pitch_Deviation", 0, 0, 127, false, displayName="Deviation", x = 62, y = 5}
+velocityDeviation = NumBox{"velocityDeviation", 0, 0, 127, false, displayName="Deviation", x = 62, y = 30}
+panDeviation = NumBox{"panDeviation", 0, 0, 2, false, displayName="Deviation", x = 62, y = 55}
+delayDeviation = NumBox{"delayDeviation", 0, 0, 1000, false, displayName="Deviation", x = 62, y = 80}
+
+timbrePreservation = OnOffButton{"Timbre_Preservation", true, displayName="Timbre Preservation", x = 62 + 120}
+tonalPitch = OnOffButton{"Tonal_Pitch", false, displayName="Tonal", x = 62 + 240}
+
+mode = Menu{"Random_Mode", {"Dynamic", "Static"}, displayName="Random Mode", x = 605, y = 55}
+
+-- TODO
+-- presets = Menu{"Presets", {"--", "Detune Instrument", "Detune Player", "Subbtle", "Medium", "Hard"}, x = 605, y = 55}
+-- presets.changed()
+-- end
+
+math.randomseed(0)
+staticRandom = {}
+for i = 1, 128 do 
+    staticRandom[i] = {pitch = math.random() * 2 - 1, velocity = math.random() * 2 - 1, pan = math.random() * 2 - 1, delay = math.random()}
+end
+
+function onNote(e)
+    local randomNumber
+    if (mode.value == 1) then
+        randomNumber = {pitch = math.random() * 2 - 1, velocity = math.random() * 2 - 1, pan = math.random() * 2 - 1, delay = math.random()}
+    else--if (mode.value == 2) then
+        randomNumber = staticRandom[e.note + 1]
+    end
+    
+    local pitch = e.note + randomNumber.pitch * pitchDeviation.value
+    local pitchInt = math.floor(pitch + 0.5)
+    local pitchFrac
+    if (tonalPitch.value) then
+        pitchFrac = 0
+    else
+        pitchFrac = pitch - pitchInt
+    end
+    
+    randomPanRange = math.min(1,panDeviation.value)
+    randomPanOffset = panDeviation.value - randomPanRange
+    pan = randomNumber.pan * randomPanRange
+    if pan > 0 then pan = math.min(1,pan + randomPanOffset) else pan = math.max(-1,pan - randomPanOffset) end
+    
+    if (delayDeviation.value > 0) then wait(randomNumber.delay * delayDeviation.value) end
+    playNote(pitchInt, e.velocity + randomNumber.velocity * velocityDeviation.value,
+    -1, e.layer, e.channel, e.input, e.vol, e.pan, e.tune + pitchFrac, e.slice)
+end
+
+function onRelease(e)
+end]]></script>
+                <ScriptData/>
+            </ScriptProcessor>
+        </EventProcessors>
+        <Layers>
+            <Layer Name="Layer 0" Bypass="0" Gain="1" Pan="0" Mute="0" MidiMute="0" Solo="0" DisplayName="Layer 1" OutputName="" LowKey="0" HighKey="127" CustomPolyphony="0" PlayMode="0" PortamentoTime="0.029999999" PortamentoMode="0" NumVoicesPerNote="1" VelocityCurve="0" BypassInsertFX="0">
+                <Properties Color="ff02b0ff"/>
+                <ControlSignalSources/>
+                <BusRouters/>
+                <Keygroups>
+                    <Keygroup Name="Keygroup 0" Bypass="0" Gain="1" Pan="0" DisplayName="Keygroup 1" OutputName="" ExclusiveGroup="0" LowKey="0" HighKey="127" LowVelocity="1" HighVelocity="127" LowKeyFade="0" HighKeyFade="0" LowVelocityFade="0" HighVelocityFade="0" TriggerMode="0" TriggerSync="0" TriggerRule="0" LatchTrigger="0" FXPostGain="0" BypassInsertFX="0">
+                        <Connections>
+                            <SignalConnection Name="AmpEnvMod" Ratio="1" Source="Amp. Env" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                        </Connections>
+                        <ControlSignalSources>
+                            <AnalogADSR Name="Amp. Env" Bypass="0" AttackTime="0.001" DecayTime="0.050000001" KeyToDecay="0" KeyToAttack="0" VelToDecay="0" Punch="0" VelToAttack="0" DynamicRange="20" SustainLevel="1" ReleaseTime="0.0099999998" ManualTrigger="0" TriggerMode="0" InvertVelocity="0" AttackDecayMode="0" DisplayName="Amp. Env"/>
+                        </ControlSignalSources>
+                        <BusRouters/>
+                        <Oscillators>
+                            <DrumOscillator Name="Oscillator" Bypass="0" CoarseTune="0" FineTune="0" Gain="1" Pitch="0" NoteTracking="1" BaseNote="60" DisplayName="Oscillator 1" Mix="1" EqFreq="2199.2769" EqGain="21.999998" Volume="0" Distortion="0" Waveform="0" OscFreq="101.3982" PitchModType="0" PitchModAmount="35.720905" PitchModRate="38.2757" OscAttack="0" OscDecay="0.15323" NoiseFilterMode="1" NoiseFilterFreq="893.36688" NoiseFilterQ="0.70710701" NoiseEnvType="0" NoiseAttack="0.0028309999" NoiseDecay="0.208425" OscVelSens="0.23848701" NoiseVelSens="0.24955601" ModVelSens="0">
+                                <Connections>
+                                    <SignalConnection Name="PitchBendMod" Ratio="2" Source="@PitchBend" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                                <Properties PresetPath="$Resource/resource/FactoryPresets/Oscillator/Drum/Rim &amp; Clap/Step Clap.preset"/>
+                            </DrumOscillator>
+                        </Oscillators>
+                    </Keygroup>
+                </Keygroups>
+            </Layer>
+        </Layers>
+    </Program>
+</UVI4>
