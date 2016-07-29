@@ -1,0 +1,96 @@
+Hello all the lucky owners of Falcon,
+I released a pack of 16 scripts that complements the current library.
+
+
+
+[img]http://louiscouka.com/img/scripts/box.png[/img]
+[b]Chord[/b] - Smarter version of the current Chorder. About 100 presets.
+
+[img]http://louiscouka.com/img/scripts/chord.png[/img]
+
+
+[b]Chord Bank[/b] - Build a bank of chords.
+
+[img]http://louiscouka.com/img/scripts/chord_bank.png[/img]
+
+
+[b]Mono[/b] - Force mono playing.
+
+[img]http://louiscouka.com/img/scripts/mono.png[/img]
+
+
+[b]Mono Group[/b] - Force mono playing for selected notes. (Ex : hihats choking)
+
+[img]http://louiscouka.com/img/scripts/mono_group.png[/img]
+
+
+[b]Bass Extractor[/b] - Only plays the lowest note (convenient to add a sub)
+
+[img]http://louiscouka.com/img/scripts/bass_extractor.png[/img]
+
+
+[b]Random Note[/b] - Add randomness on note parameters. The "static" mode applies a fixed random number (eg a detuned instrument), while the "dynamic" mode recomputes the random number each time (eg a bad musician)
+
+[img]http://louiscouka.com/img/scripts/random_note.png[/img]
+
+
+[b]Random Play[/b] - A random arpeggiator. Useful for creating FX, ambient noise. Can be associated with the script "Random Note".
+
+[img]http://louiscouka.com/img/scripts/random_play.png[/img]
+
+
+[b]Scale[/b] - Restricts all MIDI notes to a defined scale.
+
+[img]http://louiscouka.com/img/scripts/scale.png[/img]
+
+
+[b]Transpose[/b] - MIDI Transpose.
+
+[img]http://louiscouka.com/img/scripts/transpose.png[/img]
+
+
+[b]Note Range[/b] - Limit the range. Notes out of range can be muted, played at the nearest octave or more.
+
+[img]http://louiscouka.com/img/scripts/note_range.png[/img]
+
+
+[b]Note Single[/b] - Redirect all notes to a single one.
+
+[img]http://louiscouka.com/img/scripts/note_single.png[/img]
+
+
+[b]Piano Analyzer[/b] - Midi note analyzer.
+
+[img]http://louiscouka.com/img/scripts/piano_analyzer.png[/img]
+
+
+[b]Fix Overlaps[/b] - Maintains consistency between "note on" and "note off". This script ensures that two notes with the same pitch will never overlap.
+
+[img]http://louiscouka.com/img/scripts/fix_overlaps.png[/img]
+
+
+[b]Mapper[/b] - Map the desired control: Velocity, midi cc, etc ... Can be used to limit the velocity, making it soft, hard, or constant, reverse a midi cc.
+
+[img]http://louiscouka.com/img/scripts/mapper.png[/img]
+
+
+[b]Delay[/b] - A simple delay in ms.
+
+[img]http://louiscouka.com/img/scripts/delay.png[/img]
+
+
+[b]Double[/b] - Play octave.
+
+[img]http://louiscouka.com/img/scripts/double.png[/img]
+
+
+All these scripts are loaded into a rack of type "Event", "+" button and "Script Processor" submenu.
+
+[img]http://louiscouka.com/img/scripts/help.png[/img]
+
+
+The pack is available on my website for free :
+http://louiscouka.com/software.html
+
+Have a good day,
+Louis

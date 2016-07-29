@@ -2,7 +2,7 @@ import os
 import re
 import shutil
 
-version = "1.1"
+version = "1.0"
 
 #if not os.path.exists('builds'): os.mkdir('builds')
 folderOut = "builds/"

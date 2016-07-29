@@ -1,0 +1,95 @@
+Salut à tous les heureux possesseurs de Falcon,
+Je vous propose un pack 16 scripts qui vient compléter la librairie actuelle.
+
+
+[img]http://louiscouka.com/img/scripts/box.png[/img]
+[b]Chord[/b] - Une centaine de presets triés par couleur d'accord.
+
+[img]http://louiscouka.com/img/scripts/chord.png[/img]
+
+
+[b]Chord Bank[/b] - Permet de se construire une banque d'accords.
+
+[img]http://louiscouka.com/img/scripts/chord_bank.png[/img]
+
+
+[b]Mono[/b] - Force le jeu en mono.
+
+[img]http://louiscouka.com/img/scripts/mono.png[/img]
+
+
+[b]Mono Group[/b] - Force le jeu en mono pour un groupe de note uniquement. (Ex : pour les hihats)
+
+[img]http://louiscouka.com/img/scripts/mono_group.png[/img]
+
+
+[b]Bass Extractor[/b] - Ne joue que la note la plus grave (Ex : pour ajouter une sub)
+
+[img]http://louiscouka.com/img/scripts/bass_extractor.png[/img]
+
+
+[b]Random Note[/b] - Applique de l'aléatoire sur une note. Le mode "static" applique une déviation fixe par note (par exemple pour un instrument désaccordé), tandis ce que le mode "dynamic" recalcule la déviation à chaque fois (par exemple un musicien qui joue faux)
+
+[img]http://louiscouka.com/img/scripts/random_note.png[/img]
+
+
+[b]Random Play[/b] - Un arpeggiateur random. Utile pour la création d'FX, bruitage ambiants. Peut être couplé avec le script "Random Note".
+
+[img]http://louiscouka.com/img/scripts/random_play.png[/img]
+
+
+[b]Scale[/b] - Force à jouer dans des modes. (mixo, dorien, etc...). Les notes désactivées sont redirigées vers la plus proche.
+
+[img]http://louiscouka.com/img/scripts/scale.png[/img]
+
+
+[b]Transpose[/b] - MIDI Transpose
+
+[img]http://louiscouka.com/img/scripts/transpose.png[/img]
+
+
+[b]Note Range[/b] - Limite la tessiture. Les notes en dehors de la tessiture peuvent être mutées, joué à l'octave la plus proche, ou plus encore.
+
+[img]http://louiscouka.com/img/scripts/note_range.png[/img]
+
+
+[b]Note Single[/b] - Redirige toutes les notes vers une unique note au choix.
+
+[img]http://louiscouka.com/img/scripts/note_single.png[/img]
+
+
+[b]Piano Analyzer[/b] - Un Analyzer de note midi
+
+[img]http://louiscouka.com/img/scripts/piano_analyzer.png[/img]
+
+
+[b]Fix Overlaps[/b] - Maintient la cohérence note on / note off. Ce script garanti que jamais deux notes de hauteur identique ne se chevauchent.
+
+[img]http://louiscouka.com/img/scripts/fix_overlaps.png[/img]
+
+
+[b]Mapper[/b] - Map le contrôle souhaité : velocité, midi cc, etc... Peut être utilisé notamment pour limiter la vélocité, la rendre plus ou moins soft. On peut aussi inverser un midi cc, le rendre constant.
+
+[img]http://louiscouka.com/img/scripts/mapper.png[/img]
+
+
+[b]Delay[/b] - Un simple delay en ms. 
+
+[img]http://louiscouka.com/img/scripts/delay.png[/img]
+
+
+[b]Double[/b] - Double à l'octave les notes jouées.
+
+[img]http://louiscouka.com/img/scripts/double.png[/img]
+
+
+Tous ces scripts se chargent dans les racks de type "Events", button "+" puis sous-menu "Script Processor".
+
+[img]http://louiscouka.com/img/scripts/help.png[/img]
+
+
+Le pack est disponible gratuitement sur mon site :
+http://louiscouka.com/software.html
+
+Bonne journée,
+Louis
