@@ -56,11 +56,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Bass Extractor.lua</string>
+																					<string>../../builds/lua/Bass Extractor.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -72,11 +72,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Chord.lua</string>
+																					<string>../../builds/lua/Chord Bank.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -88,11 +88,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Delay.lua</string>
+																					<string>../../builds/lua/Chord.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -104,11 +104,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Double.lua</string>
+																					<string>../../builds/lua/Delay.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -120,11 +120,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Fix Overlaps.lua</string>
+																					<string>../../builds/lua/Double.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -136,11 +136,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Mapper.lua</string>
+																					<string>../../builds/lua/Fix Overlaps.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -152,11 +152,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Mono Group.lua</string>
+																					<string>../../builds/lua/Mapper.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -168,11 +168,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Mono.lua</string>
+																					<string>../../builds/lua/Mono Group.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -184,11 +184,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Multi Chord.lua</string>
+																					<string>../../builds/lua/Mono.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -200,11 +200,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Note Range.lua</string>
+																					<string>../../builds/lua/Note Range.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -216,11 +216,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Note Single.lua</string>
+																					<string>../../builds/lua/Note Single.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -232,11 +232,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Piano Analyzer.lua</string>
+																					<string>../../builds/lua/Piano Analyzer.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -248,11 +248,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Piano.lua</string>
+																					<string>../../builds/lua/Random Note.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -264,11 +264,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Random Note.lua</string>
+																					<string>../../builds/lua/Random Play.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -280,11 +280,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Random Play.lua</string>
+																					<string>../../builds/lua/Scale.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -296,43 +296,11 @@
 																					<key>GID</key>
 																					<integer>0</integer>
 																					<key>PATH</key>
-																					<string>../../lua/Scale.lua</string>
+																					<string>../../builds/lua/Transpose.lua</string>
 																					<key>PATH_TYPE</key>
 																					<integer>1</integer>
 																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
-																					<key>TYPE</key>
-																					<integer>3</integer>
-																					<key>UID</key>
-																					<integer>0</integer>
-																				</dict>
-																				<dict>
-																					<key>CHILDREN</key>
-																					<array/>
-																					<key>GID</key>
-																					<integer>0</integer>
-																					<key>PATH</key>
-																					<string>../../lua/Test.lua</string>
-																					<key>PATH_TYPE</key>
-																					<integer>1</integer>
-																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
-																					<key>TYPE</key>
-																					<integer>3</integer>
-																					<key>UID</key>
-																					<integer>0</integer>
-																				</dict>
-																				<dict>
-																					<key>CHILDREN</key>
-																					<array/>
-																					<key>GID</key>
-																					<integer>0</integer>
-																					<key>PATH</key>
-																					<string>../../lua/Transpose.lua</string>
-																					<key>PATH_TYPE</key>
-																					<integer>1</integer>
-																					<key>PERMISSIONS</key>
-																					<integer>420</integer>
+																					<integer>502</integer>
 																					<key>TYPE</key>
 																					<integer>3</integer>
 																					<key>UID</key>
@@ -825,6 +793,18 @@
 				<key>VERSION</key>
 				<integer>4</integer>
 			</dict>
+			<key>PACKAGE_SCRIPTS</key>
+			<dict>
+				<key>PREINSTALL_PATH</key>
+				<dict>
+					<key>PATH</key>
+					<string>/Users/louis/Desktop/Ayon Sound/Falcon Punch/installers/mac/uninstall.sh</string>
+					<key>PATH_TYPE</key>
+					<integer>0</integer>
+				</dict>
+				<key>RESOURCES</key>
+				<array/>
+			</dict>
 			<key>PACKAGE_SETTINGS</key>
 			<dict>
 				<key>AUTHENTICATION</key>
@@ -850,6 +830,17 @@
 		<dict>
 			<key>NOTES</key>
 			<data>
+			PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBIVE1M
+			IDQuMDEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvVFIvaHRtbDQv
+			c3RyaWN0LmR0ZCI+CjxodG1sPgo8aGVhZD4KPG1ldGEgaHR0cC1l
+			cXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+			IGNoYXJzZXQ9VVRGLTgiPgo8bWV0YSBodHRwLWVxdWl2PSJDb250
+			ZW50LVN0eWxlLVR5cGUiIGNvbnRlbnQ9InRleHQvY3NzIj4KPHRp
+			dGxlPjwvdGl0bGU+CjxtZXRhIG5hbWU9IkdlbmVyYXRvciIgY29u
+			dGVudD0iQ29jb2EgSFRNTCBXcml0ZXIiPgo8bWV0YSBuYW1lPSJD
+			b2NvYVZlcnNpb24iIGNvbnRlbnQ9IjEzNDMuMTQiPgo8c3R5bGUg
+			dHlwZT0idGV4dC9jc3MiPgo8L3N0eWxlPgo8L2hlYWQ+Cjxib2R5
+			Pgo8L2JvZHk+CjwvaHRtbD4K
 			</data>
 		</dict>
 		<key>PROJECT_PRESENTATION</key>
@@ -955,6 +946,25 @@
 				</dict>
 			</array>
 			<key>INTRODUCTION</key>
+			<dict>
+				<key>LOCALIZATIONS</key>
+				<array/>
+			</dict>
+			<key>LICENSE</key>
+			<dict>
+				<key>KEYWORDS</key>
+				<dict/>
+				<key>LOCALIZATIONS</key>
+				<array/>
+				<key>MODE</key>
+				<integer>0</integer>
+			</dict>
+			<key>README</key>
+			<dict>
+				<key>LOCALIZATIONS</key>
+				<array/>
+			</dict>
+			<key>SUMMARY</key>
 			<dict>
 				<key>LOCALIZATIONS</key>
 				<array/>
