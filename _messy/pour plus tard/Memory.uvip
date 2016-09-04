@@ -1,0 +1,2939 @@
+<UVI4>
+    <Program Name="Program" Bypass="0" Gain="1.9952623" Pan="0" DisplayName="Memory" TransposeOctaves="0" TransposeSemiTones="0" OutputName="" Polyphony="16" NotePolyphony="0" ProgramPath="D:/Louis/Travail/12 - UVI/Presets Falcon/XP1/script/Exports/Uses cases/Memory.uvip" LoopProgram="0" Streaming="1" BypassInsertFX="0">
+        <Mappers>
+            <ControlSignalMapper Name="Mapper 0" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 0">0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,097143 0,108571 0,120000 0,120000 0,131429 0,142857 0,154286 0,165714 0,177143 0,188571 0,188571 0,200000 0,211429 0,222857 0,234286 0,245714 0,257143 0,257143 0,268571 0,280000 0,291429 0,302857 0,314286 0,325714 0,325714 0,337143 0,348571 0,360000 0,371429 0,382857 0,394286 0,394286 0,405714 0,417143 0,428571 0,440000 0,451429 0,451429 0,462857 0,474286 0,485714 0,497143 0,508571 0,520000 0,520000 0,531429 0,542857 0,554286 0,565714 0,577143 0,588571 0,588571 0,600000 0,611429 0,622857 0,634286 0,645714 0,657143 0,657143 0,680333 0,703190 0,725714 0,748571 0,771429 0,805714 0,828905 0,851762 0,874619 0,908571 0,920333 0,954286 0,977143 1,000000</ControlSignalMapper>
+            <ControlSignalMapper Name="Mapper 1" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 1">-0,051429 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,074286 -0,085714 -0,108571 -0,108571 -0,120000 -0,131429 -0,142857 -0,154286 -0,165714 -0,177143 -0,188571 -0,188571 -0,188571 -0,200000 -0,211429 -0,222857 -0,222857 -0,222857 -0,222857 -0,222857 -0,228571 -0,234286 -0,238095 -0,241905 -0,245714 -0,249524 -0,253333 -0,257143 -0,260952 -0,264762 -0,268571 -0,272381 -0,276190 -0,280000 -0,285714 -0,291429 -0,291429 -0,302857 -0,314286 -0,314286 -0,310476 -0,306667 -0,302857 -0,280000 -0,268571 -0,257143 -0,257143 -0,234286 -0,188571 -0,154286 -0,108571 -0,074286 -0,051429 -0,028571 0,017143 0,040000 0,062857 0,085714 0,097143 0,108571 0,120000 0,138286 0,156571 0,174857 0,193143 0,211429 0,227429 0,243429 0,259429 0,275429 0,291429 0,304286 0,317143 0,330000 0,342857 0,355714 0,368571 0,381429 0,394286 0,408980 0,423673 0,438367 0,453061 0,467755 0,482449 0,497143 0,514286 0,531429 0,548571 0,565714 0,582857 0,600000 0,617143 0,634286 0,651429 0,668571 0,689524 0,710476 0,731429 0,752381 0,773333 0,794286 0,813333 0,832381 0,851429 0,870476 0,889524 0,908571 0,933061 0,957551 0,982041 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000</ControlSignalMapper>
+        </Mappers>
+        <Properties description="Preset Credits : Louis Couka"/>
+        <ControlSignalSources>
+            <LFO Name="LFO 2" Bypass="0" SyncToHost="0" DisplayName="LFO 2" DelayTime="0.02414703" RiseTime="0" Freq="2.867595" Depth="0.091999993" Phase="0" WaveFormType="0" Retrigger="1" Bipolar="1" Smooth="0"/>
+            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Cut Off" Bipolar="0" Style="0" Value="0.14399999">
+                <Connections>
+                    <SignalConnection Name="SignalConnection 0" Ratio="-0.13793103" Source="@MIDI CC 1" Destination="Value" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                </Connections>
+                <Properties customPosition="1" x="5" y="345"/>
+            </ConstantModulation>
+            <ConstantModulation Name="Macro 12" Bypass="0" DisplayName="Room" Bipolar="0" Style="1" Value="1">
+                <Properties customPosition="1" x="565" y="345"/>
+            </ConstantModulation>
+        </ControlSignalSources>
+        <EventProcessors>
+            <ScriptProcessor Name="EventProcessor0" Bypass="0" Dummy="0" API_version="16">
+                <Properties PresetPath="D:/Louis/Travail/12 - UVI/Presets Falcon/XP1/script/Exports/Memory.lua" ScriptPath="./../Memory.lua"/>
+                <script><![CDATA[--------------------------------------------------------------------------------
+--! Mono
+--! Only play the lastest note
+--! Author : Louis Couka
+--! Date : 29/02/2016
+--------------------------------------------------------------------------------
+
+local SIZE = 4 -- Should be pair, should have enough chords
+local BUTTON_SIZE = 50
+local CHEAT = false
+local VELOCITY = 75
+
+--------------------------------------------------------------------- Game State
+
+local pairsDone
+local score
+local left
+local level
+local finish
+local currentPressed
+
+--------------------------------------------------------------------- Midi Stuff
+function onNote(e)
+    playNote(e)
+end
+
+function playNoteFromUI(note_, vel, dur)
+    local id = postEvent({type=Event.NoteOn, note=note_, velocity=vel})
+    wait(dur)
+    releaseVoice(id)
+end
+
+local chords
+function playChords(chordIndex, dur, strum)
+    chord = chords[chordIndex]
+    for i = 1, table.getn(chord) do
+        run(playNoteFromUI, chord[i], VELOCITY, dur)
+        wait(strum)
+    end
+end
+
+local buttonsChord = {}
+for i = 1, SIZE do
+    buttonsChord[i] = {}
+end
+
+--------------------------------------------------------------------- Board
+function updateInfos()
+    scoreLabel.text = "Score: "..tostring(score)
+    leftLabel.text = "Left: "..tostring(left)
+    levelLabel.text = "Level: "..tostring(level+1)
+    if pairsDone == SIZE * SIZE / 2 then
+        win()
+    elseif left == 0 then
+        lose()
+    elseif left < 9 then
+        leftLabel.textColour = "red"
+    else
+        leftLabel.textColour = "orange"
+    end
+end
+
+buttons = {}
+local OFFSET_X = 360 - BUTTON_SIZE * SIZE / 2
+for i = 1, SIZE do
+    buttons[i] = {}
+    for j = 1, SIZE do
+        buttons[i][j] = Button("Chord")
+        buttons[i][j].width = BUTTON_SIZE + 1
+        buttons[i][j].height = BUTTON_SIZE + 1
+        buttons[i][j].x = OFFSET_X + (i - 1) * BUTTON_SIZE
+        buttons[i][j].y = 9 + (j - 1) * BUTTON_SIZE
+        buttons[i][j].backgroundColourOn = "darkgrey"
+        buttons[i][j].changed = function(self)
+            if not seedDone then
+                setupSeed()
+                setup_()
+                seedDone = true
+            end
+            left = left - 1
+            score = score - 1
+            if (not currentPressed) then
+                buttons[i][j].backgroundColourOff = "orange"
+                buttons[i][j].enabled = false
+                currentPressed = {x = i, y = j}
+            else
+                if (buttonsChord[i][j] == buttonsChord[currentPressed.x][currentPressed.y]) then -- good
+                    score = score + 10
+                    pairsDone = pairsDone + 1
+                    buttons[currentPressed.x][currentPressed.y].backgroundColourOff = "green"
+                    buttons[i][j].backgroundColourOff = "green"
+                    buttons[i][j].enabled = false
+                else -- wrong
+                    buttons[currentPressed.x][currentPressed.y].backgroundColourOff = "grey"
+                    buttons[currentPressed.x][currentPressed.y].enabled = true
+                    buttons[i][j].backgroundColourOff = "grey"
+                end
+                currentPressed = nil
+            end
+            updateInfos()
+            if not finish then
+                if level == 2 then
+                    run(playChords, buttonsChord[i][j], 170, 170)
+                else
+                    run(playChords, buttonsChord[i][j], 600, 0)
+                end
+            end
+        end
+        buttons[i][j].displayName = tostring(" ")
+    end
+end
+
+--------------------------------------------------------------------- Widgets
+
+scoreLabel = Label("Score")
+scoreLabel.width = 100
+scoreLabel.height = 40
+scoreLabel.x = 718 - scoreLabel.width
+scoreLabel.y = 14 + BUTTON_SIZE * SIZE - scoreLabel.height - 20
+scoreLabel.align = "bottomRight"
+
+leftLabel = Label("Level")
+leftLabel.width = scoreLabel.width
+leftLabel.height = scoreLabel.height
+leftLabel.x = scoreLabel.x
+leftLabel.y = scoreLabel.y + 20
+leftLabel.align = scoreLabel.align
+
+levelLabel = Label("Level")
+levelLabel.width = scoreLabel.width
+levelLabel.height = scoreLabel.height
+levelLabel.x = 5
+levelLabel.y = leftLabel.y
+levelLabel.align = "bottomLeft"
+
+finalLabel = Label("Final")
+finalLabel.width = 720
+finalLabel.height = 9 + BUTTON_SIZE * SIZE
+finalLabel.align = "centred"
+finalLabel.fontSize = 150
+
+resetButton = Button("Reset")
+resetButton.width = scoreLabel.width - 50
+resetButton.height = 20
+resetButton.x = scoreLabel.x + 46
+resetButton.y = scoreLabel.y
+resetButton.changed = function(self) setup() end
+
+continueButton = Button("Continue")
+continueButton.x = 305
+continueButton.y = 9 + BUTTON_SIZE * SIZE / 2 + 27
+continueButton.changed = function(self) setup() end
+
+--------------------------------------------------------------------- WIN Animation
+function colorShake()
+    local colors = {"orange", "red", "orange", "yellow"}
+    local i = 0
+    while (finalLabel.visible) do
+        finalLabel.textColour = colors[i + 1]
+        wait(150)
+        i = (i + 1) % table.getn(colors)
+    end
+    finalLabel.textColour = "white"
+end
+
+local DELAY_SYNC = 60
+function playWinChord(i, i2, dur)
+        buttons[place[i2].x][place[i2].y].backgroundColourOff = "yellow"
+        wait(DELAY_SYNC)
+        run(playChords, i, dur, 0)
+        wait(dur - DELAY_SYNC)
+        buttons[place[i2].x][place[i2].y].backgroundColourOff = "green"
+end
+
+function fiestaPad()
+    local i = 1
+    local j = 1
+    local i2 = 3
+    local j2 = 2
+    while (finish) do
+        i = i + 1
+        if (i > SIZE) then
+            i = 1
+            j = j % SIZE + 1
+        end
+        
+        i2 = i2 + 1
+        if (i2 > SIZE) then
+            i2 = 1
+            j2 = j2 % SIZE + 1
+        end
+        
+        buttons[i2][j2].backgroundColourOff = "yellow"
+        buttons[i][j].backgroundColourOff = "green"
+        
+        wait(80)
+    end
+end
+
+function playWin()
+    if (level == 2 ) then
+        finalLabel.fontSize = 100
+        finalLabel.visible = true
+        finalLabel.text = "You Win\nScore: "..tostring(score)
+        run(colorShake)
+        run(fiestaPad)
+    
+        local melody = {48,60,55,69,60,64,64,64,67,71,72,81,53,77,60,74,65,76,69,61,72,80,77,79,50,89,57,76,62,87,65,75,69,77,74,92,55,74,62,85,67,76,71,70,74,83,79,101,52,88,60,68,64,78,67,73,72,80,76,97,53,92,60,87,65,87,69,76,72,93,77,109,55,94,62,91,67,89,71,79,74,90,79,101,60,90,67,78,72,93,76,81,79,98,84,109}
+        for i = 1, table.getn(melody) - 2, 2 do
+            playNoteFromUI(melody[i], melody[i + 1], VELOCITY)
+        end
+        playNoteFromUI(melody[table.getn(melody) - 1], melody[table.getn(melody)],800)
+    else
+        place = {}
+        for k = 1, SIZE*SIZE/2 do
+            for i = 1, SIZE do
+                for j = 1, SIZE do
+                    if (buttonsChord[i][j] == k) then
+                        place[table.getn(place) + 1] = {x = i, y = j}
+                    end
+                end
+            end
+        end
+        
+        for i = 1, table.getn(chords) do
+            playWinChord(i, i*2 - 1, 250)
+            playWinChord(i, i*2, 250)
+        end
+        playWinChord(1, 1, 700)
+        
+        scoreSaved = score
+        level = level + 1
+        sendChange()
+        
+        continueButton.displayName = "Try Next"
+        continueButton.visible = true
+        finalLabel.fontSize = 50
+        finalLabel.visible = true
+        run(colorShake)
+    end
+end
+-- local str = ""
+-- function onNote(e)
+--     str = str..tostring(e.note)..","..tostring(e.velocity)..","
+--     print(str)
+--     playNote(e)
+-- end
+
+function win()
+    finish = true
+    finalLabel.text = "You win"
+    resetButton.visible = false
+    run(playWin)
+end
+
+--------------------------------------------------------------------- LOOSE Animation
+
+function lose()
+    finish = true
+    finalLabel.fontSize = 50
+    finalLabel.text = "You lose"
+    finalLabel.visible = true
+    continueButton.displayName = "Retry"
+    continueButton.visible = true
+    resetButton.visible = false
+    for i = 0, 20 do -- play a cluster
+        run(playNoteFromUI,40 + i, VELOCITY - 30, 500)
+    end
+end
+
+--------------------------------------------------------------------- Setup
+
+local function shuffleTable( t )
+    local rand = math.random 
+    local iterations = #t
+    local j
+    
+    for i = iterations, 2, -1 do
+        j = rand(i)
+        t[i], t[j] = t[j], t[i]
+    end
+end
+
+function Output(ttable)
+    -- output values
+    sout = {}
+    for _, v in ipairs(ttable) do
+        table.insert(sout, v) ;
+    end
+    table.insert(chords,sout)
+end
+function Permutation(ttable, n)
+    if n == 0 then
+        Output(ttable)
+    else
+        for i = 1, n do
+            ttable[n], ttable[i] = ttable[i], ttable[n]
+            Permutation(ttable, n - 1)
+            ttable[n], ttable[i] = ttable[i], ttable[n]
+        end
+    end
+end
+
+function setup()
+    score = scoreSaved
+    finish = false
+    pairsDone = 0
+    
+    continueButton.visible = false
+    resetButton.visible = true
+    finalLabel.visible = false
+    
+    if (level == 0) then
+        left = 30
+        chords = {{60},{64},{72},{69},{62},{65},{71},{67},} 
+    elseif (level == 1) then
+        left = 30
+        -- {"Unnamed",{49,56,65,68,73},{50,50,54,61,66,70,73},{51,51,53,61,65,68,73},{52,61,64,68,75},{53,51,53,61,66,70,77},{54,61,66,70,73},{55,55,56,63,66,69,72,75},{56,44,54,56,60,63,68}}, 
+        chords = {{48,55,64,67,72},{53,60,65,69,72},{52,60,64,67,72},{51,60,63,67,74},{50,60,65,69,76},{53,60,67,69,72},{55,62,65,68,71,74},{43,53,59,62,67},} 
+    else
+        left = 30
+        chords = {}
+        Permutation({60, 64, 67, 72}, 4)
+    end 
+    
+    updateInfos()
+    
+    for i = 1, SIZE do
+        for j = 1, SIZE do
+            buttons[i][j].backgroundColourOff = "darkgrey"
+            buttons[i][j].enabled = true
+        end
+    end
+    
+    setup_()
+end
+
+-- Split setup func because we need to set the seed in UI thread
+function setup_()
+    -- Random pick from our chord list
+    local chordsChoosen = {}
+    for i = 1, SIZE * SIZE, 2 do
+        local isUnique
+        local pick
+        while not isUnique do
+            isUnique = true
+            pick = math.random(1,table.getn(chords))
+            for k = 1, table.getn(chordsChoosen), 2 do
+                if (chordsChoosen[k] == pick) then
+                    isUnique = false
+                    break
+                end
+            end
+        end
+        chordsChoosen[i] = pick
+        chordsChoosen[i+1] = pick
+    end
+
+    -- Shuffle
+    shuffleTable(chordsChoosen)
+    
+    -- Stock in a matrice for easier manipulation
+    for i = 1, SIZE do
+        for j = 1, SIZE do
+            buttonsChord[i][j] = chordsChoosen[i + (j-1) * SIZE]
+            if (CHEAT) then
+                buttons[i][j].displayName = tostring(buttonsChord[i][j])
+            end
+        end
+    end
+
+    currentPressed = nil
+end
+
+local seedDone
+function setupSeed()
+    math.randomseed(math.floor(getTime() * 1000000000))
+    seedDone = true
+end
+
+scoreSaved = 30
+level = 0
+setup()
+
+-- SERIALIZE
+dummy = OnOffButton{"Dummy", visible = false, y = 0}
+function sendChange()
+    dummy.value = not dummy.value
+end
+
+function onSave()
+  return {level, scoreSaved}
+end
+
+function onLoad(data)
+    print(data[1])
+    level = data[1]
+    scoreSaved = data[2]
+    setup()
+end
+
+makePerformanceView()]]></script>
+                <ScriptData/>
+                <state><![CDATA[[0,30]]]></state>
+            </ScriptProcessor>
+        </EventProcessors>
+        <Layers>
+            <Layer Name="Layer 0" Bypass="0" Gain="1" Pan="0" Mute="0" MidiMute="0" Solo="0" DisplayName="Main" OutputName="" LowKey="0" HighKey="127" CustomPolyphony="0" PlayMode="0" PortamentoTime="0.029999999" PortamentoMode="0" NumVoicesPerNote="1" VelocityCurve="0" BypassInsertFX="0">
+                <Properties Color="ff02b0ff"/>
+                <ControlSignalSources/>
+                <Inserts>
+                    <ParametricEQ Name="InsertFX2" Bypass="0" Freq1="30" Q1="0.69999999" Gain1="0" Enable1="0" Freq2="236.19072" Q2="2.5599997" Gain2="1.9200096" Enable2="1" Freq3="180" Q3="0.69999999" Gain3="0" Enable3="0" Freq4="520" Q4="0.69999999" Gain4="0" Enable4="0" Freq5="2271.4497" Q5="0.55840003" Gain5="5" Enable5="1" Freq6="9906.5781" Q6="0.69999999" Gain6="2" Enable6="0" Freq7="1522.7106" Q7="7.0439997" Gain7="-2.0999603" Enable7="1" Freq8="9369.748" Q8="0.69999999" Gain8="0" Enable8="1">
+                        <Properties PresetPath=""/>
+                    </ParametricEQ>
+                    <DualDelay Name="InsertFX0" Bypass="0" SyncToHost="1" DelayTime="0.75" LowCut="146.62811" HighCut="8960.9482" PeakFreq="1000" PeakGain="0" PeakQ="1" Feedback="0.51599997" Mix="0.21600001" Rotation="0" InputWidth="1" OutputWidth="1" DelayRatio="0.3312" FeedbackRatio="-0.1512" InputRotation="0" OutputRotation="0" ModDepth="0" ModRate="1" ModChannelOffset="1" Interpolation="1" DualDelayVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Program/Macro 12" Destination="Bypass" Mapper="" ConnectionMode="0" Bypass="0" Inverted="1"/>
+                        </Connections>
+                    </DualDelay>
+                    <SparkVerb Name="InsertFX1" Bypass="0" ModDepth="4" ModRate="1" Diffusion="0.61799997" DiffusionStart="5" Width="1" RoomSize="20" DecayTime="1.870682" DecayLow="0.34994519" DecayHigh="0.12246162" FreqLow="250" FreqHigh="6655.5083" Shape="0" Mix="0.14" Quality="3" Mode="1" HiCut="0" LowCut="0" Rolloff="10399.921" DiffusionOnOff="0" PreDelay="2" MixMode="1" SparkVerbVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Program/Macro 12" Destination="Bypass" Mapper="" ConnectionMode="0" Bypass="0" Inverted="1"/>
+                        </Connections>
+                    </SparkVerb>
+                    <Gain Name="InsertFX6" Bypass="0" Volume="0.2610676"/>
+                    <EffectRack Name="InsertFX4" Bypass="0">
+                        <Properties PresetPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/FXs/Effect Rack/Compressor multi.preset"/>
+                        <ControlSignalSources>
+                            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Low Freq" Bipolar="0" Style="0" Value="0.29800001">
+                                <Properties customPosition="0" x="210" y="25"/>
+                            </ConstantModulation>
+                            <ConstantModulation Name="Macro 2" Bypass="0" DisplayName="High Freq" Bipolar="0" Style="0" Value="0.62199998">
+                                <Properties customPosition="0" x="465" y="25"/>
+                            </ConstantModulation>
+                        </ControlSignalSources>
+                        <Chains>
+                            <AuxEffect Name="Chain1" Bypass="0" Gain="1" Pan="0" PreInsert="1" DisplayName="Chain1">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="20000" Type="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain2" Bypass="0" Gain="0.75563246" Pan="0" PreInsert="1" DisplayName="Chain2">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="1469.0275" Type="1">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="7.2999992" CompThreshold="-24.440002" CompRatio="2.4200001" CompAttack="13.000003" CompRelease="189.23087" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain3" Bypass="0" Gain="0.50118721" Pan="0" PreInsert="1" DisplayName="Chain3">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="20" HighFrequency="1469.0275" Type="2">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="8.3000031" CompThreshold="-20.279999" CompRatio="4" CompAttack="3.8400006" CompRelease="119.54205" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                        </Chains>
+                    </EffectRack>
+                    <Gain Name="InsertFX3" Bypass="0" Volume="0.39810711"/>
+                </Inserts>
+                <BusRouters/>
+                <Keygroups>
+                    <Keygroup Name="Keygroup 0" Bypass="0" Gain="1" Pan="0" DisplayName="Keygroup 1" OutputName="" ExclusiveGroup="0" LowKey="0" HighKey="127" LowVelocity="1" HighVelocity="127" LowKeyFade="0" HighKeyFade="0" LowVelocityFade="0" HighVelocityFade="0" TriggerMode="0" TriggerSync="0" TriggerRule="0" LatchTrigger="0" FXPostGain="0" BypassInsertFX="0">
+                        <Connections>
+                            <SignalConnection Name="AmpEnvMod" Ratio="1" Source="$Keygroup/DAHDSR 1" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Keygroup/LFO 2" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                        </Connections>
+                        <ControlSignalSources>
+                            <DAHDSR Name="DAHDSR 1" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0.006984516" DecayTime="0.9935624" DecayCurve="-0.16976878" SustainLevel="0.38636363" ReleaseTime="0.021004545" ReleaseCurve="0" DisplayName="DAHDSR 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.82758623" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <DAHDSR Name="DAHDSR 2" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="2.6063526" DecayCurve="0" SustainLevel="0" ReleaseTime="0.050000001" ReleaseCurve="0" DisplayName="DAHDSR 2" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <AHD Name="AHD 1" Bypass="1" DisplayName="AHD 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="0.32108706" DecayCurve="0.18360826"/>
+                            <LFO Name="LFO 2" Bypass="1" SyncToHost="1" DisplayName="LFO 2" DelayTime="0" RiseTime="0" Freq="0.25" Depth="0.72000003" Phase="0" WaveFormType="0" Retrigger="1" Bipolar="1" Smooth="0"/>
+                        </ControlSignalSources>
+                        <Inserts>
+                            <XpanderFilter Name="InsertFX0" Bypass="0" Freq="233.89989" Q="0.039999999" KeyTracking="0.5" Mode="3" DistortionType="0" Drive="1.1199988">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 1" Ratio="0.090000004" Source="@VoiceParam Velocity" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="0.25999999" Source="$Keygroup/DAHDSR 2" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Ratio" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                        </Connections>
+                                    </SignalConnection>
+                                    <SignalConnection Name="SignalConnection 3" Ratio="0.41379312" Source="$Program/Macro 1" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </XpanderFilter>
+                            <WaveShaper Name="InsertFX2" Bypass="0" InputGain="0" OutputGain="0" Amount="0.2" Knee="0" Mix="1" PreFreq="20000" PostFreq="20" Oversampling="0" Mode="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.10344828" Source="@VoiceParam LinearKeyFollow" Destination="Amount" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveShaper>
+                            <Gain Name="InsertFX3" Bypass="0" Volume="1.0000001">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Volume" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </Gain>
+                            <Drive Name="InsertFX4" Bypass="0" DriveAmount="0" Mode="2" Oversampling="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.10344828" Source="$Keygroup/AHD 1" Destination="DriveAmount" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </Drive>
+                        </Inserts>
+                        <BusRouters/>
+                        <Oscillators>
+                            <WaveTableOscillator Name="Oscillator" Bypass="0" WavetablePath="$FalconResources.ufs/Samples/Wavetables/X-Bass/Terror_900.wav" StartPhase="0" PhaseDistortionAmount="0" PhaseDistortionMode="3" Spread="0.088" DetuneMode="0" WaveIndex="1" WaveIndexSpread="0" StereoSpread="1" StereoSpreadMode="1" NumOscs="2" FadeMipMap="1" FadeWaveIndex="1" Stereo="1" PhaseSpread="1" CoarseTune="0" FineTune="0" Gain="1" Pitch="0" NoteTracking="1" BaseNote="60" DisplayName="Oscillator 1">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="PhaseDistortionAmount" Mapper="Mapper 1" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="PitchBendMod" Ratio="1.9999992" Source="@PitchBend" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="0.48171562" Source="$Program/LFO 2" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveTableOscillator>
+                        </Oscillators>
+                    </Keygroup>
+                </Keygroups>
+            </Layer>
+        </Layers>
+    </Program>
+    <NeededFS Source="C:/ProgramData/UVI/Falcon/FalconResources.ufs"/>
+</UVI4>
+<UVI4>
+    <Program Name="Program" Bypass="0" Gain="1.9952623" Pan="0" DisplayName="Memory" TransposeOctaves="0" TransposeSemiTones="0" OutputName="" Polyphony="16" NotePolyphony="0" ProgramPath="D:/Louis/Travail/12 - UVI/Presets Falcon/XP1/script/Scripts/Examples/Memory.uvip" LoopProgram="0" Streaming="1" BypassInsertFX="0">
+        <Mappers>
+            <ControlSignalMapper Name="Mapper 0" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 0">0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,097143 0,108571 0,120000 0,120000 0,131429 0,142857 0,154286 0,165714 0,177143 0,188571 0,188571 0,200000 0,211429 0,222857 0,234286 0,245714 0,257143 0,257143 0,268571 0,280000 0,291429 0,302857 0,314286 0,325714 0,325714 0,337143 0,348571 0,360000 0,371429 0,382857 0,394286 0,394286 0,405714 0,417143 0,428571 0,440000 0,451429 0,451429 0,462857 0,474286 0,485714 0,497143 0,508571 0,520000 0,520000 0,531429 0,542857 0,554286 0,565714 0,577143 0,588571 0,588571 0,600000 0,611429 0,622857 0,634286 0,645714 0,657143 0,657143 0,680333 0,703190 0,725714 0,748571 0,771429 0,805714 0,828905 0,851762 0,874619 0,908571 0,920333 0,954286 0,977143 1,000000</ControlSignalMapper>
+            <ControlSignalMapper Name="Mapper 1" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 1">-0,051429 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,074286 -0,085714 -0,108571 -0,108571 -0,120000 -0,131429 -0,142857 -0,154286 -0,165714 -0,177143 -0,188571 -0,188571 -0,188571 -0,200000 -0,211429 -0,222857 -0,222857 -0,222857 -0,222857 -0,222857 -0,228571 -0,234286 -0,238095 -0,241905 -0,245714 -0,249524 -0,253333 -0,257143 -0,260952 -0,264762 -0,268571 -0,272381 -0,276190 -0,280000 -0,285714 -0,291429 -0,291429 -0,302857 -0,314286 -0,314286 -0,310476 -0,306667 -0,302857 -0,280000 -0,268571 -0,257143 -0,257143 -0,234286 -0,188571 -0,154286 -0,108571 -0,074286 -0,051429 -0,028571 0,017143 0,040000 0,062857 0,085714 0,097143 0,108571 0,120000 0,138286 0,156571 0,174857 0,193143 0,211429 0,227429 0,243429 0,259429 0,275429 0,291429 0,304286 0,317143 0,330000 0,342857 0,355714 0,368571 0,381429 0,394286 0,408980 0,423673 0,438367 0,453061 0,467755 0,482449 0,497143 0,514286 0,531429 0,548571 0,565714 0,582857 0,600000 0,617143 0,634286 0,651429 0,668571 0,689524 0,710476 0,731429 0,752381 0,773333 0,794286 0,813333 0,832381 0,851429 0,870476 0,889524 0,908571 0,933061 0,957551 0,982041 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000</ControlSignalMapper>
+        </Mappers>
+        <Properties description="Preset Credits : Louis Couka"/>
+        <ControlSignalSources>
+            <LFO Name="LFO 2" Bypass="0" SyncToHost="0" DisplayName="LFO 2" DelayTime="0.02414703" RiseTime="0" Freq="2.867595" Depth="0.091999993" Phase="0" WaveFormType="0" Retrigger="1" Bipolar="1" Smooth="0"/>
+            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Cut Off" Bipolar="0" Style="0" Value="0.14399999">
+                <Connections>
+                    <SignalConnection Name="SignalConnection 0" Ratio="-0.13793103" Source="@MIDI CC 1" Destination="Value" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                </Connections>
+                <Properties customPosition="1" x="5" y="345"/>
+            </ConstantModulation>
+            <ConstantModulation Name="Macro 12" Bypass="0" DisplayName="Room" Bipolar="0" Style="1" Value="1">
+                <Properties customPosition="1" x="565" y="345"/>
+            </ConstantModulation>
+        </ControlSignalSources>
+        <EventProcessors>
+            <ScriptProcessor Name="EventProcessor0" Bypass="0" Dummy="0" API_version="16">
+                <Properties PresetPath="D:/Louis/Travail/12 - UVI/Presets Falcon/XP1/script/Exports/Memory.lua" ScriptPath="./../Memory.lua"/>
+                <script><![CDATA[--------------------------------------------------------------------------------
+--! Mono
+--! Only play the lastest note
+--! Author : Louis Couka
+--! Date : 29/02/2016
+--------------------------------------------------------------------------------
+
+local SIZE = 4 -- Should be pair, should have enough chords
+local BUTTON_SIZE = 50
+local CHEAT = false
+local VELOCITY = 75
+
+--------------------------------------------------------------------- Game State
+
+local pairsDone
+local score
+local left
+local level
+local finish
+local currentPressed
+
+--------------------------------------------------------------------- Midi Stuff
+function onNote(e)
+    playNote(e)
+end
+
+function playNoteFromUI(note_, vel, dur)
+    local id = postEvent({type=Event.NoteOn, note=note_, velocity=vel})
+    wait(dur)
+    releaseVoice(id)
+end
+
+local chords
+function playChords(chordIndex, dur, strum)
+    chord = chords[chordIndex]
+    for i = 1, table.getn(chord) do
+        run(playNoteFromUI, chord[i], VELOCITY, dur)
+        wait(strum)
+    end
+end
+
+local buttonsChord = {}
+for i = 1, SIZE do
+    buttonsChord[i] = {}
+end
+
+--------------------------------------------------------------------- Board
+function updateInfos()
+    scoreLabel.text = "Score: "..tostring(score)
+    leftLabel.text = "Left: "..tostring(left)
+    levelLabel.text = "Level: "..tostring(level+1)
+    if pairsDone == SIZE * SIZE / 2 then
+        win()
+    elseif left == 0 then
+        lose()
+    elseif left < 9 then
+        leftLabel.textColour = "red"
+    else
+        leftLabel.textColour = "orange"
+    end
+end
+
+buttons = {}
+local OFFSET_X = 360 - BUTTON_SIZE * SIZE / 2
+for i = 1, SIZE do
+    buttons[i] = {}
+    for j = 1, SIZE do
+        buttons[i][j] = Button("Chord")
+        buttons[i][j].width = BUTTON_SIZE + 1
+        buttons[i][j].height = BUTTON_SIZE + 1
+        buttons[i][j].x = OFFSET_X + (i - 1) * BUTTON_SIZE
+        buttons[i][j].y = 9 + (j - 1) * BUTTON_SIZE
+        buttons[i][j].backgroundColourOn = "darkgrey"
+        buttons[i][j].changed = function(self)
+            if not seedDone then
+                setupSeed()
+                setup_()
+                seedDone = true
+            end
+            left = left - 1
+            score = score - 1
+            if (not currentPressed) then
+                buttons[i][j].backgroundColourOff = "green" -- first move color
+                buttons[i][j].enabled = false
+                currentPressed = {x = i, y = j}
+            else
+                if (buttonsChord[i][j] == buttonsChord[currentPressed.x][currentPressed.y]) then -- good
+                    score = score + 10
+                    pairsDone = pairsDone + 1
+                    buttons[currentPressed.x][currentPressed.y].backgroundColourOff = "green"
+                    buttons[i][j].backgroundColourOff = "green"
+                    buttons[i][j].enabled = false
+                else -- wrong
+                    buttons[currentPressed.x][currentPressed.y].backgroundColourOff = "darkgrey" -- already visited color
+                    buttons[currentPressed.x][currentPressed.y].enabled = true
+                    buttons[i][j].backgroundColourOff = "darkgrey" -- already visited color
+                end
+                currentPressed = nil
+            end
+            updateInfos()
+            if not finish then
+                if level == 2 then
+                    run(playChords, buttonsChord[i][j], 170, 170)
+                else
+                    run(playChords, buttonsChord[i][j], 600, 0)
+                end
+            end
+        end
+        buttons[i][j].displayName = tostring(" ")
+    end
+end
+
+--------------------------------------------------------------------- Widgets
+
+scoreLabel = Label("Score")
+scoreLabel.width = 100
+scoreLabel.height = 40
+scoreLabel.x = 718 - scoreLabel.width
+scoreLabel.y = 14 + BUTTON_SIZE * SIZE - scoreLabel.height - 20
+scoreLabel.align = "bottomRight"
+
+leftLabel = Label("Level")
+leftLabel.width = scoreLabel.width
+leftLabel.height = scoreLabel.height
+leftLabel.x = scoreLabel.x
+leftLabel.y = scoreLabel.y + 20
+leftLabel.align = scoreLabel.align
+
+levelLabel = Label("Level")
+levelLabel.width = scoreLabel.width
+levelLabel.height = scoreLabel.height
+levelLabel.x = 5
+levelLabel.y = leftLabel.y
+levelLabel.align = "bottomLeft"
+
+finalLabel = Label("Final")
+finalLabel.width = 720
+finalLabel.height = 9 + BUTTON_SIZE * SIZE
+finalLabel.align = "centred"
+finalLabel.fontSize = 150
+
+resetButton = Button("Reset")
+resetButton.width = scoreLabel.width - 50
+resetButton.height = 20
+resetButton.x = scoreLabel.x + 46
+resetButton.y = scoreLabel.y
+resetButton.changed = function(self) setup() end
+
+continueButton = Button("Continue")
+continueButton.x = 305
+continueButton.y = 9 + BUTTON_SIZE * SIZE / 2 + 27
+continueButton.changed = function(self) setup() end
+
+--------------------------------------------------------------------- WIN Animation
+function colorShake()
+    local colors = {"orange", "red", "orange", "yellow"}
+    local i = 0
+    while (finalLabel.visible) do
+        finalLabel.textColour = colors[i + 1]
+        wait(150)
+        i = (i + 1) % table.getn(colors)
+    end
+    finalLabel.textColour = "white"
+end
+
+local DELAY_SYNC = 60
+function playWinChord(i, i2, dur)
+        buttons[place[i2].x][place[i2].y].backgroundColourOff = "yellow"
+        wait(DELAY_SYNC)
+        run(playChords, i, dur, 0)
+        wait(dur - DELAY_SYNC)
+        buttons[place[i2].x][place[i2].y].backgroundColourOff = "green"
+end
+
+function fiestaPad()
+    local i = 1
+    local j = 1
+    local i2 = 3
+    local j2 = 2
+    while (finish) do
+        i = i + 1
+        if (i > SIZE) then
+            i = 1
+            j = j % SIZE + 1
+        end
+        
+        i2 = i2 + 1
+        if (i2 > SIZE) then
+            i2 = 1
+            j2 = j2 % SIZE + 1
+        end
+        
+        buttons[i2][j2].backgroundColourOff = "yellow"
+        buttons[i][j].backgroundColourOff = "green"
+        
+        wait(80)
+    end
+end
+
+function playWin()
+    if (level == 2 ) then
+        finalLabel.fontSize = 100
+        finalLabel.visible = true
+        finalLabel.text = "You Win\nScore: "..tostring(score)
+        run(colorShake)
+        run(fiestaPad)
+    
+        local melody = {48,60,55,69,60,64,64,64,67,71,72,81,53,77,60,74,65,76,69,61,72,80,77,79,50,89,57,76,62,87,65,75,69,77,74,92,55,74,62,85,67,76,71,70,74,83,79,101,52,88,60,68,64,78,67,73,72,80,76,97,53,92,60,87,65,87,69,76,72,93,77,109,55,94,62,91,67,89,71,79,74,90,79,101,60,90,67,78,72,93,76,81,79,98,84,109}
+        for i = 1, table.getn(melody) - 2, 2 do
+            playNoteFromUI(melody[i], melody[i + 1], VELOCITY)
+        end
+        playNoteFromUI(melody[table.getn(melody) - 1], melody[table.getn(melody)],800)
+    else
+        place = {}
+        for k = 1, SIZE*SIZE/2 do
+            for i = 1, SIZE do
+                for j = 1, SIZE do
+                    if (buttonsChord[i][j] == k) then
+                        place[table.getn(place) + 1] = {x = i, y = j}
+                    end
+                end
+            end
+        end
+        
+        for i = 1, table.getn(chords) do
+            playWinChord(i, i*2 - 1, 250)
+            playWinChord(i, i*2, 250)
+        end
+        playWinChord(1, 1, 700)
+        
+        scoreSaved = score
+        level = level + 1
+        sendChange()
+        
+        continueButton.displayName = "Try Next"
+        continueButton.visible = true
+        finalLabel.fontSize = 50
+        finalLabel.visible = true
+        run(colorShake)
+    end
+end
+-- local str = ""
+-- function onNote(e)
+--     str = str..tostring(e.note)..","..tostring(e.velocity)..","
+--     print(str)
+--     playNote(e)
+-- end
+
+function win()
+    finish = true
+    finalLabel.text = "You win"
+    resetButton.visible = false
+    run(playWin)
+end
+
+--------------------------------------------------------------------- LOOSE Animation
+
+function lose()
+    finish = true
+    finalLabel.fontSize = 50
+    finalLabel.text = "You lose"
+    finalLabel.visible = true
+    continueButton.displayName = "Retry"
+    continueButton.visible = true
+    resetButton.visible = false
+    for i = 0, 20 do -- play a cluster
+        run(playNoteFromUI,40 + i, VELOCITY - 30, 500)
+    end
+end
+
+--------------------------------------------------------------------- Setup
+
+local function shuffleTable( t )
+    local rand = math.random 
+    local iterations = #t
+    local j
+    
+    for i = iterations, 2, -1 do
+        j = rand(i)
+        t[i], t[j] = t[j], t[i]
+    end
+end
+
+function Output(ttable)
+    -- output values
+    sout = {}
+    for _, v in ipairs(ttable) do
+        table.insert(sout, v) ;
+    end
+    table.insert(chords,sout)
+end
+function Permutation(ttable, n)
+    if n == 0 then
+        Output(ttable)
+    else
+        for i = 1, n do
+            ttable[n], ttable[i] = ttable[i], ttable[n]
+            Permutation(ttable, n - 1)
+            ttable[n], ttable[i] = ttable[i], ttable[n]
+        end
+    end
+end
+
+function setup()
+    score = scoreSaved
+    finish = false
+    pairsDone = 0
+    
+    continueButton.visible = false
+    resetButton.visible = true
+    finalLabel.visible = false
+    
+    if (level == 0) then
+        left = 30
+        chords = {{60},{64},{72},{69},{62},{65},{71},{67},} 
+    elseif (level == 1) then
+        left = 30
+        -- {"Unnamed",{49,56,65,68,73},{50,50,54,61,66,70,73},{51,51,53,61,65,68,73},{52,61,64,68,75},{53,51,53,61,66,70,77},{54,61,66,70,73},{55,55,56,63,66,69,72,75},{56,44,54,56,60,63,68}}, 
+        chords = {{48,55,64,67,72},{53,60,65,69,72},{52,60,64,67,72},{51,60,63,67,74},{50,60,65,69,76},{53,60,67,69,72},{55,62,65,68,71,74},{43,53,59,62,67},} 
+    else
+        left = 30
+        chords = {}
+        Permutation({60, 64, 67, 72}, 4)
+    end 
+    
+    updateInfos()
+    
+    for i = 1, SIZE do
+        for j = 1, SIZE do
+            buttons[i][j].backgroundColourOff = "darkgrey"
+            buttons[i][j].enabled = true
+        end
+    end
+    
+    setup_()
+end
+
+-- Split setup func because we need to set the seed in UI thread
+function setup_()
+    -- Random pick from our chord list
+    local chordsChoosen = {}
+    for i = 1, SIZE * SIZE, 2 do
+        local isUnique
+        local pick
+        while not isUnique do
+            isUnique = true
+            pick = math.random(1,table.getn(chords))
+            for k = 1, table.getn(chordsChoosen), 2 do
+                if (chordsChoosen[k] == pick) then
+                    isUnique = false
+                    break
+                end
+            end
+        end
+        chordsChoosen[i] = pick
+        chordsChoosen[i+1] = pick
+    end
+
+    -- Shuffle
+    shuffleTable(chordsChoosen)
+    
+    -- Stock in a matrice for easier manipulation
+    for i = 1, SIZE do
+        for j = 1, SIZE do
+            buttonsChord[i][j] = chordsChoosen[i + (j-1) * SIZE]
+            if (CHEAT) then
+                buttons[i][j].displayName = tostring(buttonsChord[i][j])
+            end
+        end
+    end
+
+    currentPressed = nil
+end
+
+local seedDone
+function setupSeed()
+    math.randomseed(math.floor(getTime() * 1000000000))
+    seedDone = true
+end
+
+scoreSaved = 30
+level = 0
+setup()
+
+-- SERIALIZE
+dummy = OnOffButton{"Dummy", visible = false, y = 0}
+function sendChange()
+    dummy.value = not dummy.value
+end
+
+function onSave()
+  return {level, scoreSaved}
+end
+
+function onLoad(data)
+    print(data[1])
+    level = data[1]
+    scoreSaved = data[2]
+    setup()
+end
+
+makePerformanceView()]]></script>
+                <ScriptData/>
+                <state><![CDATA[[0,30]]]></state>
+            </ScriptProcessor>
+        </EventProcessors>
+        <Layers>
+            <Layer Name="Layer 0" Bypass="0" Gain="1" Pan="0" Mute="0" MidiMute="0" Solo="0" DisplayName="Main" OutputName="" LowKey="0" HighKey="127" CustomPolyphony="0" PlayMode="0" PortamentoTime="0.029999999" PortamentoMode="0" NumVoicesPerNote="1" VelocityCurve="0" BypassInsertFX="0">
+                <Properties Color="ff02b0ff"/>
+                <ControlSignalSources/>
+                <Inserts>
+                    <ParametricEQ Name="InsertFX2" Bypass="0" Freq1="30" Q1="0.69999999" Gain1="0" Enable1="0" Freq2="236.19072" Q2="2.5599997" Gain2="1.9200096" Enable2="1" Freq3="180" Q3="0.69999999" Gain3="0" Enable3="0" Freq4="520" Q4="0.69999999" Gain4="0" Enable4="0" Freq5="2271.4497" Q5="0.55840003" Gain5="5" Enable5="1" Freq6="9906.5781" Q6="0.69999999" Gain6="2" Enable6="0" Freq7="1522.7106" Q7="7.0439997" Gain7="-2.0999603" Enable7="1" Freq8="9369.748" Q8="0.69999999" Gain8="0" Enable8="1">
+                        <Properties PresetPath=""/>
+                    </ParametricEQ>
+                    <DualDelay Name="InsertFX0" Bypass="0" SyncToHost="1" DelayTime="0.75" LowCut="146.62811" HighCut="8960.9482" PeakFreq="1000" PeakGain="0" PeakQ="1" Feedback="0.51599997" Mix="0.21600001" Rotation="0" InputWidth="1" OutputWidth="1" DelayRatio="0.3312" FeedbackRatio="-0.1512" InputRotation="0" OutputRotation="0" ModDepth="0" ModRate="1" ModChannelOffset="1" Interpolation="1" DualDelayVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Program/Macro 12" Destination="Bypass" Mapper="" ConnectionMode="0" Bypass="0" Inverted="1"/>
+                        </Connections>
+                    </DualDelay>
+                    <SparkVerb Name="InsertFX1" Bypass="0" ModDepth="4" ModRate="1" Diffusion="0.61799997" DiffusionStart="5" Width="1" RoomSize="20" DecayTime="1.870682" DecayLow="0.34994519" DecayHigh="0.12246162" FreqLow="250" FreqHigh="6655.5083" Shape="0" Mix="0.14" Quality="3" Mode="1" HiCut="0" LowCut="0" Rolloff="10399.921" DiffusionOnOff="0" PreDelay="2" MixMode="1" SparkVerbVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Program/Macro 12" Destination="Bypass" Mapper="" ConnectionMode="0" Bypass="0" Inverted="1"/>
+                        </Connections>
+                    </SparkVerb>
+                    <Gain Name="InsertFX6" Bypass="0" Volume="0.2610676"/>
+                    <EffectRack Name="InsertFX4" Bypass="0">
+                        <Properties PresetPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/FXs/Effect Rack/Compressor multi.preset"/>
+                        <ControlSignalSources>
+                            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Low Freq" Bipolar="0" Style="0" Value="0.29800001">
+                                <Properties customPosition="0" x="210" y="25"/>
+                            </ConstantModulation>
+                            <ConstantModulation Name="Macro 2" Bypass="0" DisplayName="High Freq" Bipolar="0" Style="0" Value="0.62199998">
+                                <Properties customPosition="0" x="465" y="25"/>
+                            </ConstantModulation>
+                        </ControlSignalSources>
+                        <Chains>
+                            <AuxEffect Name="Chain1" Bypass="0" Gain="1" Pan="0" PreInsert="1" DisplayName="Chain1">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="20000" Type="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain2" Bypass="0" Gain="0.75563246" Pan="0" PreInsert="1" DisplayName="Chain2">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="1469.0275" Type="1">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="7.2999992" CompThreshold="-24.440002" CompRatio="2.4200001" CompAttack="13.000003" CompRelease="189.23087" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain3" Bypass="0" Gain="0.50118721" Pan="0" PreInsert="1" DisplayName="Chain3">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="20" HighFrequency="1469.0275" Type="2">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="8.3000031" CompThreshold="-20.279999" CompRatio="4" CompAttack="3.8400006" CompRelease="119.54205" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                        </Chains>
+                    </EffectRack>
+                    <Gain Name="InsertFX3" Bypass="0" Volume="0.39810711"/>
+                </Inserts>
+                <BusRouters/>
+                <Keygroups>
+                    <Keygroup Name="Keygroup 0" Bypass="0" Gain="1" Pan="0" DisplayName="Keygroup 1" OutputName="" ExclusiveGroup="0" LowKey="0" HighKey="127" LowVelocity="1" HighVelocity="127" LowKeyFade="0" HighKeyFade="0" LowVelocityFade="0" HighVelocityFade="0" TriggerMode="0" TriggerSync="0" TriggerRule="0" LatchTrigger="0" FXPostGain="0" BypassInsertFX="0">
+                        <Connections>
+                            <SignalConnection Name="AmpEnvMod" Ratio="1" Source="$Keygroup/DAHDSR 1" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Keygroup/LFO 2" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                        </Connections>
+                        <ControlSignalSources>
+                            <DAHDSR Name="DAHDSR 1" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0.006984516" DecayTime="0.9935624" DecayCurve="-0.16976878" SustainLevel="0.38636363" ReleaseTime="0.021004545" ReleaseCurve="0" DisplayName="DAHDSR 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.82758623" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <DAHDSR Name="DAHDSR 2" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="2.6063526" DecayCurve="0" SustainLevel="0" ReleaseTime="0.050000001" ReleaseCurve="0" DisplayName="DAHDSR 2" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <AHD Name="AHD 1" Bypass="1" DisplayName="AHD 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="0.32108706" DecayCurve="0.18360826"/>
+                            <LFO Name="LFO 2" Bypass="1" SyncToHost="1" DisplayName="LFO 2" DelayTime="0" RiseTime="0" Freq="0.25" Depth="0.72000003" Phase="0" WaveFormType="0" Retrigger="1" Bipolar="1" Smooth="0"/>
+                        </ControlSignalSources>
+                        <Inserts>
+                            <XpanderFilter Name="InsertFX0" Bypass="0" Freq="233.89989" Q="0.039999999" KeyTracking="0.5" Mode="3" DistortionType="0" Drive="1.1199988">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 1" Ratio="0.090000004" Source="@VoiceParam Velocity" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="0.25999999" Source="$Keygroup/DAHDSR 2" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Ratio" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                        </Connections>
+                                    </SignalConnection>
+                                    <SignalConnection Name="SignalConnection 3" Ratio="0.41379312" Source="$Program/Macro 1" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </XpanderFilter>
+                            <WaveShaper Name="InsertFX2" Bypass="0" InputGain="0" OutputGain="0" Amount="0.2" Knee="0" Mix="1" PreFreq="20000" PostFreq="20" Oversampling="0" Mode="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.10344828" Source="@VoiceParam LinearKeyFollow" Destination="Amount" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveShaper>
+                            <Gain Name="InsertFX3" Bypass="0" Volume="1.0000001">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Volume" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </Gain>
+                            <Drive Name="InsertFX4" Bypass="0" DriveAmount="0" Mode="2" Oversampling="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.10344828" Source="$Keygroup/AHD 1" Destination="DriveAmount" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </Drive>
+                        </Inserts>
+                        <BusRouters/>
+                        <Oscillators>
+                            <WaveTableOscillator Name="Oscillator" Bypass="0" WavetablePath="$FalconResources.ufs/Samples/Wavetables/X-Bass/Terror_900.wav" StartPhase="0" PhaseDistortionAmount="0" PhaseDistortionMode="3" Spread="0.088" DetuneMode="0" WaveIndex="1" WaveIndexSpread="0" StereoSpread="1" StereoSpreadMode="1" NumOscs="2" FadeMipMap="1" FadeWaveIndex="1" Stereo="1" PhaseSpread="1" CoarseTune="0" FineTune="0" Gain="1" Pitch="0" NoteTracking="1" BaseNote="60" DisplayName="Oscillator 1">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="PhaseDistortionAmount" Mapper="Mapper 1" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="PitchBendMod" Ratio="1.9999992" Source="@PitchBend" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="0.48171562" Source="$Program/LFO 2" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveTableOscillator>
+                        </Oscillators>
+                    </Keygroup>
+                </Keygroups>
+            </Layer>
+        </Layers>
+    </Program>
+    <NeededFS Source="C:/ProgramData/UVI/Falcon/FalconResources.ufs"/>
+</UVI4>
+<UVI4>
+    <Program Name="Program" Bypass="0" Gain="1.9952623" Pan="0" DisplayName="Memory" TransposeOctaves="0" TransposeSemiTones="0" OutputName="" Polyphony="16" NotePolyphony="0" ProgramPath="D:/Louis/Travail/12 - UVI/Presets Falcon/XP1/script/Scripts/Examples/Memory.uvip" LoopProgram="0" Streaming="1" BypassInsertFX="0">
+        <Mappers>
+            <ControlSignalMapper Name="Mapper 0" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 0">0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,097143 0,108571 0,120000 0,120000 0,131429 0,142857 0,154286 0,165714 0,177143 0,188571 0,188571 0,200000 0,211429 0,222857 0,234286 0,245714 0,257143 0,257143 0,268571 0,280000 0,291429 0,302857 0,314286 0,325714 0,325714 0,337143 0,348571 0,360000 0,371429 0,382857 0,394286 0,394286 0,405714 0,417143 0,428571 0,440000 0,451429 0,451429 0,462857 0,474286 0,485714 0,497143 0,508571 0,520000 0,520000 0,531429 0,542857 0,554286 0,565714 0,577143 0,588571 0,588571 0,600000 0,611429 0,622857 0,634286 0,645714 0,657143 0,657143 0,680333 0,703190 0,725714 0,748571 0,771429 0,805714 0,828905 0,851762 0,874619 0,908571 0,920333 0,954286 0,977143 1,000000</ControlSignalMapper>
+            <ControlSignalMapper Name="Mapper 1" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 1">-0,051429 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,074286 -0,085714 -0,108571 -0,108571 -0,120000 -0,131429 -0,142857 -0,154286 -0,165714 -0,177143 -0,188571 -0,188571 -0,188571 -0,200000 -0,211429 -0,222857 -0,222857 -0,222857 -0,222857 -0,222857 -0,228571 -0,234286 -0,238095 -0,241905 -0,245714 -0,249524 -0,253333 -0,257143 -0,260952 -0,264762 -0,268571 -0,272381 -0,276190 -0,280000 -0,285714 -0,291429 -0,291429 -0,302857 -0,314286 -0,314286 -0,310476 -0,306667 -0,302857 -0,280000 -0,268571 -0,257143 -0,257143 -0,234286 -0,188571 -0,154286 -0,108571 -0,074286 -0,051429 -0,028571 0,017143 0,040000 0,062857 0,085714 0,097143 0,108571 0,120000 0,138286 0,156571 0,174857 0,193143 0,211429 0,227429 0,243429 0,259429 0,275429 0,291429 0,304286 0,317143 0,330000 0,342857 0,355714 0,368571 0,381429 0,394286 0,408980 0,423673 0,438367 0,453061 0,467755 0,482449 0,497143 0,514286 0,531429 0,548571 0,565714 0,582857 0,600000 0,617143 0,634286 0,651429 0,668571 0,689524 0,710476 0,731429 0,752381 0,773333 0,794286 0,813333 0,832381 0,851429 0,870476 0,889524 0,908571 0,933061 0,957551 0,982041 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000</ControlSignalMapper>
+        </Mappers>
+        <Properties description="Preset Credits : Louis Couka"/>
+        <ControlSignalSources>
+            <LFO Name="LFO 2" Bypass="0" SyncToHost="0" DisplayName="LFO 2" DelayTime="0.02414703" RiseTime="0" Freq="2.867595" Depth="0.091999993" Phase="0" WaveFormType="0" Retrigger="1" Bipolar="1" Smooth="0"/>
+            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Cut Off" Bipolar="0" Style="0" Value="0.14399999">
+                <Connections>
+                    <SignalConnection Name="SignalConnection 0" Ratio="-0.13793103" Source="@MIDI CC 1" Destination="Value" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                </Connections>
+                <Properties customPosition="1" x="5" y="345"/>
+            </ConstantModulation>
+            <ConstantModulation Name="Macro 12" Bypass="0" DisplayName="Room" Bipolar="0" Style="1" Value="1">
+                <Properties customPosition="1" x="565" y="345"/>
+            </ConstantModulation>
+        </ControlSignalSources>
+        <EventProcessors>
+            <ScriptProcessor Name="EventProcessor0" Bypass="0" Dummy="0" API_version="16">
+                <Properties PresetPath="D:/Louis/Travail/12 - UVI/Presets Falcon/XP1/script/Exports/Memory.lua" ScriptPath="./../Memory.lua"/>
+                <script><![CDATA[--------------------------------------------------------------------------------
+--! Mono
+--! Only play the lastest note
+--! Author : Louis Couka
+--! Date : 29/02/2016
+--------------------------------------------------------------------------------
+
+local SIZE = 4 -- Should be pair, should have enough chords
+local BUTTON_SIZE = 50
+local CHEAT = false
+local VELOCITY = 75
+
+--------------------------------------------------------------------- Game State
+
+local pairsDone
+local score
+local left
+local level
+local finish
+local currentPressed
+
+--------------------------------------------------------------------- Midi Stuff
+function onNote(e)
+    playNote(e)
+end
+
+function playNoteFromUI(note_, vel, dur)
+    local id = postEvent({type=Event.NoteOn, note=note_, velocity=vel})
+    wait(dur)
+    releaseVoice(id)
+end
+
+local chords
+function playChords(chordIndex, dur, strum)
+    chord = chords[chordIndex]
+    for i = 1, table.getn(chord) do
+        run(playNoteFromUI, chord[i], VELOCITY, dur)
+        wait(strum)
+    end
+end
+
+local buttonsChord = {}
+for i = 1, SIZE do
+    buttonsChord[i] = {}
+end
+
+--------------------------------------------------------------------- Board
+function updateInfos()
+    scoreLabel.text = "Score: "..tostring(score)
+    leftLabel.text = "Left: "..tostring(left)
+    levelLabel.text = "Level: "..tostring(level+1)
+    if pairsDone == SIZE * SIZE / 2 then
+        win()
+    elseif left == 0 then
+        lose()
+    elseif left < 9 then
+        leftLabel.textColour = "red"
+    else
+        leftLabel.textColour = "orange"
+    end
+end
+
+buttons = {}
+local OFFSET_X = 360 - BUTTON_SIZE * SIZE / 2
+for i = 1, SIZE do
+    buttons[i] = {}
+    for j = 1, SIZE do
+        buttons[i][j] = Button("Chord")
+        buttons[i][j].width = BUTTON_SIZE + 1
+        buttons[i][j].height = BUTTON_SIZE + 1
+        buttons[i][j].x = OFFSET_X + (i - 1) * BUTTON_SIZE
+        buttons[i][j].y = 9 + (j - 1) * BUTTON_SIZE
+        buttons[i][j].backgroundColourOn = "darkgrey"
+        buttons[i][j].changed = function(self)
+            if not seedDone then
+                setupSeed()
+                setup_()
+                seedDone = true
+            end
+            left = left - 1
+            score = score - 1
+            if (not currentPressed) then
+                buttons[i][j].backgroundColourOff = "green" -- first move color
+                buttons[i][j].enabled = false
+                currentPressed = {x = i, y = j}
+            else
+                if (buttonsChord[i][j] == buttonsChord[currentPressed.x][currentPressed.y]) then -- good
+                    score = score + 10
+                    pairsDone = pairsDone + 1
+                    buttons[currentPressed.x][currentPressed.y].backgroundColourOff = "green"
+                    buttons[i][j].backgroundColourOff = "green"
+                    buttons[i][j].enabled = false
+                else -- wrong
+                    buttons[currentPressed.x][currentPressed.y].backgroundColourOff = "darkgrey" -- already visited color
+                    buttons[currentPressed.x][currentPressed.y].enabled = true
+                    buttons[i][j].backgroundColourOff = "darkgrey" -- already visited color
+                end
+                currentPressed = nil
+            end
+            updateInfos()
+            if not finish then
+                if level == 2 then
+                    run(playChords, buttonsChord[i][j], 170, 170)
+                else
+                    run(playChords, buttonsChord[i][j], 600, 0)
+                end
+            end
+        end
+        buttons[i][j].displayName = tostring(" ")
+    end
+end
+
+--------------------------------------------------------------------- Widgets
+
+scoreLabel = Label("Score")
+scoreLabel.width = 100
+scoreLabel.height = 40
+scoreLabel.x = 718 - scoreLabel.width
+scoreLabel.y = 14 + BUTTON_SIZE * SIZE - scoreLabel.height - 20
+scoreLabel.align = "bottomRight"
+
+leftLabel = Label("Level")
+leftLabel.width = scoreLabel.width
+leftLabel.height = scoreLabel.height
+leftLabel.x = scoreLabel.x
+leftLabel.y = scoreLabel.y + 20
+leftLabel.align = scoreLabel.align
+
+levelLabel = Label("Level")
+levelLabel.width = scoreLabel.width
+levelLabel.height = scoreLabel.height
+levelLabel.x = 5
+levelLabel.y = leftLabel.y
+levelLabel.align = "bottomLeft"
+
+finalLabel = Label("Final")
+finalLabel.width = 720
+finalLabel.height = 9 + BUTTON_SIZE * SIZE
+finalLabel.align = "centred"
+finalLabel.fontSize = 150
+
+resetButton = Button("Reset")
+resetButton.width = scoreLabel.width - 50
+resetButton.height = 20
+resetButton.x = scoreLabel.x + 46
+resetButton.y = scoreLabel.y
+resetButton.changed = function(self) setup() end
+
+continueButton = Button("Continue")
+continueButton.x = 305
+continueButton.y = 9 + BUTTON_SIZE * SIZE / 2 + 27
+continueButton.changed = function(self) setup() end
+
+--------------------------------------------------------------------- WIN Animation
+function colorShake()
+    local colors = {"orange", "red", "orange", "yellow"}
+    local i = 0
+    while (finalLabel.visible) do
+        finalLabel.textColour = colors[i + 1]
+        wait(150)
+        i = (i + 1) % table.getn(colors)
+    end
+    finalLabel.textColour = "white"
+end
+
+local DELAY_SYNC = 60
+function playWinChord(i, i2, dur)
+        buttons[place[i2].x][place[i2].y].backgroundColourOff = "yellow"
+        wait(DELAY_SYNC)
+        run(playChords, i, dur, 0)
+        wait(dur - DELAY_SYNC)
+        buttons[place[i2].x][place[i2].y].backgroundColourOff = "green"
+end
+
+function fiestaPad()
+    local i = 1
+    local j = 1
+    local i2 = 3
+    local j2 = 2
+    while (finish) do
+        i = i + 1
+        if (i > SIZE) then
+            i = 1
+            j = j % SIZE + 1
+        end
+        
+        i2 = i2 + 1
+        if (i2 > SIZE) then
+            i2 = 1
+            j2 = j2 % SIZE + 1
+        end
+        
+        buttons[i2][j2].backgroundColourOff = "yellow"
+        buttons[i][j].backgroundColourOff = "green"
+        
+        wait(80)
+    end
+end
+
+function playWin()
+    if (level == 2 ) then
+        finalLabel.fontSize = 100
+        finalLabel.visible = true
+        finalLabel.text = "You Win\nScore: "..tostring(score)
+        run(colorShake)
+        run(fiestaPad)
+    
+        local melody = {48,60,55,69,60,64,64,64,67,71,72,81,53,77,60,74,65,76,69,61,72,80,77,79,50,89,57,76,62,87,65,75,69,77,74,92,55,74,62,85,67,76,71,70,74,83,79,101,52,88,60,68,64,78,67,73,72,80,76,97,53,92,60,87,65,87,69,76,72,93,77,109,55,94,62,91,67,89,71,79,74,90,79,101,60,90,67,78,72,93,76,81,79,98,84,109}
+        for i = 1, table.getn(melody) - 2, 2 do
+            playNoteFromUI(melody[i], melody[i + 1], VELOCITY)
+        end
+        playNoteFromUI(melody[table.getn(melody) - 1], melody[table.getn(melody)],800)
+    else
+        place = {}
+        for k = 1, SIZE*SIZE/2 do
+            for i = 1, SIZE do
+                for j = 1, SIZE do
+                    if (buttonsChord[i][j] == k) then
+                        place[table.getn(place) + 1] = {x = i, y = j}
+                    end
+                end
+            end
+        end
+        
+        for i = 1, table.getn(chords) do
+            playWinChord(i, i*2 - 1, 250)
+            playWinChord(i, i*2, 250)
+        end
+        playWinChord(1, 1, 700)
+        
+        scoreSaved = score
+        level = level + 1
+        sendChange()
+        
+        continueButton.displayName = "Try Next"
+        continueButton.visible = true
+        finalLabel.fontSize = 50
+        finalLabel.visible = true
+        run(colorShake)
+    end
+end
+-- local str = ""
+-- function onNote(e)
+--     str = str..tostring(e.note)..","..tostring(e.velocity)..","
+--     print(str)
+--     playNote(e)
+-- end
+
+function win()
+    finish = true
+    finalLabel.text = "You win"
+    resetButton.visible = false
+    run(playWin)
+end
+
+--------------------------------------------------------------------- LOOSE Animation
+
+function lose()
+    finish = true
+    finalLabel.fontSize = 50
+    finalLabel.text = "You lose"
+    finalLabel.visible = true
+    continueButton.displayName = "Retry"
+    continueButton.visible = true
+    resetButton.visible = false
+    for i = 0, 20 do -- play a cluster
+        run(playNoteFromUI,40 + i, VELOCITY - 30, 500)
+    end
+end
+
+--------------------------------------------------------------------- Setup
+
+local function shuffleTable( t )
+    local rand = math.random 
+    local iterations = #t
+    local j
+    
+    for i = iterations, 2, -1 do
+        j = rand(i)
+        t[i], t[j] = t[j], t[i]
+    end
+end
+
+function Output(ttable)
+    -- output values
+    sout = {}
+    for _, v in ipairs(ttable) do
+        table.insert(sout, v) ;
+    end
+    table.insert(chords,sout)
+end
+function Permutation(ttable, n)
+    if n == 0 then
+        Output(ttable)
+    else
+        for i = 1, n do
+            ttable[n], ttable[i] = ttable[i], ttable[n]
+            Permutation(ttable, n - 1)
+            ttable[n], ttable[i] = ttable[i], ttable[n]
+        end
+    end
+end
+
+function setup()
+    score = scoreSaved
+    finish = false
+    pairsDone = 0
+    
+    continueButton.visible = false
+    resetButton.visible = true
+    finalLabel.visible = false
+    
+    if (level == 0) then
+        left = 30
+        chords = {{60},{64},{72},{69},{62},{65},{71},{67},} 
+    elseif (level == 1) then
+        left = 30
+        -- {"Unnamed",{49,56,65,68,73},{50,50,54,61,66,70,73},{51,51,53,61,65,68,73},{52,61,64,68,75},{53,51,53,61,66,70,77},{54,61,66,70,73},{55,55,56,63,66,69,72,75},{56,44,54,56,60,63,68}}, 
+        chords = {{48,55,64,67,72},{53,60,65,69,72},{52,60,64,67,72},{51,60,63,67,74},{50,60,65,69,76},{53,60,67,69,72},{55,62,65,68,71,74},{43,53,59,62,67},} 
+    else
+        left = 30
+        chords = {}
+        Permutation({60, 64, 67, 72}, 4)
+    end 
+    
+    updateInfos()
+    
+    for i = 1, SIZE do
+        for j = 1, SIZE do
+            buttons[i][j].backgroundColourOff = "darkgrey"
+            buttons[i][j].enabled = true
+        end
+    end
+    
+    setup_()
+end
+
+-- Split setup func because we need to set the seed in UI thread
+function setup_()
+    -- Random pick from our chord list
+    local chordsChoosen = {}
+    for i = 1, SIZE * SIZE, 2 do
+        local isUnique
+        local pick
+        while not isUnique do
+            isUnique = true
+            pick = math.random(1,table.getn(chords))
+            for k = 1, table.getn(chordsChoosen), 2 do
+                if (chordsChoosen[k] == pick) then
+                    isUnique = false
+                    break
+                end
+            end
+        end
+        chordsChoosen[i] = pick
+        chordsChoosen[i+1] = pick
+    end
+
+    -- Shuffle
+    shuffleTable(chordsChoosen)
+    
+    -- Stock in a matrice for easier manipulation
+    for i = 1, SIZE do
+        for j = 1, SIZE do
+            buttonsChord[i][j] = chordsChoosen[i + (j-1) * SIZE]
+            if (CHEAT) then
+                buttons[i][j].displayName = tostring(buttonsChord[i][j])
+            end
+        end
+    end
+
+    currentPressed = nil
+end
+
+local seedDone
+function setupSeed()
+    math.randomseed(math.floor(getTime() * 1000000000))
+    seedDone = true
+end
+
+scoreSaved = 30
+level = 0
+setup()
+
+-- SERIALIZE
+dummy = OnOffButton{"Dummy", visible = false, y = 0}
+function sendChange()
+    dummy.value = not dummy.value
+end
+
+function onSave()
+  return {level, scoreSaved}
+end
+
+function onLoad(data)
+    print(data[1])
+    level = data[1]
+    scoreSaved = data[2]
+    setup()
+end
+
+makePerformanceView()]]></script>
+                <ScriptData/>
+                <state><![CDATA[[0,30]]]></state>
+            </ScriptProcessor>
+        </EventProcessors>
+        <Layers>
+            <Layer Name="Layer 0" Bypass="0" Gain="1" Pan="0" Mute="0" MidiMute="0" Solo="0" DisplayName="Main" OutputName="" LowKey="0" HighKey="127" CustomPolyphony="0" PlayMode="0" PortamentoTime="0.029999999" PortamentoMode="0" NumVoicesPerNote="1" VelocityCurve="0" BypassInsertFX="0">
+                <Properties Color="ff02b0ff"/>
+                <ControlSignalSources/>
+                <Inserts>
+                    <ParametricEQ Name="InsertFX2" Bypass="0" Freq1="30" Q1="0.69999999" Gain1="0" Enable1="0" Freq2="236.19072" Q2="2.5599997" Gain2="1.9200096" Enable2="1" Freq3="180" Q3="0.69999999" Gain3="0" Enable3="0" Freq4="520" Q4="0.69999999" Gain4="0" Enable4="0" Freq5="2271.4497" Q5="0.55840003" Gain5="5" Enable5="1" Freq6="9906.5781" Q6="0.69999999" Gain6="2" Enable6="0" Freq7="1522.7106" Q7="7.0439997" Gain7="-2.0999603" Enable7="1" Freq8="9369.748" Q8="0.69999999" Gain8="0" Enable8="1">
+                        <Properties PresetPath=""/>
+                    </ParametricEQ>
+                    <DualDelay Name="InsertFX0" Bypass="0" SyncToHost="1" DelayTime="0.75" LowCut="146.62811" HighCut="8960.9482" PeakFreq="1000" PeakGain="0" PeakQ="1" Feedback="0.51599997" Mix="0.21600001" Rotation="0" InputWidth="1" OutputWidth="1" DelayRatio="0.3312" FeedbackRatio="-0.1512" InputRotation="0" OutputRotation="0" ModDepth="0" ModRate="1" ModChannelOffset="1" Interpolation="1" DualDelayVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Program/Macro 12" Destination="Bypass" Mapper="" ConnectionMode="0" Bypass="0" Inverted="1"/>
+                        </Connections>
+                    </DualDelay>
+                    <SparkVerb Name="InsertFX1" Bypass="0" ModDepth="4" ModRate="1" Diffusion="0.61799997" DiffusionStart="5" Width="1" RoomSize="20" DecayTime="1.870682" DecayLow="0.34994519" DecayHigh="0.12246162" FreqLow="250" FreqHigh="6655.5083" Shape="0" Mix="0.14" Quality="3" Mode="1" HiCut="0" LowCut="0" Rolloff="10399.921" DiffusionOnOff="0" PreDelay="2" MixMode="1" SparkVerbVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Program/Macro 12" Destination="Bypass" Mapper="" ConnectionMode="0" Bypass="0" Inverted="1"/>
+                        </Connections>
+                    </SparkVerb>
+                    <Gain Name="InsertFX6" Bypass="0" Volume="0.2610676"/>
+                    <EffectRack Name="InsertFX4" Bypass="0">
+                        <Properties PresetPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/FXs/Effect Rack/Compressor multi.preset"/>
+                        <ControlSignalSources>
+                            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Low Freq" Bipolar="0" Style="0" Value="0.29800001">
+                                <Properties customPosition="0" x="210" y="25"/>
+                            </ConstantModulation>
+                            <ConstantModulation Name="Macro 2" Bypass="0" DisplayName="High Freq" Bipolar="0" Style="0" Value="0.62199998">
+                                <Properties customPosition="0" x="465" y="25"/>
+                            </ConstantModulation>
+                        </ControlSignalSources>
+                        <Chains>
+                            <AuxEffect Name="Chain1" Bypass="0" Gain="1" Pan="0" PreInsert="1" DisplayName="Chain1">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="20000" Type="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain2" Bypass="0" Gain="0.75563246" Pan="0" PreInsert="1" DisplayName="Chain2">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="1469.0275" Type="1">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="7.2999992" CompThreshold="-24.440002" CompRatio="2.4200001" CompAttack="13.000003" CompRelease="189.23087" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain3" Bypass="0" Gain="0.50118721" Pan="0" PreInsert="1" DisplayName="Chain3">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="20" HighFrequency="1469.0275" Type="2">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="8.3000031" CompThreshold="-20.279999" CompRatio="4" CompAttack="3.8400006" CompRelease="119.54205" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                        </Chains>
+                    </EffectRack>
+                    <Gain Name="InsertFX3" Bypass="0" Volume="0.39810711"/>
+                </Inserts>
+                <BusRouters/>
+                <Keygroups>
+                    <Keygroup Name="Keygroup 0" Bypass="0" Gain="1" Pan="0" DisplayName="Keygroup 1" OutputName="" ExclusiveGroup="0" LowKey="0" HighKey="127" LowVelocity="1" HighVelocity="127" LowKeyFade="0" HighKeyFade="0" LowVelocityFade="0" HighVelocityFade="0" TriggerMode="0" TriggerSync="0" TriggerRule="0" LatchTrigger="0" FXPostGain="0" BypassInsertFX="0">
+                        <Connections>
+                            <SignalConnection Name="AmpEnvMod" Ratio="1" Source="$Keygroup/DAHDSR 1" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Keygroup/LFO 2" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                        </Connections>
+                        <ControlSignalSources>
+                            <DAHDSR Name="DAHDSR 1" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0.006984516" DecayTime="0.9935624" DecayCurve="-0.16976878" SustainLevel="0.38636363" ReleaseTime="0.021004545" ReleaseCurve="0" DisplayName="DAHDSR 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.82758623" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <DAHDSR Name="DAHDSR 2" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="2.6063526" DecayCurve="0" SustainLevel="0" ReleaseTime="0.050000001" ReleaseCurve="0" DisplayName="DAHDSR 2" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <AHD Name="AHD 1" Bypass="1" DisplayName="AHD 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="0.32108706" DecayCurve="0.18360826"/>
+                            <LFO Name="LFO 2" Bypass="1" SyncToHost="1" DisplayName="LFO 2" DelayTime="0" RiseTime="0" Freq="0.25" Depth="0.72000003" Phase="0" WaveFormType="0" Retrigger="1" Bipolar="1" Smooth="0"/>
+                        </ControlSignalSources>
+                        <Inserts>
+                            <XpanderFilter Name="InsertFX0" Bypass="0" Freq="233.89989" Q="0.039999999" KeyTracking="0.5" Mode="3" DistortionType="0" Drive="1.1199988">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 1" Ratio="0.090000004" Source="@VoiceParam Velocity" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="0.25999999" Source="$Keygroup/DAHDSR 2" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Ratio" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                        </Connections>
+                                    </SignalConnection>
+                                    <SignalConnection Name="SignalConnection 3" Ratio="0.41379312" Source="$Program/Macro 1" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </XpanderFilter>
+                            <WaveShaper Name="InsertFX2" Bypass="0" InputGain="0" OutputGain="0" Amount="0.2" Knee="0" Mix="1" PreFreq="20000" PostFreq="20" Oversampling="0" Mode="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.10344828" Source="@VoiceParam LinearKeyFollow" Destination="Amount" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveShaper>
+                            <Gain Name="InsertFX3" Bypass="0" Volume="1.0000001">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Volume" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </Gain>
+                            <Drive Name="InsertFX4" Bypass="0" DriveAmount="0" Mode="2" Oversampling="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.10344828" Source="$Keygroup/AHD 1" Destination="DriveAmount" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </Drive>
+                        </Inserts>
+                        <BusRouters/>
+                        <Oscillators>
+                            <WaveTableOscillator Name="Oscillator" Bypass="0" WavetablePath="$FalconResources.ufs/Samples/Wavetables/X-Bass/Terror_900.wav" StartPhase="0" PhaseDistortionAmount="0" PhaseDistortionMode="3" Spread="0.088" DetuneMode="0" WaveIndex="1" WaveIndexSpread="0" StereoSpread="1" StereoSpreadMode="1" NumOscs="2" FadeMipMap="1" FadeWaveIndex="1" Stereo="1" PhaseSpread="1" CoarseTune="0" FineTune="0" Gain="1" Pitch="0" NoteTracking="1" BaseNote="60" DisplayName="Oscillator 1">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="PhaseDistortionAmount" Mapper="Mapper 1" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="PitchBendMod" Ratio="1.9999992" Source="@PitchBend" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="0.48171562" Source="$Program/LFO 2" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveTableOscillator>
+                        </Oscillators>
+                    </Keygroup>
+                </Keygroups>
+            </Layer>
+        </Layers>
+    </Program>
+    <NeededFS Source="C:/ProgramData/UVI/Falcon/FalconResources.ufs"/>
+</UVI4>
+<UVI4>
+    <Program Name="Program" Bypass="0" Gain="1.9952623" Pan="0" DisplayName="Memory" TransposeOctaves="0" TransposeSemiTones="0" OutputName="" Polyphony="16" NotePolyphony="0" ProgramPath="D:/Louis/Travail/12 - UVI/Presets Falcon/XP1/script/Scripts/Examples/Memory.uvip" LoopProgram="0" Streaming="1" BypassInsertFX="0">
+        <Mappers>
+            <ControlSignalMapper Name="Mapper 0" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 0">0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,097143 0,108571 0,120000 0,120000 0,131429 0,142857 0,154286 0,165714 0,177143 0,188571 0,188571 0,200000 0,211429 0,222857 0,234286 0,245714 0,257143 0,257143 0,268571 0,280000 0,291429 0,302857 0,314286 0,325714 0,325714 0,337143 0,348571 0,360000 0,371429 0,382857 0,394286 0,394286 0,405714 0,417143 0,428571 0,440000 0,451429 0,451429 0,462857 0,474286 0,485714 0,497143 0,508571 0,520000 0,520000 0,531429 0,542857 0,554286 0,565714 0,577143 0,588571 0,588571 0,600000 0,611429 0,622857 0,634286 0,645714 0,657143 0,657143 0,680333 0,703190 0,725714 0,748571 0,771429 0,805714 0,828905 0,851762 0,874619 0,908571 0,920333 0,954286 0,977143 1,000000</ControlSignalMapper>
+            <ControlSignalMapper Name="Mapper 1" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 1">-0,051429 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,074286 -0,085714 -0,108571 -0,108571 -0,120000 -0,131429 -0,142857 -0,154286 -0,165714 -0,177143 -0,188571 -0,188571 -0,188571 -0,200000 -0,211429 -0,222857 -0,222857 -0,222857 -0,222857 -0,222857 -0,228571 -0,234286 -0,238095 -0,241905 -0,245714 -0,249524 -0,253333 -0,257143 -0,260952 -0,264762 -0,268571 -0,272381 -0,276190 -0,280000 -0,285714 -0,291429 -0,291429 -0,302857 -0,314286 -0,314286 -0,310476 -0,306667 -0,302857 -0,280000 -0,268571 -0,257143 -0,257143 -0,234286 -0,188571 -0,154286 -0,108571 -0,074286 -0,051429 -0,028571 0,017143 0,040000 0,062857 0,085714 0,097143 0,108571 0,120000 0,138286 0,156571 0,174857 0,193143 0,211429 0,227429 0,243429 0,259429 0,275429 0,291429 0,304286 0,317143 0,330000 0,342857 0,355714 0,368571 0,381429 0,394286 0,408980 0,423673 0,438367 0,453061 0,467755 0,482449 0,497143 0,514286 0,531429 0,548571 0,565714 0,582857 0,600000 0,617143 0,634286 0,651429 0,668571 0,689524 0,710476 0,731429 0,752381 0,773333 0,794286 0,813333 0,832381 0,851429 0,870476 0,889524 0,908571 0,933061 0,957551 0,982041 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000</ControlSignalMapper>
+        </Mappers>
+        <Properties description="Preset Credits : Louis Couka"/>
+        <ControlSignalSources>
+            <LFO Name="LFO 2" Bypass="0" SyncToHost="0" DisplayName="LFO 2" DelayTime="0.02414703" RiseTime="0" Freq="2.867595" Depth="0.091999993" Phase="0" WaveFormType="0" Retrigger="1" Bipolar="1" Smooth="0"/>
+            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Cut Off" Bipolar="0" Style="0" Value="0.14399999">
+                <Connections>
+                    <SignalConnection Name="SignalConnection 0" Ratio="-0.13793103" Source="@MIDI CC 1" Destination="Value" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                </Connections>
+                <Properties customPosition="1" x="5" y="345"/>
+            </ConstantModulation>
+            <ConstantModulation Name="Macro 12" Bypass="0" DisplayName="Room" Bipolar="0" Style="1" Value="1">
+                <Properties customPosition="1" x="565" y="345"/>
+            </ConstantModulation>
+        </ControlSignalSources>
+        <EventProcessors>
+            <ScriptProcessor Name="EventProcessor0" Bypass="0" Dummy="0" API_version="16">
+                <Properties PresetPath="D:/Louis/Travail/12 - UVI/Presets Falcon/XP1/script/Exports/Memory.lua" ScriptPath="./../Memory.lua"/>
+                <script><![CDATA[--------------------------------------------------------------------------------
+--! Mono
+--! Only play the lastest note
+--! Author : Louis Couka
+--! Date : 29/02/2016
+--------------------------------------------------------------------------------
+
+local SIZE = 4 -- Should be pair, should have enough chords
+local BUTTON_SIZE = 50
+local CHEAT = false
+local VELOCITY = 75
+
+--------------------------------------------------------------------- Game State
+
+local pairsDone
+local score
+local left
+local level
+local finish
+local currentPressed
+
+--------------------------------------------------------------------- Midi Stuff
+function onNote(e)
+    playNote(e)
+end
+
+function playNoteFromUI(note_, vel, dur)
+    local id = postEvent({type=Event.NoteOn, note=note_, velocity=vel})
+    wait(dur)
+    releaseVoice(id)
+end
+
+local chords
+function playChords(chordIndex, dur, strum)
+    chord = chords[chordIndex]
+    for i = 1, table.getn(chord) do
+        run(playNoteFromUI, chord[i], VELOCITY, dur)
+        wait(strum)
+    end
+end
+
+local buttonsChord = {}
+for i = 1, SIZE do
+    buttonsChord[i] = {}
+end
+
+--------------------------------------------------------------------- Board
+function updateInfos()
+    scoreLabel.text = "Score: "..tostring(score)
+    leftLabel.text = "Left: "..tostring(left)
+    levelLabel.text = "Level: "..tostring(level+1)
+    if pairsDone == SIZE * SIZE / 2 then
+        win()
+    elseif left == 0 then
+        lose()
+    elseif left < 9 then
+        leftLabel.textColour = "red"
+    else
+        leftLabel.textColour = "orange"
+    end
+end
+
+buttons = {}
+local OFFSET_X = 360 - BUTTON_SIZE * SIZE / 2
+for i = 1, SIZE do
+    buttons[i] = {}
+    for j = 1, SIZE do
+        buttons[i][j] = Button("Chord")
+        buttons[i][j].width = BUTTON_SIZE + 1
+        buttons[i][j].height = BUTTON_SIZE + 1
+        buttons[i][j].x = OFFSET_X + (i - 1) * BUTTON_SIZE
+        buttons[i][j].y = 9 + (j - 1) * BUTTON_SIZE
+        buttons[i][j].backgroundColourOn = "darkgrey"
+        buttons[i][j].changed = function(self)
+            if not seedDone then
+                setupSeed()
+                setup_()
+                seedDone = true
+            end
+            left = left - 1
+            score = score - 1
+            if (not currentPressed) then
+                buttons[i][j].backgroundColourOff = "green" -- first move color
+                buttons[i][j].enabled = false
+                currentPressed = {x = i, y = j}
+            else
+                if (buttonsChord[i][j] == buttonsChord[currentPressed.x][currentPressed.y]) then -- good
+                    score = score + 10
+                    pairsDone = pairsDone + 1
+                    buttons[currentPressed.x][currentPressed.y].backgroundColourOff = "green"
+                    buttons[i][j].backgroundColourOff = "green"
+                    buttons[i][j].enabled = false
+                else -- wrong
+                    buttons[currentPressed.x][currentPressed.y].backgroundColourOff = "darkgrey" -- already visited color
+                    buttons[currentPressed.x][currentPressed.y].enabled = true
+                    buttons[i][j].backgroundColourOff = "darkgrey" -- already visited color
+                end
+                currentPressed = nil
+            end
+            updateInfos()
+            if not finish then
+                if level == 2 then
+                    run(playChords, buttonsChord[i][j], 170, 170)
+                else
+                    run(playChords, buttonsChord[i][j], 600, 0)
+                end
+            end
+        end
+        buttons[i][j].displayName = tostring(" ")
+    end
+end
+
+--------------------------------------------------------------------- Widgets
+
+scoreLabel = Label("Score")
+scoreLabel.width = 100
+scoreLabel.height = 40
+scoreLabel.x = 718 - scoreLabel.width
+scoreLabel.y = 14 + BUTTON_SIZE * SIZE - scoreLabel.height - 20
+scoreLabel.align = "bottomRight"
+
+leftLabel = Label("Level")
+leftLabel.width = scoreLabel.width
+leftLabel.height = scoreLabel.height
+leftLabel.x = scoreLabel.x
+leftLabel.y = scoreLabel.y + 20
+leftLabel.align = scoreLabel.align
+
+levelLabel = Label("Level")
+levelLabel.width = scoreLabel.width
+levelLabel.height = scoreLabel.height
+levelLabel.x = 5
+levelLabel.y = leftLabel.y
+levelLabel.align = "bottomLeft"
+
+finalLabel = Label("Final")
+finalLabel.width = 720
+finalLabel.height = 9 + BUTTON_SIZE * SIZE
+finalLabel.align = "centred"
+finalLabel.fontSize = 150
+
+resetButton = Button("Reset")
+resetButton.width = scoreLabel.width - 50
+resetButton.height = 20
+resetButton.x = scoreLabel.x + 46
+resetButton.y = scoreLabel.y
+resetButton.changed = function(self) setup() end
+
+continueButton = Button("Continue")
+continueButton.x = 305
+continueButton.y = 9 + BUTTON_SIZE * SIZE / 2 + 27
+continueButton.changed = function(self) setup() end
+
+--------------------------------------------------------------------- WIN Animation
+function colorShake()
+    local colors = {"orange", "red", "orange", "yellow"}
+    local i = 0
+    while (finalLabel.visible) do
+        finalLabel.textColour = colors[i + 1]
+        wait(150)
+        i = (i + 1) % table.getn(colors)
+    end
+    finalLabel.textColour = "white"
+end
+
+local DELAY_SYNC = 60
+function playWinChord(i, i2, dur)
+        buttons[place[i2].x][place[i2].y].backgroundColourOff = "yellow"
+        wait(DELAY_SYNC)
+        run(playChords, i, dur, 0)
+        wait(dur - DELAY_SYNC)
+        buttons[place[i2].x][place[i2].y].backgroundColourOff = "green"
+end
+
+function fiestaPad()
+    local i = 1
+    local j = 1
+    local i2 = 3
+    local j2 = 2
+    while (finish) do
+        i = i + 1
+        if (i > SIZE) then
+            i = 1
+            j = j % SIZE + 1
+        end
+        
+        i2 = i2 + 1
+        if (i2 > SIZE) then
+            i2 = 1
+            j2 = j2 % SIZE + 1
+        end
+        
+        buttons[i2][j2].backgroundColourOff = "yellow"
+        buttons[i][j].backgroundColourOff = "green"
+        
+        wait(80)
+    end
+end
+
+function playWin()
+    if (level == 2 ) then
+        finalLabel.fontSize = 100
+        finalLabel.visible = true
+        finalLabel.text = "You Win\nScore: "..tostring(score)
+        run(colorShake)
+        run(fiestaPad)
+    
+        local melody = {48,60,55,69,60,64,64,64,67,71,72,81,53,77,60,74,65,76,69,61,72,80,77,79,50,89,57,76,62,87,65,75,69,77,74,92,55,74,62,85,67,76,71,70,74,83,79,101,52,88,60,68,64,78,67,73,72,80,76,97,53,92,60,87,65,87,69,76,72,93,77,109,55,94,62,91,67,89,71,79,74,90,79,101,60,90,67,78,72,93,76,81,79,98,84,109}
+        for i = 1, table.getn(melody) - 2, 2 do
+            playNoteFromUI(melody[i], melody[i + 1], VELOCITY)
+        end
+        playNoteFromUI(melody[table.getn(melody) - 1], melody[table.getn(melody)],800)
+    else
+        place = {}
+        for k = 1, SIZE*SIZE/2 do
+            for i = 1, SIZE do
+                for j = 1, SIZE do
+                    if (buttonsChord[i][j] == k) then
+                        place[table.getn(place) + 1] = {x = i, y = j}
+                    end
+                end
+            end
+        end
+        
+        for i = 1, table.getn(chords) do
+            playWinChord(i, i*2 - 1, 250)
+            playWinChord(i, i*2, 250)
+        end
+        playWinChord(1, 1, 700)
+        
+        scoreSaved = score
+        level = level + 1
+        sendChange()
+        
+        continueButton.displayName = "Try Next"
+        continueButton.visible = true
+        finalLabel.fontSize = 50
+        finalLabel.visible = true
+        run(colorShake)
+    end
+end
+-- local str = ""
+-- function onNote(e)
+--     str = str..tostring(e.note)..","..tostring(e.velocity)..","
+--     print(str)
+--     playNote(e)
+-- end
+
+function win()
+    finish = true
+    finalLabel.text = "You win"
+    resetButton.visible = false
+    run(playWin)
+end
+
+--------------------------------------------------------------------- LOOSE Animation
+
+function lose()
+    finish = true
+    finalLabel.fontSize = 50
+    finalLabel.text = "You lose"
+    finalLabel.visible = true
+    continueButton.displayName = "Retry"
+    continueButton.visible = true
+    resetButton.visible = false
+    for i = 0, 20 do -- play a cluster
+        run(playNoteFromUI,40 + i, VELOCITY - 30, 500)
+    end
+end
+
+--------------------------------------------------------------------- Setup
+
+local function shuffleTable( t )
+    local rand = math.random 
+    local iterations = #t
+    local j
+    
+    for i = iterations, 2, -1 do
+        j = rand(i)
+        t[i], t[j] = t[j], t[i]
+    end
+end
+
+function Output(ttable)
+    -- output values
+    sout = {}
+    for _, v in ipairs(ttable) do
+        table.insert(sout, v) ;
+    end
+    table.insert(chords,sout)
+end
+function Permutation(ttable, n)
+    if n == 0 then
+        Output(ttable)
+    else
+        for i = 1, n do
+            ttable[n], ttable[i] = ttable[i], ttable[n]
+            Permutation(ttable, n - 1)
+            ttable[n], ttable[i] = ttable[i], ttable[n]
+        end
+    end
+end
+
+function setup()
+    score = scoreSaved
+    finish = false
+    pairsDone = 0
+    
+    continueButton.visible = false
+    resetButton.visible = true
+    finalLabel.visible = false
+    
+    if (level == 0) then
+        left = 30
+        chords = {{60},{64},{72},{69},{62},{65},{71},{67},} 
+    elseif (level == 1) then
+        left = 30
+        -- {"Unnamed",{49,56,65,68,73},{50,50,54,61,66,70,73},{51,51,53,61,65,68,73},{52,61,64,68,75},{53,51,53,61,66,70,77},{54,61,66,70,73},{55,55,56,63,66,69,72,75},{56,44,54,56,60,63,68}}, 
+        chords = {{48,55,64,67,72},{53,60,65,69,72},{52,60,64,67,72},{51,60,63,67,74},{50,60,65,69,76},{53,60,67,69,72},{55,62,65,68,71,74},{43,53,59,62,67},} 
+    else
+        left = 30
+        chords = {}
+        Permutation({60, 64, 67, 72}, 4)
+    end 
+    
+    updateInfos()
+    
+    for i = 1, SIZE do
+        for j = 1, SIZE do
+            buttons[i][j].backgroundColourOff = "darkgrey"
+            buttons[i][j].enabled = true
+        end
+    end
+    
+    setup_()
+end
+
+-- Split setup func because we need to set the seed in UI thread
+function setup_()
+    -- Random pick from our chord list
+    local chordsChoosen = {}
+    for i = 1, SIZE * SIZE, 2 do
+        local isUnique
+        local pick
+        while not isUnique do
+            isUnique = true
+            pick = math.random(1,table.getn(chords))
+            for k = 1, table.getn(chordsChoosen), 2 do
+                if (chordsChoosen[k] == pick) then
+                    isUnique = false
+                    break
+                end
+            end
+        end
+        chordsChoosen[i] = pick
+        chordsChoosen[i+1] = pick
+    end
+
+    -- Shuffle
+    shuffleTable(chordsChoosen)
+    
+    -- Stock in a matrice for easier manipulation
+    for i = 1, SIZE do
+        for j = 1, SIZE do
+            buttonsChord[i][j] = chordsChoosen[i + (j-1) * SIZE]
+            if (CHEAT) then
+                buttons[i][j].displayName = tostring(buttonsChord[i][j])
+            end
+        end
+    end
+
+    currentPressed = nil
+end
+
+local seedDone
+function setupSeed()
+    math.randomseed(math.floor(getTime() * 1000000000))
+    seedDone = true
+end
+
+scoreSaved = 30
+level = 0
+setup()
+
+-- SERIALIZE
+dummy = OnOffButton{"Dummy", visible = false, y = 0}
+function sendChange()
+    dummy.value = not dummy.value
+end
+
+function onSave()
+  return {level, scoreSaved}
+end
+
+function onLoad(data)
+    print(data[1])
+    level = data[1]
+    scoreSaved = data[2]
+    setup()
+end
+
+makePerformanceView()]]></script>
+                <ScriptData/>
+                <state><![CDATA[[0,30]]]></state>
+            </ScriptProcessor>
+        </EventProcessors>
+        <Layers>
+            <Layer Name="Layer 0" Bypass="0" Gain="1" Pan="0" Mute="0" MidiMute="0" Solo="0" DisplayName="Main" OutputName="" LowKey="0" HighKey="127" CustomPolyphony="0" PlayMode="0" PortamentoTime="0.029999999" PortamentoMode="0" NumVoicesPerNote="1" VelocityCurve="0" BypassInsertFX="0">
+                <Properties Color="ff02b0ff"/>
+                <ControlSignalSources/>
+                <Inserts>
+                    <ParametricEQ Name="InsertFX2" Bypass="0" Freq1="30" Q1="0.69999999" Gain1="0" Enable1="0" Freq2="236.19072" Q2="2.5599997" Gain2="1.9200096" Enable2="1" Freq3="180" Q3="0.69999999" Gain3="0" Enable3="0" Freq4="520" Q4="0.69999999" Gain4="0" Enable4="0" Freq5="2271.4497" Q5="0.55840003" Gain5="5" Enable5="1" Freq6="9906.5781" Q6="0.69999999" Gain6="2" Enable6="0" Freq7="1522.7106" Q7="7.0439997" Gain7="-2.0999603" Enable7="1" Freq8="9369.748" Q8="0.69999999" Gain8="0" Enable8="1">
+                        <Properties PresetPath=""/>
+                    </ParametricEQ>
+                    <DualDelay Name="InsertFX0" Bypass="0" SyncToHost="1" DelayTime="0.75" LowCut="146.62811" HighCut="8960.9482" PeakFreq="1000" PeakGain="0" PeakQ="1" Feedback="0.51599997" Mix="0.21600001" Rotation="0" InputWidth="1" OutputWidth="1" DelayRatio="0.3312" FeedbackRatio="-0.1512" InputRotation="0" OutputRotation="0" ModDepth="0" ModRate="1" ModChannelOffset="1" Interpolation="1" DualDelayVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Program/Macro 12" Destination="Bypass" Mapper="" ConnectionMode="0" Bypass="0" Inverted="1"/>
+                        </Connections>
+                    </DualDelay>
+                    <SparkVerb Name="InsertFX1" Bypass="0" ModDepth="4" ModRate="1" Diffusion="0.61799997" DiffusionStart="5" Width="1" RoomSize="20" DecayTime="1.870682" DecayLow="0.34994519" DecayHigh="0.12246162" FreqLow="250" FreqHigh="6655.5083" Shape="0" Mix="0.14" Quality="3" Mode="1" HiCut="0" LowCut="0" Rolloff="10399.921" DiffusionOnOff="0" PreDelay="2" MixMode="1" SparkVerbVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Program/Macro 12" Destination="Bypass" Mapper="" ConnectionMode="0" Bypass="0" Inverted="1"/>
+                        </Connections>
+                    </SparkVerb>
+                    <Gain Name="InsertFX6" Bypass="0" Volume="0.2610676"/>
+                    <EffectRack Name="InsertFX4" Bypass="0">
+                        <Properties PresetPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/FXs/Effect Rack/Compressor multi.preset"/>
+                        <ControlSignalSources>
+                            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Low Freq" Bipolar="0" Style="0" Value="0.29800001">
+                                <Properties customPosition="0" x="210" y="25"/>
+                            </ConstantModulation>
+                            <ConstantModulation Name="Macro 2" Bypass="0" DisplayName="High Freq" Bipolar="0" Style="0" Value="0.62199998">
+                                <Properties customPosition="0" x="465" y="25"/>
+                            </ConstantModulation>
+                        </ControlSignalSources>
+                        <Chains>
+                            <AuxEffect Name="Chain1" Bypass="0" Gain="1" Pan="0" PreInsert="1" DisplayName="Chain1">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="20000" Type="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain2" Bypass="0" Gain="0.75563246" Pan="0" PreInsert="1" DisplayName="Chain2">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="1469.0275" Type="1">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="7.2999992" CompThreshold="-24.440002" CompRatio="2.4200001" CompAttack="13.000003" CompRelease="189.23087" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain3" Bypass="0" Gain="0.50118721" Pan="0" PreInsert="1" DisplayName="Chain3">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="20" HighFrequency="1469.0275" Type="2">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="8.3000031" CompThreshold="-20.279999" CompRatio="4" CompAttack="3.8400006" CompRelease="119.54205" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                        </Chains>
+                    </EffectRack>
+                    <Gain Name="InsertFX3" Bypass="0" Volume="0.39810711"/>
+                </Inserts>
+                <BusRouters/>
+                <Keygroups>
+                    <Keygroup Name="Keygroup 0" Bypass="0" Gain="1" Pan="0" DisplayName="Keygroup 1" OutputName="" ExclusiveGroup="0" LowKey="0" HighKey="127" LowVelocity="1" HighVelocity="127" LowKeyFade="0" HighKeyFade="0" LowVelocityFade="0" HighVelocityFade="0" TriggerMode="0" TriggerSync="0" TriggerRule="0" LatchTrigger="0" FXPostGain="0" BypassInsertFX="0">
+                        <Connections>
+                            <SignalConnection Name="AmpEnvMod" Ratio="1" Source="$Keygroup/DAHDSR 1" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Keygroup/LFO 2" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                        </Connections>
+                        <ControlSignalSources>
+                            <DAHDSR Name="DAHDSR 1" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0.006984516" DecayTime="0.9935624" DecayCurve="-0.16976878" SustainLevel="0.38636363" ReleaseTime="0.021004545" ReleaseCurve="0" DisplayName="DAHDSR 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.82758623" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <DAHDSR Name="DAHDSR 2" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="2.6063526" DecayCurve="0" SustainLevel="0" ReleaseTime="0.050000001" ReleaseCurve="0" DisplayName="DAHDSR 2" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <AHD Name="AHD 1" Bypass="1" DisplayName="AHD 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="0.32108706" DecayCurve="0.18360826"/>
+                            <LFO Name="LFO 2" Bypass="1" SyncToHost="1" DisplayName="LFO 2" DelayTime="0" RiseTime="0" Freq="0.25" Depth="0.72000003" Phase="0" WaveFormType="0" Retrigger="1" Bipolar="1" Smooth="0"/>
+                        </ControlSignalSources>
+                        <Inserts>
+                            <XpanderFilter Name="InsertFX0" Bypass="0" Freq="233.89989" Q="0.039999999" KeyTracking="0.5" Mode="3" DistortionType="0" Drive="1.1199988">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 1" Ratio="0.090000004" Source="@VoiceParam Velocity" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="0.25999999" Source="$Keygroup/DAHDSR 2" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Ratio" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                        </Connections>
+                                    </SignalConnection>
+                                    <SignalConnection Name="SignalConnection 3" Ratio="0.41379312" Source="$Program/Macro 1" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </XpanderFilter>
+                            <WaveShaper Name="InsertFX2" Bypass="0" InputGain="0" OutputGain="0" Amount="0.2" Knee="0" Mix="1" PreFreq="20000" PostFreq="20" Oversampling="0" Mode="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.10344828" Source="@VoiceParam LinearKeyFollow" Destination="Amount" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveShaper>
+                            <Gain Name="InsertFX3" Bypass="0" Volume="1.0000001">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Volume" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </Gain>
+                            <Drive Name="InsertFX4" Bypass="0" DriveAmount="0" Mode="2" Oversampling="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.10344828" Source="$Keygroup/AHD 1" Destination="DriveAmount" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </Drive>
+                        </Inserts>
+                        <BusRouters/>
+                        <Oscillators>
+                            <WaveTableOscillator Name="Oscillator" Bypass="0" WavetablePath="$FalconResources.ufs/Samples/Wavetables/X-Bass/Terror_900.wav" StartPhase="0" PhaseDistortionAmount="0" PhaseDistortionMode="3" Spread="0.088" DetuneMode="0" WaveIndex="1" WaveIndexSpread="0" StereoSpread="1" StereoSpreadMode="1" NumOscs="2" FadeMipMap="1" FadeWaveIndex="1" Stereo="1" PhaseSpread="1" CoarseTune="0" FineTune="0" Gain="1" Pitch="0" NoteTracking="1" BaseNote="60" DisplayName="Oscillator 1">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="PhaseDistortionAmount" Mapper="Mapper 1" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="PitchBendMod" Ratio="1.9999992" Source="@PitchBend" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="0.48171562" Source="$Program/LFO 2" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveTableOscillator>
+                        </Oscillators>
+                    </Keygroup>
+                </Keygroups>
+            </Layer>
+        </Layers>
+    </Program>
+    <NeededFS Source="C:/ProgramData/UVI/Falcon/FalconResources.ufs"/>
+</UVI4>
+<UVI4>
+    <Program Name="Program" Bypass="0" Gain="1.9952623" Pan="0" DisplayName="Memory" TransposeOctaves="0" TransposeSemiTones="0" OutputName="" Polyphony="16" NotePolyphony="0" ProgramPath="D:/Louis/Travail/12 - UVI/Presets Falcon/XP1/script/Scripts/Examples/Memory.uvip" LoopProgram="0" Streaming="1" BypassInsertFX="0">
+        <Mappers>
+            <ControlSignalMapper Name="Mapper 0" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 0">0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,097143 0,108571 0,120000 0,120000 0,131429 0,142857 0,154286 0,165714 0,177143 0,188571 0,188571 0,200000 0,211429 0,222857 0,234286 0,245714 0,257143 0,257143 0,268571 0,280000 0,291429 0,302857 0,314286 0,325714 0,325714 0,337143 0,348571 0,360000 0,371429 0,382857 0,394286 0,394286 0,405714 0,417143 0,428571 0,440000 0,451429 0,451429 0,462857 0,474286 0,485714 0,497143 0,508571 0,520000 0,520000 0,531429 0,542857 0,554286 0,565714 0,577143 0,588571 0,588571 0,600000 0,611429 0,622857 0,634286 0,645714 0,657143 0,657143 0,680333 0,703190 0,725714 0,748571 0,771429 0,805714 0,828905 0,851762 0,874619 0,908571 0,920333 0,954286 0,977143 1,000000</ControlSignalMapper>
+            <ControlSignalMapper Name="Mapper 1" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 1">-0,051429 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,074286 -0,085714 -0,108571 -0,108571 -0,120000 -0,131429 -0,142857 -0,154286 -0,165714 -0,177143 -0,188571 -0,188571 -0,188571 -0,200000 -0,211429 -0,222857 -0,222857 -0,222857 -0,222857 -0,222857 -0,228571 -0,234286 -0,238095 -0,241905 -0,245714 -0,249524 -0,253333 -0,257143 -0,260952 -0,264762 -0,268571 -0,272381 -0,276190 -0,280000 -0,285714 -0,291429 -0,291429 -0,302857 -0,314286 -0,314286 -0,310476 -0,306667 -0,302857 -0,280000 -0,268571 -0,257143 -0,257143 -0,234286 -0,188571 -0,154286 -0,108571 -0,074286 -0,051429 -0,028571 0,017143 0,040000 0,062857 0,085714 0,097143 0,108571 0,120000 0,138286 0,156571 0,174857 0,193143 0,211429 0,227429 0,243429 0,259429 0,275429 0,291429 0,304286 0,317143 0,330000 0,342857 0,355714 0,368571 0,381429 0,394286 0,408980 0,423673 0,438367 0,453061 0,467755 0,482449 0,497143 0,514286 0,531429 0,548571 0,565714 0,582857 0,600000 0,617143 0,634286 0,651429 0,668571 0,689524 0,710476 0,731429 0,752381 0,773333 0,794286 0,813333 0,832381 0,851429 0,870476 0,889524 0,908571 0,933061 0,957551 0,982041 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000</ControlSignalMapper>
+        </Mappers>
+        <Properties description="Preset Credits : Louis Couka"/>
+        <ControlSignalSources>
+            <LFO Name="LFO 2" Bypass="0" SyncToHost="0" DisplayName="LFO 2" DelayTime="0.02414703" RiseTime="0" Freq="2.867595" Depth="0.091999993" Phase="0" WaveFormType="0" Retrigger="1" Bipolar="1" Smooth="0"/>
+            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Cut Off" Bipolar="0" Style="0" Value="0.14399999">
+                <Connections>
+                    <SignalConnection Name="SignalConnection 0" Ratio="-0.13793103" Source="@MIDI CC 1" Destination="Value" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                </Connections>
+                <Properties customPosition="1" x="5" y="345"/>
+            </ConstantModulation>
+            <ConstantModulation Name="Macro 12" Bypass="0" DisplayName="Room" Bipolar="0" Style="1" Value="1">
+                <Properties customPosition="1" x="565" y="345"/>
+            </ConstantModulation>
+        </ControlSignalSources>
+        <Layers>
+            <Layer Name="Layer 0" Bypass="0" Gain="1" Pan="0" Mute="0" MidiMute="0" Solo="0" DisplayName="Main" OutputName="" LowKey="0" HighKey="127" CustomPolyphony="0" PlayMode="0" PortamentoTime="0.029999999" PortamentoMode="0" NumVoicesPerNote="1" VelocityCurve="0" BypassInsertFX="0">
+                <Properties Color="ff02b0ff"/>
+                <ControlSignalSources/>
+                <Inserts>
+                    <ParametricEQ Name="InsertFX2" Bypass="0" Freq1="30" Q1="0.69999999" Gain1="0" Enable1="0" Freq2="236.19072" Q2="2.5599997" Gain2="1.9200096" Enable2="1" Freq3="180" Q3="0.69999999" Gain3="0" Enable3="0" Freq4="520" Q4="0.69999999" Gain4="0" Enable4="0" Freq5="2271.4497" Q5="0.55840003" Gain5="5" Enable5="1" Freq6="9906.5781" Q6="0.69999999" Gain6="2" Enable6="0" Freq7="1522.7106" Q7="7.0439997" Gain7="-2.0999603" Enable7="1" Freq8="9369.748" Q8="0.69999999" Gain8="0" Enable8="1">
+                        <Properties PresetPath=""/>
+                    </ParametricEQ>
+                    <DualDelay Name="InsertFX0" Bypass="0" SyncToHost="1" DelayTime="0.75" LowCut="146.62811" HighCut="8960.9482" PeakFreq="1000" PeakGain="0" PeakQ="1" Feedback="0.51599997" Mix="0.21600001" Rotation="0" InputWidth="1" OutputWidth="1" DelayRatio="0.3312" FeedbackRatio="-0.1512" InputRotation="0" OutputRotation="0" ModDepth="0" ModRate="1" ModChannelOffset="1" Interpolation="1" DualDelayVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Program/Macro 12" Destination="Bypass" Mapper="" ConnectionMode="0" Bypass="0" Inverted="1"/>
+                        </Connections>
+                    </DualDelay>
+                    <SparkVerb Name="InsertFX1" Bypass="0" ModDepth="4" ModRate="1" Diffusion="0.61799997" DiffusionStart="5" Width="1" RoomSize="20" DecayTime="1.870682" DecayLow="0.34994519" DecayHigh="0.12246162" FreqLow="250" FreqHigh="6655.5083" Shape="0" Mix="0.14" Quality="3" Mode="1" HiCut="0" LowCut="0" Rolloff="10399.921" DiffusionOnOff="0" PreDelay="2" MixMode="1" SparkVerbVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Program/Macro 12" Destination="Bypass" Mapper="" ConnectionMode="0" Bypass="0" Inverted="1"/>
+                        </Connections>
+                    </SparkVerb>
+                    <Gain Name="InsertFX6" Bypass="0" Volume="0.2610676"/>
+                    <EffectRack Name="InsertFX4" Bypass="0">
+                        <Properties PresetPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/FXs/Effect Rack/Compressor multi.preset"/>
+                        <ControlSignalSources>
+                            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Low Freq" Bipolar="0" Style="0" Value="0.29800001">
+                                <Properties customPosition="0" x="210" y="25"/>
+                            </ConstantModulation>
+                            <ConstantModulation Name="Macro 2" Bypass="0" DisplayName="High Freq" Bipolar="0" Style="0" Value="0.62199998">
+                                <Properties customPosition="0" x="465" y="25"/>
+                            </ConstantModulation>
+                        </ControlSignalSources>
+                        <Chains>
+                            <AuxEffect Name="Chain1" Bypass="0" Gain="1" Pan="0" PreInsert="1" DisplayName="Chain1">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="20000" Type="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain2" Bypass="0" Gain="0.75563246" Pan="0" PreInsert="1" DisplayName="Chain2">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="1469.0275" Type="1">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="7.2999992" CompThreshold="-24.440002" CompRatio="2.4200001" CompAttack="13.000003" CompRelease="189.23087" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain3" Bypass="0" Gain="0.50118721" Pan="0" PreInsert="1" DisplayName="Chain3">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="20" HighFrequency="1469.0275" Type="2">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="8.3000031" CompThreshold="-20.279999" CompRatio="4" CompAttack="3.8400006" CompRelease="119.54205" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                        </Chains>
+                    </EffectRack>
+                    <Gain Name="InsertFX3" Bypass="0" Volume="0.39810711"/>
+                </Inserts>
+                <BusRouters/>
+                <Keygroups>
+                    <Keygroup Name="Keygroup 0" Bypass="0" Gain="1" Pan="0" DisplayName="Keygroup 1" OutputName="" ExclusiveGroup="0" LowKey="0" HighKey="127" LowVelocity="1" HighVelocity="127" LowKeyFade="0" HighKeyFade="0" LowVelocityFade="0" HighVelocityFade="0" TriggerMode="0" TriggerSync="0" TriggerRule="0" LatchTrigger="0" FXPostGain="0" BypassInsertFX="0">
+                        <Connections>
+                            <SignalConnection Name="AmpEnvMod" Ratio="1" Source="$Keygroup/DAHDSR 1" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Keygroup/LFO 2" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                        </Connections>
+                        <ControlSignalSources>
+                            <DAHDSR Name="DAHDSR 1" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0.006984516" DecayTime="0.9935624" DecayCurve="-0.16976878" SustainLevel="0.38636363" ReleaseTime="0.021004545" ReleaseCurve="0" DisplayName="DAHDSR 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.82758623" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <DAHDSR Name="DAHDSR 2" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="2.6063526" DecayCurve="0" SustainLevel="0" ReleaseTime="0.050000001" ReleaseCurve="0" DisplayName="DAHDSR 2" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <AHD Name="AHD 1" Bypass="1" DisplayName="AHD 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="0.32108706" DecayCurve="0.18360826"/>
+                            <LFO Name="LFO 2" Bypass="1" SyncToHost="1" DisplayName="LFO 2" DelayTime="0" RiseTime="0" Freq="0.25" Depth="0.72000003" Phase="0" WaveFormType="0" Retrigger="1" Bipolar="1" Smooth="0"/>
+                        </ControlSignalSources>
+                        <Inserts>
+                            <XpanderFilter Name="InsertFX0" Bypass="0" Freq="233.89989" Q="0.039999999" KeyTracking="0.5" Mode="3" DistortionType="0" Drive="1.1199988">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 1" Ratio="0.090000004" Source="@VoiceParam Velocity" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="0.25999999" Source="$Keygroup/DAHDSR 2" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Ratio" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                        </Connections>
+                                    </SignalConnection>
+                                    <SignalConnection Name="SignalConnection 3" Ratio="0.41379312" Source="$Program/Macro 1" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </XpanderFilter>
+                            <WaveShaper Name="InsertFX2" Bypass="0" InputGain="0" OutputGain="0" Amount="0.2" Knee="0" Mix="1" PreFreq="20000" PostFreq="20" Oversampling="0" Mode="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.10344828" Source="@VoiceParam LinearKeyFollow" Destination="Amount" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveShaper>
+                            <Gain Name="InsertFX3" Bypass="0" Volume="1.0000001">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Volume" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </Gain>
+                            <Drive Name="InsertFX4" Bypass="0" DriveAmount="0" Mode="2" Oversampling="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.10344828" Source="$Keygroup/AHD 1" Destination="DriveAmount" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </Drive>
+                        </Inserts>
+                        <BusRouters/>
+                        <Oscillators>
+                            <WaveTableOscillator Name="Oscillator" Bypass="0" WavetablePath="$FalconResources.ufs/Samples/Wavetables/X-Bass/Terror_900.wav" StartPhase="0" PhaseDistortionAmount="0" PhaseDistortionMode="3" Spread="0.088" DetuneMode="0" WaveIndex="1" WaveIndexSpread="0" StereoSpread="1" StereoSpreadMode="1" NumOscs="2" FadeMipMap="1" FadeWaveIndex="1" Stereo="1" PhaseSpread="1" CoarseTune="0" FineTune="0" Gain="1" Pitch="0" NoteTracking="1" BaseNote="60" DisplayName="Oscillator 1">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="PhaseDistortionAmount" Mapper="Mapper 1" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="PitchBendMod" Ratio="1.9999992" Source="@PitchBend" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="0.48171562" Source="$Program/LFO 2" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveTableOscillator>
+                        </Oscillators>
+                    </Keygroup>
+                </Keygroups>
+            </Layer>
+        </Layers>
+    </Program>
+    <NeededFS Source="C:/ProgramData/UVI/Falcon/FalconResources.ufs"/>
+</UVI4>
+<UVI4>
+    <Program Name="Program" Bypass="0" Gain="1.9952623" Pan="0" DisplayName="Memory" TransposeOctaves="0" TransposeSemiTones="0" OutputName="" Polyphony="16" NotePolyphony="0" ProgramPath="D:/Louis/Travail/12 - UVI/Presets Falcon/XP1/script/Scripts/Examples/Memory.uvip" LoopProgram="0" Streaming="1" BypassInsertFX="0">
+        <Mappers>
+            <ControlSignalMapper Name="Mapper 0" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 0">0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,028571 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,040000 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,051429 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,062857 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,074286 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,085714 0,097143 0,108571 0,120000 0,120000 0,131429 0,142857 0,154286 0,165714 0,177143 0,188571 0,188571 0,200000 0,211429 0,222857 0,234286 0,245714 0,257143 0,257143 0,268571 0,280000 0,291429 0,302857 0,314286 0,325714 0,325714 0,337143 0,348571 0,360000 0,371429 0,382857 0,394286 0,394286 0,405714 0,417143 0,428571 0,440000 0,451429 0,451429 0,462857 0,474286 0,485714 0,497143 0,508571 0,520000 0,520000 0,531429 0,542857 0,554286 0,565714 0,577143 0,588571 0,588571 0,600000 0,611429 0,622857 0,634286 0,645714 0,657143 0,657143 0,680333 0,703190 0,725714 0,748571 0,771429 0,805714 0,828905 0,851762 0,874619 0,908571 0,920333 0,954286 0,977143 1,000000</ControlSignalMapper>
+            <ControlSignalMapper Name="Mapper 1" Min="-1" Max="1" Integer="0" Discrete="0" DisplayName="Mapper 1">-0,051429 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,062857 -0,074286 -0,085714 -0,108571 -0,108571 -0,120000 -0,131429 -0,142857 -0,154286 -0,165714 -0,177143 -0,188571 -0,188571 -0,188571 -0,200000 -0,211429 -0,222857 -0,222857 -0,222857 -0,222857 -0,222857 -0,228571 -0,234286 -0,238095 -0,241905 -0,245714 -0,249524 -0,253333 -0,257143 -0,260952 -0,264762 -0,268571 -0,272381 -0,276190 -0,280000 -0,285714 -0,291429 -0,291429 -0,302857 -0,314286 -0,314286 -0,310476 -0,306667 -0,302857 -0,280000 -0,268571 -0,257143 -0,257143 -0,234286 -0,188571 -0,154286 -0,108571 -0,074286 -0,051429 -0,028571 0,017143 0,040000 0,062857 0,085714 0,097143 0,108571 0,120000 0,138286 0,156571 0,174857 0,193143 0,211429 0,227429 0,243429 0,259429 0,275429 0,291429 0,304286 0,317143 0,330000 0,342857 0,355714 0,368571 0,381429 0,394286 0,408980 0,423673 0,438367 0,453061 0,467755 0,482449 0,497143 0,514286 0,531429 0,548571 0,565714 0,582857 0,600000 0,617143 0,634286 0,651429 0,668571 0,689524 0,710476 0,731429 0,752381 0,773333 0,794286 0,813333 0,832381 0,851429 0,870476 0,889524 0,908571 0,933061 0,957551 0,982041 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000</ControlSignalMapper>
+        </Mappers>
+        <Properties description="Preset Credits : Louis Couka"/>
+        <ControlSignalSources>
+            <LFO Name="LFO 2" Bypass="0" SyncToHost="0" DisplayName="LFO 2" DelayTime="0.02414703" RiseTime="0" Freq="2.867595" Depth="0.091999993" Phase="0" WaveFormType="0" Retrigger="1" Bipolar="1" Smooth="0"/>
+            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Cut Off" Bipolar="0" Style="0" Value="0.14399999">
+                <Connections>
+                    <SignalConnection Name="SignalConnection 0" Ratio="-0.13793103" Source="@MIDI CC 1" Destination="Value" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                </Connections>
+                <Properties customPosition="1" x="5" y="345"/>
+            </ConstantModulation>
+            <ConstantModulation Name="Macro 12" Bypass="0" DisplayName="Room" Bipolar="0" Style="1" Value="1">
+                <Properties customPosition="1" x="565" y="345"/>
+            </ConstantModulation>
+        </ControlSignalSources>
+        <EventProcessors>
+            <ScriptProcessor Name="EventProcessor0" Bypass="0" Dummy="0" API_version="16">
+                <Properties ScriptPath="./../Memory.lua"/>
+                <script><![CDATA[--------------------------------------------------------------------------------
+--! Mono
+--! Only play the lastest note
+--! Author : Louis Couka
+--! Date : 29/02/2016
+--------------------------------------------------------------------------------
+
+local SIZE = 4 -- Should be pair, should have enough chords
+local BUTTON_SIZE = 50
+local CHEAT = false
+local VELOCITY = 75
+
+--------------------------------------------------------------------- Game State
+
+local pairsDone
+local score
+local left
+local level
+local finish
+local currentPressed
+
+--------------------------------------------------------------------- Midi Stuff
+function onNote(e)
+    playNote(e)
+end
+
+function playNoteFromUI(note_, vel, dur)
+    local id = postEvent({type=Event.NoteOn, note=note_, velocity=vel})
+    wait(dur)
+    releaseVoice(id)
+end
+
+local chords
+function playChords(chordIndex, dur, strum)
+    chord = chords[chordIndex]
+    for i = 1, table.getn(chord) do
+        run(playNoteFromUI, chord[i], VELOCITY, dur)
+        wait(strum)
+    end
+end
+
+local buttonsChord = {}
+for i = 1, SIZE do
+    buttonsChord[i] = {}
+end
+
+--------------------------------------------------------------------- Board
+function updateInfos()
+    scoreLabel.text = "Score: "..tostring(score)
+    leftLabel.text = "Left: "..tostring(left)
+    levelLabel.text = "Level: "..tostring(level+1)
+    if pairsDone == SIZE * SIZE / 2 then
+        win()
+    elseif left == 0 then
+        lose()
+    elseif left < 9 then
+        leftLabel.textColour = "red"
+    else
+        leftLabel.textColour = "orange"
+    end
+end
+
+buttons = {}
+local OFFSET_X = 360 - BUTTON_SIZE * SIZE / 2
+for i = 1, SIZE do
+    buttons[i] = {}
+    for j = 1, SIZE do
+        buttons[i][j] = Button("Chord")
+        buttons[i][j].width = BUTTON_SIZE + 1
+        buttons[i][j].height = BUTTON_SIZE + 1
+        buttons[i][j].x = OFFSET_X + (i - 1) * BUTTON_SIZE
+        buttons[i][j].y = 9 + (j - 1) * BUTTON_SIZE
+        buttons[i][j].backgroundColourOn = "darkgrey"
+        buttons[i][j].changed = function(self)
+            if not seedDone then
+                setupSeed()
+                setup_()
+                seedDone = true
+            end
+            left = left - 1
+            score = score - 1
+            if (not currentPressed) then
+                buttons[i][j].backgroundColourOff = "green" -- first move color
+                buttons[i][j].enabled = false
+                currentPressed = {x = i, y = j}
+            else
+                if (buttonsChord[i][j] == buttonsChord[currentPressed.x][currentPressed.y]) then -- good
+                    score = score + 10
+                    pairsDone = pairsDone + 1
+                    buttons[currentPressed.x][currentPressed.y].backgroundColourOff = "green"
+                    buttons[i][j].backgroundColourOff = "green"
+                    buttons[i][j].enabled = false
+                else -- wrong
+                    buttons[currentPressed.x][currentPressed.y].backgroundColourOff = "darkgrey" -- already visited color
+                    buttons[currentPressed.x][currentPressed.y].enabled = true
+                    buttons[i][j].backgroundColourOff = "darkgrey" -- already visited color
+                end
+                currentPressed = nil
+            end
+            updateInfos()
+            if not finish then
+                if level == 2 then
+                    run(playChords, buttonsChord[i][j], 170, 170)
+                else
+                    run(playChords, buttonsChord[i][j], 600, 0)
+                end
+            end
+        end
+        buttons[i][j].displayName = tostring(" ")
+    end
+end
+
+--------------------------------------------------------------------- Widgets
+
+scoreLabel = Label("Score")
+scoreLabel.width = 100
+scoreLabel.height = 40
+scoreLabel.x = 718 - scoreLabel.width
+scoreLabel.y = 14 + BUTTON_SIZE * SIZE - scoreLabel.height - 20
+scoreLabel.align = "bottomRight"
+
+leftLabel = Label("Level")
+leftLabel.width = scoreLabel.width
+leftLabel.height = scoreLabel.height
+leftLabel.x = scoreLabel.x
+leftLabel.y = scoreLabel.y + 20
+leftLabel.align = scoreLabel.align
+
+levelLabel = Label("Level")
+levelLabel.width = scoreLabel.width
+levelLabel.height = scoreLabel.height
+levelLabel.x = 5
+levelLabel.y = leftLabel.y
+levelLabel.align = "bottomLeft"
+
+finalLabel = Label("Final")
+finalLabel.width = 720
+finalLabel.height = 9 + BUTTON_SIZE * SIZE
+finalLabel.align = "centred"
+finalLabel.fontSize = 150
+
+resetButton = Button("Reset")
+resetButton.width = scoreLabel.width - 50
+resetButton.height = 20
+resetButton.x = scoreLabel.x + 46
+resetButton.y = scoreLabel.y
+resetButton.changed = function(self) setup() end
+
+continueButton = Button("Continue")
+continueButton.x = 305
+continueButton.y = 9 + BUTTON_SIZE * SIZE / 2 + 27
+continueButton.changed = function(self) setup() end
+
+--------------------------------------------------------------------- WIN Animation
+function colorShake()
+    local colors = {"orange", "red", "orange", "yellow"}
+    local i = 0
+    while (finalLabel.visible) do
+        finalLabel.textColour = colors[i + 1]
+        wait(150)
+        i = (i + 1) % table.getn(colors)
+    end
+    finalLabel.textColour = "white"
+end
+
+local DELAY_SYNC = 60
+function playWinChord(i, i2, dur)
+        buttons[place[i2].x][place[i2].y].backgroundColourOff = "yellow"
+        wait(DELAY_SYNC)
+        run(playChords, i, dur, 0)
+        wait(dur - DELAY_SYNC)
+        buttons[place[i2].x][place[i2].y].backgroundColourOff = "green"
+end
+
+function fiestaPad()
+    local i = 1
+    local j = 1
+    local i2 = 3
+    local j2 = 2
+    while (finish) do
+        i = i + 1
+        if (i > SIZE) then
+            i = 1
+            j = j % SIZE + 1
+        end
+        
+        i2 = i2 + 1
+        if (i2 > SIZE) then
+            i2 = 1
+            j2 = j2 % SIZE + 1
+        end
+        
+        buttons[i2][j2].backgroundColourOff = "yellow"
+        buttons[i][j].backgroundColourOff = "green"
+        
+        wait(80)
+    end
+end
+
+function playWin()
+    if (level == 2 ) then
+        finalLabel.fontSize = 100
+        finalLabel.visible = true
+        finalLabel.text = "You Win\nScore: "..tostring(score)
+        run(colorShake)
+        run(fiestaPad)
+    
+        local melody = {48,60,55,69,60,64,64,64,67,71,72,81,53,77,60,74,65,76,69,61,72,80,77,79,50,89,57,76,62,87,65,75,69,77,74,92,55,74,62,85,67,76,71,70,74,83,79,101,52,88,60,68,64,78,67,73,72,80,76,97,53,92,60,87,65,87,69,76,72,93,77,109,55,94,62,91,67,89,71,79,74,90,79,101,60,90,67,78,72,93,76,81,79,98,84,109}
+        for i = 1, table.getn(melody) - 2, 2 do
+            playNoteFromUI(melody[i], melody[i + 1], VELOCITY)
+        end
+        playNoteFromUI(melody[table.getn(melody) - 1], melody[table.getn(melody)],800)
+    else
+        place = {}
+        for k = 1, SIZE*SIZE/2 do
+            for i = 1, SIZE do
+                for j = 1, SIZE do
+                    if (buttonsChord[i][j] == k) then
+                        place[table.getn(place) + 1] = {x = i, y = j}
+                    end
+                end
+            end
+        end
+        
+        for i = 1, table.getn(chords) do
+            playWinChord(i, i*2 - 1, 250)
+            playWinChord(i, i*2, 250)
+        end
+        playWinChord(1, 1, 700)
+        
+        scoreSaved = score
+        level = level + 1
+        sendChange()
+        
+        continueButton.displayName = "Try Next"
+        continueButton.visible = true
+        finalLabel.fontSize = 50
+        finalLabel.visible = true
+        run(colorShake)
+    end
+end
+-- local str = ""
+-- function onNote(e)
+--     str = str..tostring(e.note)..","..tostring(e.velocity)..","
+--     print(str)
+--     playNote(e)
+-- end
+
+function win()
+    finish = true
+    finalLabel.text = "You win"
+    resetButton.visible = false
+    run(playWin)
+end
+
+--------------------------------------------------------------------- LOOSE Animation
+
+function lose()
+    finish = true
+    finalLabel.fontSize = 50
+    finalLabel.text = "You lose"
+    finalLabel.visible = true
+    continueButton.displayName = "Retry"
+    continueButton.visible = true
+    resetButton.visible = false
+    for i = 0, 20 do -- play a cluster
+        run(playNoteFromUI,40 + i, VELOCITY - 30, 500)
+    end
+end
+
+--------------------------------------------------------------------- Setup
+
+local function shuffleTable( t )
+    local rand = math.random 
+    local iterations = #t
+    local j
+    
+    for i = iterations, 2, -1 do
+        j = rand(i)
+        t[i], t[j] = t[j], t[i]
+    end
+end
+
+function Output(ttable)
+    -- output values
+    sout = {}
+    for _, v in ipairs(ttable) do
+        table.insert(sout, v) ;
+    end
+    table.insert(chords,sout)
+end
+function Permutation(ttable, n)
+    if n == 0 then
+        Output(ttable)
+    else
+        for i = 1, n do
+            ttable[n], ttable[i] = ttable[i], ttable[n]
+            Permutation(ttable, n - 1)
+            ttable[n], ttable[i] = ttable[i], ttable[n]
+        end
+    end
+end
+
+function setup()
+    score = scoreSaved
+    finish = false
+    pairsDone = 0
+    
+    continueButton.visible = false
+    resetButton.visible = true
+    finalLabel.visible = false
+    
+    if (level == 0) then
+        left = 30
+        chords = {{60},{64},{72},{69},{62},{65},{71},{67},} 
+    elseif (level == 1) then
+        left = 30
+        -- {"Unnamed",{49,56,65,68,73},{50,50,54,61,66,70,73},{51,51,53,61,65,68,73},{52,61,64,68,75},{53,51,53,61,66,70,77},{54,61,66,70,73},{55,55,56,63,66,69,72,75},{56,44,54,56,60,63,68}}, 
+        chords = {{48,55,64,67,72},{53,60,65,69,72},{52,60,64,67,72},{51,60,63,67,74},{50,60,65,69,76},{53,60,67,69,72},{55,62,65,68,71,74},{43,53,59,62,67},} 
+    else
+        left = 30
+        chords = {}
+        Permutation({60, 64, 67, 72}, 4)
+    end 
+    
+    updateInfos()
+    
+    for i = 1, SIZE do
+        for j = 1, SIZE do
+            buttons[i][j].backgroundColourOff = "darkgrey"
+            buttons[i][j].enabled = true
+        end
+    end
+    
+    setup_()
+end
+
+-- Split setup func because we need to set the seed in UI thread
+function setup_()
+    -- Random pick from our chord list
+    local chordsChoosen = {}
+    for i = 1, SIZE * SIZE, 2 do
+        local isUnique
+        local pick
+        while not isUnique do
+            isUnique = true
+            pick = math.random(1,table.getn(chords))
+            for k = 1, table.getn(chordsChoosen), 2 do
+                if (chordsChoosen[k] == pick) then
+                    isUnique = false
+                    break
+                end
+            end
+        end
+        chordsChoosen[i] = pick
+        chordsChoosen[i+1] = pick
+    end
+
+    -- Shuffle
+    shuffleTable(chordsChoosen)
+    
+    -- Stock in a matrice for easier manipulation
+    for i = 1, SIZE do
+        for j = 1, SIZE do
+            buttonsChord[i][j] = chordsChoosen[i + (j-1) * SIZE]
+            if (CHEAT) then
+                buttons[i][j].displayName = tostring(buttonsChord[i][j])
+            end
+        end
+    end
+
+    currentPressed = nil
+end
+
+local seedDone
+function setupSeed()
+    math.randomseed(math.floor(getTime() * 1000000000))
+    seedDone = true
+end
+
+scoreSaved = 30
+level = 0
+setup()
+
+-- SERIALIZE
+dummy = OnOffButton{"Dummy", visible = false, y = 0}
+function sendChange()
+    dummy.value = not dummy.value
+end
+
+function onSave()
+  return {level, scoreSaved}
+end
+
+function onLoad(data)
+    print(data[1])
+    level = data[1]
+    scoreSaved = data[2]
+    setup()
+end
+
+makePerformanceView()]]></script>
+                <ScriptData/>
+                <state><![CDATA[[0,30]]]></state>
+            </ScriptProcessor>
+        </EventProcessors>
+        <Layers>
+            <Layer Name="Layer 0" Bypass="0" Gain="1" Pan="0" Mute="0" MidiMute="0" Solo="0" DisplayName="Main" OutputName="" LowKey="0" HighKey="127" CustomPolyphony="0" PlayMode="0" PortamentoTime="0.029999999" PortamentoMode="0" NumVoicesPerNote="1" VelocityCurve="0" BypassInsertFX="0">
+                <Properties Color="ff02b0ff"/>
+                <ControlSignalSources/>
+                <Inserts>
+                    <ParametricEQ Name="InsertFX2" Bypass="0" Freq1="30" Q1="0.69999999" Gain1="0" Enable1="0" Freq2="236.19072" Q2="2.5599997" Gain2="1.9200096" Enable2="1" Freq3="180" Q3="0.69999999" Gain3="0" Enable3="0" Freq4="520" Q4="0.69999999" Gain4="0" Enable4="0" Freq5="2271.4497" Q5="0.55840003" Gain5="5" Enable5="1" Freq6="9906.5781" Q6="0.69999999" Gain6="2" Enable6="0" Freq7="1522.7106" Q7="7.0439997" Gain7="-2.0999603" Enable7="1" Freq8="9369.748" Q8="0.69999999" Gain8="0" Enable8="1">
+                        <Properties PresetPath=""/>
+                    </ParametricEQ>
+                    <DualDelay Name="InsertFX0" Bypass="0" SyncToHost="1" DelayTime="0.75" LowCut="146.62811" HighCut="8960.9482" PeakFreq="1000" PeakGain="0" PeakQ="1" Feedback="0.51599997" Mix="0.21600001" Rotation="0" InputWidth="1" OutputWidth="1" DelayRatio="0.3312" FeedbackRatio="-0.1512" InputRotation="0" OutputRotation="0" ModDepth="0" ModRate="1" ModChannelOffset="1" Interpolation="1" DualDelayVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Program/Macro 12" Destination="Bypass" Mapper="" ConnectionMode="0" Bypass="0" Inverted="1"/>
+                        </Connections>
+                    </DualDelay>
+                    <SparkVerb Name="InsertFX1" Bypass="0" ModDepth="4" ModRate="1" Diffusion="0.61799997" DiffusionStart="5" Width="1" RoomSize="20" DecayTime="1.870682" DecayLow="0.34994519" DecayHigh="0.12246162" FreqLow="250" FreqHigh="6655.5083" Shape="0" Mix="0.14" Quality="3" Mode="1" HiCut="0" LowCut="0" Rolloff="10399.921" DiffusionOnOff="0" PreDelay="2" MixMode="1" SparkVerbVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Program/Macro 12" Destination="Bypass" Mapper="" ConnectionMode="0" Bypass="0" Inverted="1"/>
+                        </Connections>
+                    </SparkVerb>
+                    <Gain Name="InsertFX6" Bypass="0" Volume="0.2610676"/>
+                    <EffectRack Name="InsertFX4" Bypass="0">
+                        <Properties PresetPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/FXs/Effect Rack/Compressor multi.preset"/>
+                        <ControlSignalSources>
+                            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Low Freq" Bipolar="0" Style="0" Value="0.29800001">
+                                <Properties customPosition="0" x="210" y="25"/>
+                            </ConstantModulation>
+                            <ConstantModulation Name="Macro 2" Bypass="0" DisplayName="High Freq" Bipolar="0" Style="0" Value="0.62199998">
+                                <Properties customPosition="0" x="465" y="25"/>
+                            </ConstantModulation>
+                        </ControlSignalSources>
+                        <Chains>
+                            <AuxEffect Name="Chain1" Bypass="0" Gain="1" Pan="0" PreInsert="1" DisplayName="Chain1">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="20000" Type="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain2" Bypass="0" Gain="0.75563246" Pan="0" PreInsert="1" DisplayName="Chain2">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="1469.0275" Type="1">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="7.2999992" CompThreshold="-24.440002" CompRatio="2.4200001" CompAttack="13.000003" CompRelease="189.23087" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain3" Bypass="0" Gain="0.50118721" Pan="0" PreInsert="1" DisplayName="Chain3">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="20" HighFrequency="1469.0275" Type="2">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="8.3000031" CompThreshold="-20.279999" CompRatio="4" CompAttack="3.8400006" CompRelease="119.54205" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                        </Chains>
+                    </EffectRack>
+                    <Gain Name="InsertFX3" Bypass="0" Volume="0.39810711"/>
+                </Inserts>
+                <BusRouters/>
+                <Keygroups>
+                    <Keygroup Name="Keygroup 0" Bypass="0" Gain="1" Pan="0" DisplayName="Keygroup 1" OutputName="" ExclusiveGroup="0" LowKey="0" HighKey="127" LowVelocity="1" HighVelocity="127" LowKeyFade="0" HighKeyFade="0" LowVelocityFade="0" HighVelocityFade="0" TriggerMode="0" TriggerSync="0" TriggerRule="0" LatchTrigger="0" FXPostGain="0" BypassInsertFX="0">
+                        <Connections>
+                            <SignalConnection Name="AmpEnvMod" Ratio="1" Source="$Keygroup/DAHDSR 1" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="$Keygroup/LFO 2" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                        </Connections>
+                        <ControlSignalSources>
+                            <DAHDSR Name="DAHDSR 1" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0.006984516" DecayTime="0.9935624" DecayCurve="-0.16976878" SustainLevel="0.38636363" ReleaseTime="0.021004545" ReleaseCurve="0" DisplayName="DAHDSR 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.82758623" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <DAHDSR Name="DAHDSR 2" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="2.6063526" DecayCurve="0" SustainLevel="0" ReleaseTime="0.050000001" ReleaseCurve="0" DisplayName="DAHDSR 2" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="DecayTime" Mapper="Mapper 0" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </DAHDSR>
+                            <AHD Name="AHD 1" Bypass="1" DisplayName="AHD 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="0.32108706" DecayCurve="0.18360826"/>
+                            <LFO Name="LFO 2" Bypass="1" SyncToHost="1" DisplayName="LFO 2" DelayTime="0" RiseTime="0" Freq="0.25" Depth="0.72000003" Phase="0" WaveFormType="0" Retrigger="1" Bipolar="1" Smooth="0"/>
+                        </ControlSignalSources>
+                        <Inserts>
+                            <XpanderFilter Name="InsertFX0" Bypass="0" Freq="233.89989" Q="0.039999999" KeyTracking="0.5" Mode="3" DistortionType="0" Drive="1.1199988">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 1" Ratio="0.090000004" Source="@VoiceParam Velocity" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="0.25999999" Source="$Keygroup/DAHDSR 2" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Ratio" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                        </Connections>
+                                    </SignalConnection>
+                                    <SignalConnection Name="SignalConnection 3" Ratio="0.41379312" Source="$Program/Macro 1" Destination="Freq" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </XpanderFilter>
+                            <WaveShaper Name="InsertFX2" Bypass="0" InputGain="0" OutputGain="0" Amount="0.2" Knee="0" Mix="1" PreFreq="20000" PostFreq="20" Oversampling="0" Mode="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.10344828" Source="@VoiceParam LinearKeyFollow" Destination="Amount" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveShaper>
+                            <Gain Name="InsertFX3" Bypass="0" Volume="1.0000001">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="Volume" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </Gain>
+                            <Drive Name="InsertFX4" Bypass="0" DriveAmount="0" Mode="2" Oversampling="0">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="0.10344828" Source="$Keygroup/AHD 1" Destination="DriveAmount" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </Drive>
+                        </Inserts>
+                        <BusRouters/>
+                        <Oscillators>
+                            <WaveTableOscillator Name="Oscillator" Bypass="0" WavetablePath="$FalconResources.ufs/Samples/Wavetables/X-Bass/Terror_900.wav" StartPhase="0" PhaseDistortionAmount="0" PhaseDistortionMode="3" Spread="0.088" DetuneMode="0" WaveIndex="1" WaveIndexSpread="0" StereoSpread="1" StereoSpreadMode="1" NumOscs="2" FadeMipMap="1" FadeWaveIndex="1" Stereo="1" PhaseSpread="1" CoarseTune="0" FineTune="0" Gain="1" Pitch="0" NoteTracking="1" BaseNote="60" DisplayName="Oscillator 1">
+                                <Connections>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="1" Source="@VoiceParam Velocity" Destination="PhaseDistortionAmount" Mapper="Mapper 1" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="PitchBendMod" Ratio="1.9999992" Source="@PitchBend" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="0.48171562" Source="$Program/LFO 2" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </WaveTableOscillator>
+                        </Oscillators>
+                    </Keygroup>
+                </Keygroups>
+            </Layer>
+        </Layers>
+    </Program>
+    <NeededFS Source="C:/ProgramData/UVI/Falcon/FalconResources.ufs"/>
+</UVI4>

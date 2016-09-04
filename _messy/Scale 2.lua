@@ -4,11 +4,24 @@
 --! Date : 05/03/2016
 --------------------------------------------------------------------------------
 
-local KEY = {"C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"}
+local KEY = {"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"}
+
 local keysButton = {}
+local keysNumBox = {}
+local WIDTH = 51
 for i = 1, 12 do
-    keysButton[i] = OnOffButton{"KeyButton_"..tostring(i), true, width = 42 - 3, x = 102 + (i - 1) * 42, y = 5, height = 39}
+    keysNumBox[i] = NumBox{"KeyNumBox_"..tostring(i), i - 1, -24, 24, true, showLabel = false, width = WIDTH + 3, x = 102 + (i - 1) * WIDTH, y = 24}
+    keysButton[i] = OnOffButton{"KeyButton_"..tostring(i), true, width = WIDTH + 1, x = keysNumBox[i].x, y = 5}
+    keysNumBox[i].changed = function(self)
+        if (self.value ~= i - 1) then
+            self.textColour = "#333333"
+        else
+            self.textColour = "#aaaaaa"
+        end  
+    end
+    keysNumBox[i].changed(keysNumBox[i])
 end
+keysNumBox[12].width = WIDTH + 1
 
 local rootKey = Menu{"Root", KEY, showLabel = false, width = 94, height = 20, x = 5, y = 5}
 rootKey.changed = function(self)
@@ -45,14 +58,22 @@ scales = {
 scaleNames = {}
 for i = 1, table.getn(scales) do
     scaleNames[i] = scales[i][1]
+    table.insert(scales[i][2], 12) -- Simplify preset loading
+end
+
+function nearest(i, a, b)
+    if (math.abs(i - a) <= math.abs(i - b)) then
+        return a
+    else
+        return b
+    end
 end
 
 function loadScale(scale)
-    for i = 1, 12 do
-        keysButton[i]:setValue(false)
-    end
-    for i = 1, table.getn(scale) do
-        keysButton[scale[i]+1]:setValue(true)
+    for i = 1, table.getn(scale) - 1 do
+        for j = scale[i], scale[i+1] - 1 do
+            keysNumBox[j+1]:setValue(nearest(j, scale[i], scale[i+1]))
+        end
     end
 end
 
@@ -60,38 +81,14 @@ local scaleMenu = Menu{"Scale", scaleNames, showLabel = false, width = rootKey.w
 scaleMenu.changed = function(self)
     loadScale(scales[self.value][2])
 end
-scaleMenu.changed(scaleMenu)
-
-
-Label{"Key Priority", align = "centred", x = 602, y = 3, width = 110}
-local priorityDown = OnOffButton{"Down", x = 606, y = 24, width = 55, height = 20}
-local priorityUp = OnOffButton{"Up", x = 660, y = 24, width = 55, height = 20}
-priorityDown.changed = function(self)
-    priorityDown:setValue(true, false)
-    priorityUp:setValue(false, false)
-    priorityValue = -1
-end
-priorityUp.changed = function(self)
-    priorityUp:setValue(true, false)
-    priorityDown:setValue(false, false)
-    priorityValue = 1
-end
-priorityDown:setValue(true, true)
+scaleMenu.changed(scaleMenu) -- Refresh at first time
 
 function onNote(e)
     degree = (e.note - (rootKey.value - 1) + 12) % 12
-    degreeDeviation = 0
-    while (true) do
-        if (keysButton[(degree + degreeDeviation + 12) % 12 + 1].value) then break end
-        degreeDeviation = - degreeDeviation
-        if (keysButton[(degree + degreeDeviation + 12) % 12 + 1].value) then break end
-        degreeDeviation = priorityValue - degreeDeviation
-        if (degreeDeviation == priorityValue * 7) then -- no button
-            degreeDeviation = 0
-            break
-        end
+    if (keysButton[degree + 1].value) then
+        baseNote = e.note - degree
+        playNote(baseNote + keysNumBox[degree + 1].value, e.velocity, -1, e.layer, e.channel, e.input, e.vol, e.pan, e.tune, e.slice)
     end
-    playNote(e.note + degreeDeviation, e.velocity, -1, e.layer, e.channel, e.input, e.vol, e.pan, e.tune, e.slice)
 end
 
 function onRelease(e)
@@ -104,11 +101,22 @@ privateSave.changed = function(self)
     local out = "{\""..tostring(scales[scaleMenu.value][1]).."\",{"
         local first
         for i = 1, 12 do
-            if(keysButton[i].value) then
-                if first then out = out.."," else first = true end
-                out = out..tostring(i-1)
-                end
+            if first then
+                out = out..","
+            else
+                first = true
+            end
+            if (keysButton[i].value) then
+                out = out..tostring(keysNumBox[i].value)
+            else
+                out = out.."nil"
+            end
         end
     out = out.."}},"
     print (out)
 end
+
+
+-- privateSave = Button("left", false)
+-- privateSave = Button("right", false)
+-- privateSave = Button("random", false)

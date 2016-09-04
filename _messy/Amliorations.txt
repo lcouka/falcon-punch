@@ -1,0 +1,31 @@
+Double à ameliorer
+Chord => ajouter des keychange
+MultiChord => key et transpose map
+Analyzer a ameliorer
+Bass Extractor => mono retrigger
+Strum script avec Order "Up", "Down", "Alternate", "Random"
+Script setColour comme mono
+
+
+
+
+
+Other
+Timbre Changer
+Auto Pan
+
+Mono
+MonoBass
+Note Range
+delay
+delay note off
+velocity mapper
+duration changer
+
+CHORDER
+bug du copier copller
+bug du learn quand trop elevé
+
+
+midi learn pour le note solo
+un truc pour choisir le nombre de répé dans le seq random

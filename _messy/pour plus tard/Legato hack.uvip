@@ -1,0 +1,184 @@
+<UVI4>
+    <Program Name="Program" Bypass="0" Gain="1" Pan="0" DisplayName="Legato hack" TransposeOctaves="0" TransposeSemiTones="0" OutputName="" Polyphony="16" NotePolyphony="0" ProgramPath="D:/Louis/Travail/12 - UVI/Presets Falcon/XP1/script/Exports/Uses cases/Legato hack.uvip" LoopProgram="0" Streaming="1" BypassInsertFX="0">
+        <ControlSignalSources>
+            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Macro 1" Bipolar="0" Style="0" Value="0"/>
+            <MultiEnvelope Name="Multi Envelope 1" Bypass="0" SyncToHost="1" DisplayName="Multi Envelope 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="2" NumSteps="1" Speed="1" Smooth="0" Bipolar="0" NoteOffRetrigger="0" ShouldFakeMachFiveReleaseTriggerBug="1" LoopStart="0" LoopEnd="0" ReleaseStep="0">
+                <Steps>
+                    <Step Time="28" DestLevel="1" Curve="0"/>
+                </Steps>
+                <Properties PresetPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/Modulations/Multi Envelope/Default.preset"/>
+            </MultiEnvelope>
+        </ControlSignalSources>
+        <Layers>
+            <Layer Name="Layer 0" Bypass="0" Gain="1" Pan="0" Mute="0" MidiMute="0" Solo="0" DisplayName="Layer 1" OutputName="" LowKey="0" HighKey="127" CustomPolyphony="0" PlayMode="0" PortamentoTime="0.029999999" PortamentoMode="0" NumVoicesPerNote="1" VelocityCurve="0" BypassInsertFX="0">
+                <Properties Color="ffa398e8" FXMultiPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/MultiFX/master 2.fxm"/>
+                <ControlSignalSources/>
+                <EventProcessors>
+                    <ScriptProcessor Name="EventProcessor1" Bypass="0" API_version="16">
+                        <Properties ScriptPath="./../Legato Hack In.lua"/>
+                        <script><![CDATA[--------------------------------------------------------------------------------
+--! Legato Hack In
+--! Author : Louis Couka
+--! Date : 05/03/2015
+--------------------------------------------------------------------------------
+
+desc = Label("Legato Hack : Sandwish an Arp or whatever sequential and use legato mode for automation drawing (only works with polyphonic modes)")
+desc.align = "centred"
+desc.width = 710
+
+local notesPlaying = 0
+function onNote(e)
+    if notesPlaying == 0 then
+        controlChange(49, 1)
+    end
+    notesPlaying = notesPlaying + 1
+    playNote(e)
+end
+
+function onRelease(e)
+    if (notesPlaying > 0) then
+        notesPlaying = notesPlaying - 1
+    end
+    if notesPlaying == 0 then
+        controlChange(49, 0)
+    end
+end
+
+function onController(e)
+    if not(e.controller == 49 and e.value <= 1) then
+		postEvent(e)
+	end
+end]]></script>
+                        <ScriptData/>
+                    </ScriptProcessor>
+                    <Arpeggiator Name="EventProcessor0" Bypass="0" Mode="0" TriggerMode="1" OctaveMode="1" Octave="0" NumStrike="1" RepeatBottomNote="0" RepeatTopNote="0" Resolution="22" StepLength="1" ArpVelocityBlend="0.5" GrooveAmount="0" Hold="0" NumSteps="8" Step0State="1" Step1State="2" Step2State="2" Step3State="1" Step4State="2" Step5State="2" Step6State="1" Step7State="2" Step8State="1" Step9State="1" Step10State="1" Step11State="1" Step12State="1" Step13State="1" Step14State="1" Step15State="1" Step16State="1" Step17State="1" Step18State="1" Step19State="1" Step20State="1" Step21State="1" Step22State="1" Step23State="1" Step24State="1" Step25State="1" Step26State="1" Step27State="1" Step28State="1" Step29State="1" Step30State="1" Step31State="1" Step32State="1" Step33State="1" Step34State="1" Step35State="1" Step36State="1" Step37State="1" Step38State="1" Step39State="1" Step40State="1" Step41State="1" Step42State="1" Step43State="1" Step44State="1" Step45State="1" Step46State="1" Step47State="1" Step48State="1" Step49State="1" Step50State="1" Step51State="1" Step52State="1" Step53State="1" Step54State="1" Step55State="1" Step56State="1" Step57State="1" Step58State="1" Step59State="1" Step60State="1" Step61State="1" Step62State="1" Step63State="1" Step64State="1" Step65State="1" Step66State="1" Step67State="1" Step68State="1" Step69State="1" Step70State="1" Step71State="1" Step72State="1" Step73State="1" Step74State="1" Step75State="1" Step76State="1" Step77State="1" Step78State="1" Step79State="1" Step80State="1" Step81State="1" Step82State="1" Step83State="1" Step84State="1" Step85State="1" Step86State="1" Step87State="1" Step88State="1" Step89State="1" Step90State="1" Step91State="1" Step92State="1" Step93State="1" Step94State="1" Step95State="1" Step96State="1" Step97State="1" Step98State="1" Step99State="1" Step100State="1" Step101State="1" Step102State="1" Step103State="1" Step104State="1" Step105State="1" Step106State="1" Step107State="1" Step108State="1" Step109State="1" Step110State="1" Step111State="1" Step112State="1" Step113State="1" Step114State="1" Step115State="1" Step116State="1" Step117State="1" Step118State="1" Step119State="1" Step120State="1" Step121State="1" Step122State="1" Step123State="1" Step124State="1" Step125State="1" Step126State="1" Step127State="1" Step0Size="0.62557077" Step1Size="1" Step2Size="1" Step3Size="0.67579907" Step4Size="1" Step5Size="1" Step6Size="0.71232879" Step7Size="1" Step8Size="1" Step9Size="1" Step10Size="1" Step11Size="1" Step12Size="1" Step13Size="1" Step14Size="1" Step15Size="1" Step16Size="1" Step17Size="1" Step18Size="1" Step19Size="1" Step20Size="1" Step21Size="1" Step22Size="1" Step23Size="1" Step24Size="1" Step25Size="1" Step26Size="1" Step27Size="1" Step28Size="1" Step29Size="1" Step30Size="1" Step31Size="1" Step32Size="1" Step33Size="1" Step34Size="1" Step35Size="1" Step36Size="1" Step37Size="1" Step38Size="1" Step39Size="1" Step40Size="1" Step41Size="1" Step42Size="1" Step43Size="1" Step44Size="1" Step45Size="1" Step46Size="1" Step47Size="1" Step48Size="1" Step49Size="1" Step50Size="1" Step51Size="1" Step52Size="1" Step53Size="1" Step54Size="1" Step55Size="1" Step56Size="1" Step57Size="1" Step58Size="1" Step59Size="1" Step60Size="1" Step61Size="1" Step62Size="1" Step63Size="1" Step64Size="1" Step65Size="1" Step66Size="1" Step67Size="1" Step68Size="1" Step69Size="1" Step70Size="1" Step71Size="1" Step72Size="1" Step73Size="1" Step74Size="1" Step75Size="1" Step76Size="1" Step77Size="1" Step78Size="1" Step79Size="1" Step80Size="1" Step81Size="1" Step82Size="1" Step83Size="1" Step84Size="1" Step85Size="1" Step86Size="1" Step87Size="1" Step88Size="1" Step89Size="1" Step90Size="1" Step91Size="1" Step92Size="1" Step93Size="1" Step94Size="1" Step95Size="1" Step96Size="1" Step97Size="1" Step98Size="1" Step99Size="1" Step100Size="1" Step101Size="1" Step102Size="1" Step103Size="1" Step104Size="1" Step105Size="1" Step106Size="1" Step107Size="1" Step108Size="1" Step109Size="1" Step110Size="1" Step111Size="1" Step112Size="1" Step113Size="1" Step114Size="1" Step115Size="1" Step116Size="1" Step117Size="1" Step118Size="1" Step119Size="1" Step120Size="1" Step121Size="1" Step122Size="1" Step123Size="1" Step124Size="1" Step125Size="1" Step126Size="1" Step127Size="1" Step0Level="1" Step1Level="1" Step2Level="1" Step3Level="1" Step4Level="1" Step5Level="1" Step6Level="1" Step7Level="1" Step8Level="1" Step9Level="1" Step10Level="1" Step11Level="1" Step12Level="1" Step13Level="1" Step14Level="1" Step15Level="1" Step16Level="1" Step17Level="1" Step18Level="1" Step19Level="1" Step20Level="1" Step21Level="1" Step22Level="1" Step23Level="1" Step24Level="1" Step25Level="1" Step26Level="1" Step27Level="1" Step28Level="1" Step29Level="1" Step30Level="1" Step31Level="1" Step32Level="1" Step33Level="1" Step34Level="1" Step35Level="1" Step36Level="1" Step37Level="1" Step38Level="1" Step39Level="1" Step40Level="1" Step41Level="1" Step42Level="1" Step43Level="1" Step44Level="1" Step45Level="1" Step46Level="1" Step47Level="1" Step48Level="1" Step49Level="1" Step50Level="1" Step51Level="1" Step52Level="1" Step53Level="1" Step54Level="1" Step55Level="1" Step56Level="1" Step57Level="1" Step58Level="1" Step59Level="1" Step60Level="1" Step61Level="1" Step62Level="1" Step63Level="1" Step64Level="1" Step65Level="1" Step66Level="1" Step67Level="1" Step68Level="1" Step69Level="1" Step70Level="1" Step71Level="1" Step72Level="1" Step73Level="1" Step74Level="1" Step75Level="1" Step76Level="1" Step77Level="1" Step78Level="1" Step79Level="1" Step80Level="1" Step81Level="1" Step82Level="1" Step83Level="1" Step84Level="1" Step85Level="1" Step86Level="1" Step87Level="1" Step88Level="1" Step89Level="1" Step90Level="1" Step91Level="1" Step92Level="1" Step93Level="1" Step94Level="1" Step95Level="1" Step96Level="1" Step97Level="1" Step98Level="1" Step99Level="1" Step100Level="1" Step101Level="1" Step102Level="1" Step103Level="1" Step104Level="1" Step105Level="1" Step106Level="1" Step107Level="1" Step108Level="1" Step109Level="1" Step110Level="1" Step111Level="1" Step112Level="1" Step113Level="1" Step114Level="1" Step115Level="1" Step116Level="1" Step117Level="1" Step118Level="1" Step119Level="1" Step120Level="1" Step121Level="1" Step122Level="1" Step123Level="1" Step124Level="1" Step125Level="1" Step126Level="1" Step127Level="1" Step0Offset="0" Step1Offset="0" Step2Offset="0" Step3Offset="0" Step4Offset="0" Step5Offset="0" Step6Offset="0" Step7Offset="0" Step8Offset="0" Step9Offset="0" Step10Offset="0" Step11Offset="0" Step12Offset="0" Step13Offset="0" Step14Offset="0" Step15Offset="0" Step16Offset="0" Step17Offset="0" Step18Offset="0" Step19Offset="0" Step20Offset="0" Step21Offset="0" Step22Offset="0" Step23Offset="0" Step24Offset="0" Step25Offset="0" Step26Offset="0" Step27Offset="0" Step28Offset="0" Step29Offset="0" Step30Offset="0" Step31Offset="0" Step32Offset="0" Step33Offset="0" Step34Offset="0" Step35Offset="0" Step36Offset="0" Step37Offset="0" Step38Offset="0" Step39Offset="0" Step40Offset="0" Step41Offset="0" Step42Offset="0" Step43Offset="0" Step44Offset="0" Step45Offset="0" Step46Offset="0" Step47Offset="0" Step48Offset="0" Step49Offset="0" Step50Offset="0" Step51Offset="0" Step52Offset="0" Step53Offset="0" Step54Offset="0" Step55Offset="0" Step56Offset="0" Step57Offset="0" Step58Offset="0" Step59Offset="0" Step60Offset="0" Step61Offset="0" Step62Offset="0" Step63Offset="0" Step64Offset="0" Step65Offset="0" Step66Offset="0" Step67Offset="0" Step68Offset="0" Step69Offset="0" Step70Offset="0" Step71Offset="0" Step72Offset="0" Step73Offset="0" Step74Offset="0" Step75Offset="0" Step76Offset="0" Step77Offset="0" Step78Offset="0" Step79Offset="0" Step80Offset="0" Step81Offset="0" Step82Offset="0" Step83Offset="0" Step84Offset="0" Step85Offset="0" Step86Offset="0" Step87Offset="0" Step88Offset="0" Step89Offset="0" Step90Offset="0" Step91Offset="0" Step92Offset="0" Step93Offset="0" Step94Offset="0" Step95Offset="0" Step96Offset="0" Step97Offset="0" Step98Offset="0" Step99Offset="0" Step100Offset="0" Step101Offset="0" Step102Offset="0" Step103Offset="0" Step104Offset="0" Step105Offset="0" Step106Offset="0" Step107Offset="0" Step108Offset="0" Step109Offset="0" Step110Offset="0" Step111Offset="0" Step112Offset="0" Step113Offset="0" Step114Offset="0" Step115Offset="0" Step116Offset="0" Step117Offset="0" Step118Offset="0" Step119Offset="0" Step120Offset="0" Step121Offset="0" Step122Offset="0" Step123Offset="0" Step124Offset="0" Step125Offset="0" Step126Offset="0" Step127Offset="0" Step0CC="0" Step1CC="0" Step2CC="0" Step3CC="0" Step4CC="0" Step5CC="0" Step6CC="0" Step7CC="0" Step8CC="0" Step9CC="0" Step10CC="0" Step11CC="0" Step12CC="0" Step13CC="0" Step14CC="0" Step15CC="0" Step16CC="0" Step17CC="0" Step18CC="0" Step19CC="0" Step20CC="0" Step21CC="0" Step22CC="0" Step23CC="0" Step24CC="0" Step25CC="0" Step26CC="0" Step27CC="0" Step28CC="0" Step29CC="0" Step30CC="0" Step31CC="0" Step32CC="0" Step33CC="0" Step34CC="0" Step35CC="0" Step36CC="0" Step37CC="0" Step38CC="0" Step39CC="0" Step40CC="0" Step41CC="0" Step42CC="0" Step43CC="0" Step44CC="0" Step45CC="0" Step46CC="0" Step47CC="0" Step48CC="0" Step49CC="0" Step50CC="0" Step51CC="0" Step52CC="0" Step53CC="0" Step54CC="0" Step55CC="0" Step56CC="0" Step57CC="0" Step58CC="0" Step59CC="0" Step60CC="0" Step61CC="0" Step62CC="0" Step63CC="0" Step64CC="0" Step65CC="0" Step66CC="0" Step67CC="0" Step68CC="0" Step69CC="0" Step70CC="0" Step71CC="0" Step72CC="0" Step73CC="0" Step74CC="0" Step75CC="0" Step76CC="0" Step77CC="0" Step78CC="0" Step79CC="0" Step80CC="0" Step81CC="0" Step82CC="0" Step83CC="0" Step84CC="0" Step85CC="0" Step86CC="0" Step87CC="0" Step88CC="0" Step89CC="0" Step90CC="0" Step91CC="0" Step92CC="0" Step93CC="0" Step94CC="0" Step95CC="0" Step96CC="0" Step97CC="0" Step98CC="0" Step99CC="0" Step100CC="0" Step101CC="0" Step102CC="0" Step103CC="0" Step104CC="0" Step105CC="0" Step106CC="0" Step107CC="0" Step108CC="0" Step109CC="0" Step110CC="0" Step111CC="0" Step112CC="0" Step113CC="0" Step114CC="0" Step115CC="0" Step116CC="0" Step117CC="0" Step118CC="0" Step119CC="0" Step120CC="0" Step121CC="0" Step122CC="0" Step123CC="0" Step124CC="0" Step125CC="0" Step126CC="0" Step127CC="0" StepCCId="-1" ArpeggiatorVersion="2"/>
+                    <ScriptProcessor Name="EventProcessor2" Bypass="0" Kill_Portamento="0" API_version="16">
+                        <Properties ScriptPath="./../Legato Hack Out.lua"/>
+                        <script><![CDATA[--------------------------------------------------------------------------------
+--! Legato Hack Out
+--! Author : Louis Couka
+--! Date : 05/03/2015
+--------------------------------------------------------------------------------
+
+killPortamento = OnOffButton{"Kill_Portamento", displayName = "Kill Portamento When Retrigger", width = 180}
+
+local idPlaying
+local playGhost = false
+function onNote(e)
+    if playGhost then
+        if not killPortamento.value then
+            playNote(e)
+            idPlaying = playNote(e.note, 80, 0, nil, nil, nil, 0)
+        else
+            idPlaying = playNote(e.note, 80, 0, nil, nil, nil, 0)
+            playNote(e)
+        end
+        playGhost = false
+    else
+        playNote(e)
+    end
+end
+
+function onController(e)
+    if (e.controller == 49 and e.value <= 1) then
+        if (e.value == 1) then
+            playGhost = true
+        else
+            releaseVoice(idPlaying)
+        end
+    else
+        postEvent(e)
+    end
+end]]></script>
+                        <ScriptData/>
+                    </ScriptProcessor>
+                </EventProcessors>
+                <Inserts>
+                    <ParametricEQ Name="InsertFX1" Bypass="0" Freq1="20" Q1="0.69999999" Gain1="0" Enable1="0" Freq2="149.69518" Q2="5.0144" Gain2="3" Enable2="1" Freq3="50.833549" Q3="0.6056" Gain3="1.5" Enable3="1" Freq4="522.40601" Q4="0.2" Gain4="-2.2232552" Enable4="1" Freq5="1870" Q5="0.69999999" Gain5="0" Enable5="0" Freq6="13914.361" Q6="0.41679955" Gain6="2" Enable6="1" Freq7="2402.5874" Q7="5.8640003" Gain7="2" Enable7="1" Freq8="14947.614" Q8="0.69999999" Gain8="0" Enable8="0"/>
+                    <DualDelay Name="InsertFX2" Bypass="0" SyncToHost="0" DelayTime="0.13900001" LowCut="102.26976" HighCut="4926.501" PeakFreq="1000" PeakGain="0" PeakQ="1" Feedback="0.085000001" Mix="0.25" Rotation="0" InputWidth="1" OutputWidth="1" DelayRatio="0.028799951" FeedbackRatio="0" InputRotation="0" OutputRotation="0" ModDepth="0" ModRate="1" ModChannelOffset="1" Interpolation="1" DualDelayVersion="1"/>
+                    <SparkVerb Name="InsertFX3" Bypass="0" ModDepth="4" ModRate="1" Diffusion="0.61799997" DiffusionStart="5" Width="1" RoomSize="8.2208681" DecayTime="0.74473196" DecayLow="0.7177943" DecayHigh="0.34355795" FreqLow="250" FreqHigh="12000" Shape="0" Mix="0.22999999" Quality="4" Mode="1" HiCut="0" LowCut="0" Rolloff="10210.101" DiffusionOnOff="0" PreDelay="0" MixMode="1" SparkVerbVersion="1"/>
+                    <EffectRack Name="InsertFX4" Bypass="0">
+                        <Properties PresetPath="$Resource/resource/FactoryPresets/FX/Effect Rack/3 Bands Chain.preset"/>
+                        <ControlSignalSources>
+                            <ConstantModulation Name="Macro 1" Bypass="0" DisplayName="Low Freq" Bipolar="0" Style="0" Value="0.29800001">
+                                <Properties customPosition="0" x="210" y="25"/>
+                            </ConstantModulation>
+                            <ConstantModulation Name="Macro 2" Bypass="0" DisplayName="High Freq" Bipolar="0" Style="0" Value="0.62199998">
+                                <Properties customPosition="0" x="465" y="25"/>
+                            </ConstantModulation>
+                        </ControlSignalSources>
+                        <Chains>
+                            <AuxEffect Name="Chain1" Bypass="0" Gain="1" Pan="0" PreInsert="1" DisplayName="Chain1">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="20000" Type="0">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain2" Bypass="0" Gain="1" Pan="0" PreInsert="1" DisplayName="Chain2">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="156.68594" HighFrequency="1469.0275" Type="1">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 1" Destination="LowFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                            <SignalConnection Name="SignalConnection 1" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="7.2999992" CompThreshold="-24.440002" CompRatio="2.4200001" CompAttack="13.000003" CompRelease="189.23087" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.79999995"/>
+                                </Inserts>
+                            </AuxEffect>
+                            <AuxEffect Name="Chain3" Bypass="0" Gain="1" Pan="0" PreInsert="1" DisplayName="Chain3">
+                                <Inserts>
+                                    <CrossOverFilter Name="InsertFX0" Bypass="0" LowFrequency="20" HighFrequency="1469.0275" Type="2">
+                                        <Connections>
+                                            <SignalConnection Name="SignalConnection 0" Ratio="1" Source="./../../Macro 2" Destination="HighFrequency" Mapper="" ConnectionMode="1" Bypass="0" Inverted="0" Offset="0"/>
+                                        </Connections>
+                                    </CrossOverFilter>
+                                    <CompExp Name="InsertFX1" Bypass="0" AutoMakeUp="0" MakeUpGain="8.3000031" CompThreshold="-20.279999" CompRatio="4" CompAttack="3.8400006" CompRelease="119.54205" GateThreshold="-130" GateRatio="1" GateAttack="10" GateRelease="100" Mix="0.80000001"/>
+                                </Inserts>
+                            </AuxEffect>
+                        </Chains>
+                    </EffectRack>
+                    <Gain Name="InsertFX5" Bypass="0" Volume="0.59446263"/>
+                    <SampledReverb Name="InsertFX0" Bypass="0" Dry="1" Wet="0" Time="1" DampingLow="0" DampingHigh="0" PreDelay="0" Width="0" SamplePath="$FalconResources.ufs/Samples/IR/01 Acoustic Spaces/Cathedral/01 Cathedral 33m.aif" NormalizePower="1" UseWindowAtOriginalSize="0" SampledReverbVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="0.44827586" Source="$Program/Multi Envelope 1" Destination="Wet" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                        </Connections>
+                        <Properties PresetPath="C:/Users/Louis/Documents/UVI/Falcon/User Presets/FXs/IReverb/bigverb.preset"/>
+                    </SampledReverb>
+                    <DualDelay Name="InsertFX6" Bypass="0" SyncToHost="1" DelayTime="0.25" LowCut="43.462585" HighCut="16911.117" PeakFreq="1000" PeakGain="0" PeakQ="1" Feedback="0.69199997" Mix="0" Rotation="90" InputWidth="0.099999994" OutputWidth="1" DelayRatio="0" FeedbackRatio="0" InputRotation="1" OutputRotation="0" ModDepth="0" ModRate="1" ModChannelOffset="1" Interpolation="1" DualDelayVersion="1">
+                        <Connections>
+                            <SignalConnection Name="SignalConnection 0" Ratio="0.55172414" Source="$Program/Multi Envelope 1" Destination="Mix" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                        </Connections>
+                        <Properties PresetPath="$Resource/resource/FactoryPresets/FX/01 - Delay/07 - Dual Delay/1 Stereo Delay/Ping Pong 8.preset"/>
+                    </DualDelay>
+                </Inserts>
+                <BusRouters/>
+                <Keygroups>
+                    <Keygroup Name="Keygroup 0" Bypass="0" Gain="1" Pan="0" DisplayName="Keygroup 1" OutputName="" ExclusiveGroup="0" LowKey="0" HighKey="127" LowVelocity="1" HighVelocity="127" LowKeyFade="0" HighKeyFade="0" LowVelocityFade="0" HighVelocityFade="0" TriggerMode="0" TriggerSync="0" TriggerRule="0" LatchTrigger="0" FXPostGain="0" BypassInsertFX="0">
+                        <Connections>
+                            <SignalConnection Name="AmpEnvMod" Ratio="1" Source="$Keygroup/DAHDSR 1" Destination="Gain" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                        </Connections>
+                        <ControlSignalSources>
+                            <DAHDSR Name="DAHDSR 1" Bypass="0" DelayTime="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="0" DecayCurve="0" SustainLevel="1" ReleaseTime="0.050000001" ReleaseCurve="0" DisplayName="DAHDSR 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0"/>
+                            <AHD Name="AHD 1" Bypass="0" DisplayName="AHD 1" VelocityAmount="0" VelocitySens="0.75" Retrigger="1" NoteOffRetrigger="0" AttackTime="0" AttackCurve="0" HoldTime="0" DecayTime="0.2126767" DecayCurve="-0.93540907"/>
+                        </ControlSignalSources>
+                        <BusRouters/>
+                        <Oscillators>
+                            <MinBlepGenerator Name="Oscillator" Bypass="0" Waveform="1" Pwm="0.5" StartPhase="0" Polarity="0" HardSync="0" HardSyncShift="0" NumOscillators="2" MultiOscSpread="0.14400001" Stereo="1" PhaseSpread="1" DetuneMode="0" StereoSpread="0.1" StereoSpreadMode="1" CoarseTune="0" FineTune="0" Gain="1" Pitch="-12" NoteTracking="1" BaseNote="60" DisplayName="Oscillator 1">
+                                <Connections>
+                                    <SignalConnection Name="PitchBendMod" Ratio="2" Source="@PitchBend" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 0" Ratio="9.634304" Source="$Keygroup/AHD 1" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 1" Ratio="11.999998" Source="$Program/Macro 1" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                    <SignalConnection Name="SignalConnection 2" Ratio="23.999994" Source="$Program/Multi Envelope 1" Destination="Pitch" Mapper="" ConnectionMode="0" Bypass="0" Inverted="0"/>
+                                </Connections>
+                            </MinBlepGenerator>
+                        </Oscillators>
+                    </Keygroup>
+                </Keygroups>
+            </Layer>
+        </Layers>
+    </Program>
+    <NeededFS Source="C:/ProgramData/UVI/Falcon/FalconResources.ufs"/>
+</UVI4>
