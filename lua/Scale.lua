@@ -56,7 +56,7 @@ function loadScale(scale)
     end
 end
 
-local scaleMenu = Menu{"Scale", scaleNames, showLabel = false, width = rootKey.width, height = rootKey.height, x = rootKey.x, y = 24}
+local scaleMenu = Menu{"Scale", scaleNames, showLabel = false, width = rootKey.width, height = rootKey.height, x = rootKey.x, y = 24, persistent = false}
 scaleMenu.changed = function(self)
     loadScale(scales[self.value][2])
 end

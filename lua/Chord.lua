@@ -86,15 +86,6 @@ function loadPreset(preset)
     end
 end
 
-
-local vocingSus4
-
-local vocingMinorMajor7
-
-local vocingMajorMajor7 = {
-    
-}
-
 local presets =
 {
     {
@@ -267,6 +258,34 @@ local presets =
     }
 }
 
+presetNames = {}
+for i = 1, table.getn(presets) do
+    presetNames[i] = presets[i][1]
+end
+
+coloursMenu = Menu{"Colours", presetNames, showLabel = false, height = 20, x = 5, y = 75, width = 100, persistent = false}
+voicing = NumBox{"Voicing", 1, 1, 99, true, x = coloursMenu.x + coloursMenu.width + 9, y = 75, width = coloursMenu.width, persistent = false}
+function loadSelectedPreset()
+    loadPreset(presets[coloursMenu.value][2][voicing.value])
+end
+voicing.changed = function(self)
+    numVoicings = table.getn(presets[coloursMenu.value][2])
+    if self.value > numVoicings then self:setValue(numVoicings, false) end
+    self.displayText = tostring(self.value).."/"..tostring(numVoicings)
+    loadSelectedPreset()
+end
+coloursMenu.changed = function(self)
+    voicing:setValue(1, false)
+    voicing.changed(voicing)
+end
+voicing.changed(voicing)
+
+voicingUp = Button{"Voicing_Up", displayName = "+", width = 15, height = 12, x = voicing.x + voicing.width + 3, y = voicing.y - 1}
+voicingUp.changed = function(self) voicing:setValue(voicing.value+1) end
+voicingDown = Button{"Voicing_Down", displayName = "-", width = 15, height = 12, x = voicing.x + voicing.width + 3, y = voicing.y + 10}
+voicingDown.changed = function(self) voicing:setValue(voicing.value-1) end
+
+-- NOEXPORT
 ---- UNCOMMENT THIS TO SEE IF THERE ARE DOUBLONS
 -- function compareTable(t1, t2)
 --     if table.getn(t1) == table.getn(t2) then
@@ -289,36 +308,8 @@ local presets =
 --     end
 -- end
 
-presetNames = {}
-for i = 1, table.getn(presets) do
-    presetNames[i] = presets[i][1]
-end
-
-coloursMenu = Menu{"Colours", presetNames, showLabel = false, height = 20, x = 5, y = 75, width = 100}
-vocing = NumBox{"Voicing", 1, 1, 99, true, x = coloursMenu.x + coloursMenu.width + 9, y = 75, width = coloursMenu.width}
-function loadSelectedPreset()
-    loadPreset(presets[coloursMenu.value][2][vocing.value])
-end
-vocing.changed = function(self)
-    numVoicings = table.getn(presets[coloursMenu.value][2])
-    if self.value > numVoicings then self:setValue(numVoicings, false) end
-    self.displayText = tostring(self.value).."/"..tostring(numVoicings)
-    loadSelectedPreset()
-end
-coloursMenu.changed = function(self)
-    vocing:setValue(1, false)
-    vocing.changed(vocing)
-end
-vocing.changed(vocing)
-
-voicingUp = Button{"Voicing_Up", displayName = "+", width = 15, height = 12, x = vocing.x + vocing.width + 3, y = vocing.y - 1}
-voicingUp.changed = function(self) vocing:setValue(vocing.value+1) end
-voicingDown = Button{"Voicing_Down", displayName = "-", width = 15, height = 12, x = vocing.x + vocing.width + 3, y = vocing.y + 10}
-voicingDown.changed = function(self) vocing:setValue(vocing.value-1) end
-
--- NOEXPORT
 privateSave = Button("Private_Save")
-privateSave.y = vocing.y
+privateSave.y = voicing.y
 privateSave.changed = function(self)
     local out = "{"
     local first
